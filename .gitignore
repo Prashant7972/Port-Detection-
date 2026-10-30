@@ -1,0 +1,143 @@
+# ==============================================================================
+# Security & Environment Variables (NEVER EXPOSE API KEYS OR SECRETS)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.secret
+*.token
+credentials.json
+secrets.json
+
+# ==============================================================================
+# Proprietary System Prompts & LLM Instructions
+# ==============================================================================
+prompts/
+*PROMPT*.md
+*prompt*.md
+system_prompt.txt
+CLAUDE_MICROSERVICE_PROMPT.md
+
+# ==============================================================================
+# Python Bytecode & Runtime Caches
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================================================
+# Virtual Environments
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# ML Models, Weights, Checkpoints & Training Runs
+# ==============================================================================
+*.pt
+*.pth
+*.weights
+*.bin
+*.onnx
+*.engine
+*.tflite
+yolov8n.pt
+runs/
+wandb/
+
+# ==============================================================================
+# Temporary Exports, Scratch Files & Compressed Archives
+# ==============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+data/yolo_dataset.zip
+scratch_test_render.png
+reground_recent_uploads.py
+
+# ==============================================================================
+# Heavy Binary Media & Generated Image Datasets (150+ MB)
+# ==============================================================================
+data/raw_images/
+data/annotated_images/
+data/marketplace_images/
+data/metadata_test_images/
+data/pdf_uploads/
+data/pdf_pages/
+data/uploads/
+data/yolo_export/
+*.cache
+
+# Loose Root Scratch & Test Artifacts
+*.pdf
+!sample_datasheets/*.pdf
+*.ps
+demo_detected_ports.jpg
+detected_ports_output.jpg
+extracted_antenna_diagram.jpg
+asus_wifi_router_rear*.jpg
+asus_wifi_ports.json
+thinkpad_left_ports*.jpg
+thinkpad_ports.json
+
+# ==============================================================================
+# Logs & Process Outputs
+# ==============================================================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================================================================
+# IDEs, Text Editors & Operating System Metadata
+# ==============================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==============================================================================
+# Testing & Code Quality Caches
+# ==============================================================================
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

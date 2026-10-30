@@ -1,0 +1,86 @@
+{
+  "device_model": "Ericsson Radio KRD9010594",
+  "device_type": "Macro RRU / Radio Unit",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "The bottom interface panel of the Ericsson radio unit showing the grounding point, AC power input connector, alarm ports, maintenance interface, and optical SFP fronthaul ports with dust covers.",
+  "ports": [
+    {
+      "port_name": "Ground Lug",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        460,
+        303,
+        513,
+        335
+      ]
+    },
+    {
+      "port_name": "AC Power Connector",
+      "port_type": "Power",
+      "silkscreen_label": "100-250V",
+      "box_2d": [
+        466,
+        340,
+        513,
+        381
+      ]
+    },
+    {
+      "port_name": "Alarm / Control Port",
+      "port_type": "Console",
+      "silkscreen_label": "",
+      "box_2d": [
+        475,
+        417,
+        507,
+        448
+      ]
+    },
+    {
+      "port_name": "Maintenance / Test Port",
+      "port_type": "Other",
+      "silkscreen_label": "",
+      "box_2d": [
+        470,
+        461,
+        503,
+        495
+      ]
+    },
+    {
+      "port_name": "External Alarm Terminal",
+      "port_type": "Console",
+      "silkscreen_label": "",
+      "box_2d": [
+        471,
+        511,
+        492,
+        555
+      ]
+    },
+    {
+      "port_name": "Optical SFP Fronthaul 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        454,
+        579,
+        505,
+        630
+      ]
+    },
+    {
+      "port_name": "Optical SFP Fronthaul 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        452,
+        642,
+        509,
+        701
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2196 @@
+<?xml version="1.0" ?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <name>Telecom_Hardware_Port_Review</name>
+      <labels>
+        <label>
+          <name>RJ45</name>
+        </label>
+        <label>
+          <name>SFP</name>
+        </label>
+        <label>
+          <name>Power</name>
+        </label>
+        <label>
+          <name>Console</name>
+        </label>
+        <label>
+          <name>RF</name>
+        </label>
+        <label>
+          <name>USB</name>
+        </label>
+        <label>
+          <name>Ground</name>
+        </label>
+        <label>
+          <name>Other</name>
+        </label>
+      </labels>
+    </task>
+  </meta>
+  <image id="1" name="device_laptop_thinkpad.jpg" width="3711" height="442">
+    <box label="USB" occluded="0" xtl="1246.9" ytl="176.8" xbr="1469.6" ybr="340.3" z_order="0">
+      <attribute name="port_name">USB 2.0 (Left)</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="1588.3" ytl="163.5" xbr="2130.1" ybr="380.1" z_order="0">
+      <attribute name="port_name">VGA Display Output</attribute>
+      <attribute name="silkscreen_label">Monitor</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="2196.9" ytl="229.8" xbr="2582.9" ybr="389.0" z_order="0">
+      <attribute name="port_name">DisplayPort (++DP)</attribute>
+      <attribute name="silkscreen_label">++DP</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="2649.7" ytl="238.7" xbr="2887.2" ybr="375.7" z_order="0">
+      <attribute name="port_name">USB 2.0 (Right)</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="3080.1" ytl="238.7" xbr="3247.1" ybr="360.2" z_order="0">
+      <attribute name="port_name">Wi-Fi / Bluetooth Radio Switch</attribute>
+      <attribute name="silkscreen_label">Wireless</attribute>
+    </box>
+  </image>
+  <image id="2" name="device_wifi_router_asus.jpg" width="3063" height="1073">
+    <box label="Power" occluded="0" xtl="582.0" ytl="397.0" xbr="710.6" ybr="536.5" z_order="0">
+      <attribute name="port_name">DC Power In (5V/12V)</attribute>
+      <attribute name="silkscreen_label">DC IN</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="750.4" ytl="456.0" xbr="830.1" ybr="541.9" z_order="0">
+      <attribute name="port_name">EZSetup Button</attribute>
+      <attribute name="silkscreen_label">EZSETUP</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="869.9" ytl="354.1" xbr="1041.4" ybr="439.9" z_order="0">
+      <attribute name="port_name">USB 2.0 (Port 1)</attribute>
+      <attribute name="silkscreen_label">USB 2.0</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="869.9" ytl="461.4" xbr="1041.4" ybr="547.2" z_order="0">
+      <attribute name="port_name">USB 2.0 (Port 2)</attribute>
+      <attribute name="silkscreen_label">USB 2.0</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="1090.4" ytl="456.0" xbr="1160.9" ybr="541.9" z_order="0">
+      <attribute name="port_name">Restore Reset Pin</attribute>
+      <attribute name="silkscreen_label">RESTORE</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1179.3" ytl="375.6" xbr="1399.8" ybr="547.2" z_order="0">
+      <attribute name="port_name">WAN / Internet Port</attribute>
+      <attribute name="silkscreen_label">WAN</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1709.2" ytl="375.6" xbr="1899.1" ybr="547.2" z_order="0">
+      <attribute name="port_name">LAN 1 Port</attribute>
+      <attribute name="silkscreen_label">LAN 1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1899.1" ytl="375.6" xbr="2070.6" ybr="547.2" z_order="0">
+      <attribute name="port_name">LAN 2 Port</attribute>
+      <attribute name="silkscreen_label">LAN 2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="2070.6" ytl="375.6" xbr="2239.1" ybr="547.2" z_order="0">
+      <attribute name="port_name">LAN 3 Port</attribute>
+      <attribute name="silkscreen_label">LAN 3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="2239.1" ytl="375.6" xbr="2441.2" ybr="547.2" z_order="0">
+      <attribute name="port_name">LAN 4 Port</attribute>
+      <attribute name="silkscreen_label">LAN 4</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="2499.4" ytl="386.3" xbr="2649.5" ybr="525.8" z_order="0">
+      <attribute name="port_name">Wi-Fi SMA Antenna Jack</attribute>
+      <attribute name="silkscreen_label">ANT</attribute>
+    </box>
+  </image>
+  <image id="3" name="device_01_avaya_2550t.jpg" width="868" height="178">
+    <box label="Console" occluded="0" xtl="37.3" ytl="82.1" xbr="60.8" ybr="137.2" z_order="0">
+      <attribute name="port_name">Console</attribute>
+      <attribute name="silkscreen_label">Console</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="88.5" ytl="89.5" xbr="123.3" ybr="111.8" z_order="0">
+      <attribute name="port_name">Port 49</attribute>
+      <attribute name="silkscreen_label">49</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="125.9" ytl="89.5" xbr="159.7" ybr="111.8" z_order="0">
+      <attribute name="port_name">Port 50</attribute>
+      <attribute name="silkscreen_label">50</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="89.4" ytl="115.5" xbr="123.3" ybr="136.9" z_order="0">
+      <attribute name="port_name">Port 51</attribute>
+      <attribute name="silkscreen_label">Down/51</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="125.9" ytl="115.5" xbr="159.7" ybr="136.9" z_order="0">
+      <attribute name="port_name">Port 52</attribute>
+      <attribute name="silkscreen_label">Up/52</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="164.1" ytl="90.1" xbr="191.8" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="164.1" ytl="115.0" xbr="191.8" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="191.0" ytl="90.1" xbr="218.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="191.0" ytl="115.0" xbr="218.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="217.9" ytl="90.1" xbr="245.6" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="217.9" ytl="115.0" xbr="245.6" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="243.9" ytl="90.1" xbr="271.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="243.9" ytl="115.0" xbr="271.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="269.9" ytl="90.1" xbr="297.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label">9</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="269.9" ytl="115.0" xbr="297.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 10</attribute>
+      <attribute name="silkscreen_label">10</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="296.9" ytl="90.1" xbr="324.6" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 11</attribute>
+      <attribute name="silkscreen_label">11</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="296.9" ytl="115.0" xbr="324.6" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 12</attribute>
+      <attribute name="silkscreen_label">12</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="332.4" ytl="90.1" xbr="360.2" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 13</attribute>
+      <attribute name="silkscreen_label">13</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="332.4" ytl="115.0" xbr="360.2" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 14</attribute>
+      <attribute name="silkscreen_label">14</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="358.5" ytl="90.1" xbr="386.3" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 15</attribute>
+      <attribute name="silkscreen_label">15</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="358.5" ytl="115.0" xbr="386.3" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 16</attribute>
+      <attribute name="silkscreen_label">16</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="385.4" ytl="90.1" xbr="413.2" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 17</attribute>
+      <attribute name="silkscreen_label">17</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="385.4" ytl="115.0" xbr="413.2" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 18</attribute>
+      <attribute name="silkscreen_label">18</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="411.4" ytl="90.1" xbr="439.2" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 19</attribute>
+      <attribute name="silkscreen_label">19</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="411.4" ytl="115.0" xbr="439.2" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 20</attribute>
+      <attribute name="silkscreen_label">20</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="438.3" ytl="90.1" xbr="466.1" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 21</attribute>
+      <attribute name="silkscreen_label">21</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="438.3" ytl="115.0" xbr="466.1" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 22</attribute>
+      <attribute name="silkscreen_label">22</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="464.4" ytl="90.1" xbr="492.2" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 23</attribute>
+      <attribute name="silkscreen_label">23</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="464.4" ytl="115.0" xbr="492.2" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 24</attribute>
+      <attribute name="silkscreen_label">24</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="500.0" ytl="90.4" xbr="527.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 25</attribute>
+      <attribute name="silkscreen_label">25</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="500.0" ytl="115.0" xbr="527.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 26</attribute>
+      <attribute name="silkscreen_label">26</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="526.9" ytl="90.4" xbr="553.8" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 27</attribute>
+      <attribute name="silkscreen_label">27</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="526.9" ytl="115.0" xbr="553.8" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 28</attribute>
+      <attribute name="silkscreen_label">28</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="552.9" ytl="90.4" xbr="580.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 29</attribute>
+      <attribute name="silkscreen_label">29</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="552.9" ytl="115.0" xbr="580.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 30</attribute>
+      <attribute name="silkscreen_label">30</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="579.0" ytl="90.4" xbr="606.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 31</attribute>
+      <attribute name="silkscreen_label">31</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="579.0" ytl="115.0" xbr="606.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 32</attribute>
+      <attribute name="silkscreen_label">32</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="605.9" ytl="90.4" xbr="632.8" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 33</attribute>
+      <attribute name="silkscreen_label">33</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="605.9" ytl="115.0" xbr="632.8" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 34</attribute>
+      <attribute name="silkscreen_label">34</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="631.9" ytl="90.4" xbr="659.7" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 35</attribute>
+      <attribute name="silkscreen_label">35</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="631.9" ytl="115.0" xbr="659.7" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 36</attribute>
+      <attribute name="silkscreen_label">36</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="667.5" ytl="90.4" xbr="695.3" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 37</attribute>
+      <attribute name="silkscreen_label">37</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="667.5" ytl="115.0" xbr="695.3" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 38</attribute>
+      <attribute name="silkscreen_label">38</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="694.4" ytl="90.4" xbr="721.3" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 39</attribute>
+      <attribute name="silkscreen_label">39</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="694.4" ytl="115.0" xbr="721.3" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 40</attribute>
+      <attribute name="silkscreen_label">40</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="720.4" ytl="90.4" xbr="748.2" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 41</attribute>
+      <attribute name="silkscreen_label">41</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="720.4" ytl="115.0" xbr="748.2" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 42</attribute>
+      <attribute name="silkscreen_label">42</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="746.5" ytl="90.4" xbr="774.3" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 43</attribute>
+      <attribute name="silkscreen_label">43</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="746.5" ytl="115.0" xbr="774.3" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 44</attribute>
+      <attribute name="silkscreen_label">44</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="773.4" ytl="90.4" xbr="800.3" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 45</attribute>
+      <attribute name="silkscreen_label">45</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="773.4" ytl="115.0" xbr="800.3" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 46</attribute>
+      <attribute name="silkscreen_label">46</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="799.4" ytl="90.4" xbr="827.2" ybr="112.0" z_order="0">
+      <attribute name="port_name">Port 47</attribute>
+      <attribute name="silkscreen_label">47</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="799.4" ytl="115.0" xbr="827.2" ybr="136.3" z_order="0">
+      <attribute name="port_name">Port 48</attribute>
+      <attribute name="silkscreen_label">48</attribute>
+    </box>
+  </image>
+  <image id="4" name="device_02_cisco_sg300.jpg" width="1024" height="768">
+    <box label="RJ45" occluded="0" xtl="563.2" ytl="528.4" xbr="598.0" ybr="549.1" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="563.2" ytl="549.1" xbr="598.0" ybr="573.7" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="598.0" ytl="528.4" xbr="632.8" ybr="549.1" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="598.0" ytl="549.1" xbr="632.8" ybr="573.7" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="632.8" ytl="528.4" xbr="667.6" ybr="549.1" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="632.8" ytl="549.1" xbr="667.6" ybr="573.7" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="667.6" ytl="528.4" xbr="702.5" ybr="549.1" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="667.6" ytl="549.1" xbr="702.5" ybr="573.7" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="702.5" ytl="528.4" xbr="737.3" ybr="549.1" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label">9</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="702.5" ytl="549.1" xbr="737.3" ybr="573.7" z_order="0">
+      <attribute name="port_name">Port 10</attribute>
+      <attribute name="silkscreen_label">10</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="737.3" ytl="528.4" xbr="772.1" ybr="549.1" z_order="0">
+      <attribute name="port_name">Port 11</attribute>
+      <attribute name="silkscreen_label">11</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="737.3" ytl="549.1" xbr="772.1" ybr="573.7" z_order="0">
+      <attribute name="port_name">Port 12</attribute>
+      <attribute name="silkscreen_label">12</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="772.1" ytl="526.8" xbr="804.9" ybr="547.6" z_order="0">
+      <attribute name="port_name">Port 13</attribute>
+      <attribute name="silkscreen_label">13</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="772.1" ytl="547.6" xbr="804.9" ybr="569.1" z_order="0">
+      <attribute name="port_name">Port 14</attribute>
+      <attribute name="silkscreen_label">14</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="804.9" ytl="526.8" xbr="835.6" ybr="547.6" z_order="0">
+      <attribute name="port_name">Port 15</attribute>
+      <attribute name="silkscreen_label">15</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="804.9" ytl="547.6" xbr="835.6" ybr="569.1" z_order="0">
+      <attribute name="port_name">Port 16</attribute>
+      <attribute name="silkscreen_label">16</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="835.6" ytl="526.8" xbr="866.3" ybr="547.6" z_order="0">
+      <attribute name="port_name">Port 17</attribute>
+      <attribute name="silkscreen_label">17</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="835.6" ytl="547.6" xbr="866.3" ybr="569.1" z_order="0">
+      <attribute name="port_name">Port 18</attribute>
+      <attribute name="silkscreen_label">18</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="866.3" ytl="526.8" xbr="897.0" ybr="547.6" z_order="0">
+      <attribute name="port_name">Port 19</attribute>
+      <attribute name="silkscreen_label">19</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="866.3" ytl="547.6" xbr="897.0" ybr="569.1" z_order="0">
+      <attribute name="port_name">Port 20</attribute>
+      <attribute name="silkscreen_label">20</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="897.0" ytl="526.8" xbr="928.8" ybr="547.6" z_order="0">
+      <attribute name="port_name">Port 21</attribute>
+      <attribute name="silkscreen_label">21</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="897.0" ytl="547.6" xbr="928.8" ybr="569.1" z_order="0">
+      <attribute name="port_name">Port 22</attribute>
+      <attribute name="silkscreen_label">22</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="928.8" ytl="526.8" xbr="959.5" ybr="547.6" z_order="0">
+      <attribute name="port_name">Port 23</attribute>
+      <attribute name="silkscreen_label">23</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="928.8" ytl="547.6" xbr="959.5" ybr="569.1" z_order="0">
+      <attribute name="port_name">Port 24</attribute>
+      <attribute name="silkscreen_label">24</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="961.5" ytl="525.3" xbr="991.2" ybr="546.0" z_order="0">
+      <attribute name="port_name">Port 25</attribute>
+      <attribute name="silkscreen_label">25</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="961.5" ytl="546.0" xbr="991.2" ybr="566.0" z_order="0">
+      <attribute name="port_name">Port 26</attribute>
+      <attribute name="silkscreen_label">26</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="991.2" ytl="524.5" xbr="1023.0" ybr="545.3" z_order="0">
+      <attribute name="port_name">Port 27</attribute>
+      <attribute name="silkscreen_label">27</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="991.2" ytl="545.3" xbr="1023.0" ybr="564.5" z_order="0">
+      <attribute name="port_name">Port 28</attribute>
+      <attribute name="silkscreen_label">28</attribute>
+    </box>
+  </image>
+  <image id="5" name="device_03_3com_24port.jpg" width="640" height="480">
+    <box label="RJ45" occluded="0" xtl="37.1" ytl="205.0" xbr="85.8" ybr="243.8" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="37.1" ytl="249.1" xbr="78.7" ybr="280.3" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="80.6" ytl="208.8" xbr="125.4" ybr="246.7" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="78.7" ytl="250.6" xbr="117.8" ybr="282.2" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="127.4" ytl="211.7" xbr="160.6" ybr="248.2" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="119.0" ytl="252.5" xbr="157.4" ybr="283.2" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="160.6" ytl="212.2" xbr="200.3" ybr="248.6" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="158.1" ytl="253.9" xbr="195.2" ybr="284.2" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="197.8" ytl="218.9" xbr="240.0" ybr="256.3" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label">9</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="195.2" ytl="257.8" xbr="231.0" ybr="286.6" z_order="0">
+      <attribute name="port_name">Port 10</attribute>
+      <attribute name="silkscreen_label">10</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="231.7" ytl="222.2" xbr="261.1" ybr="252.5" z_order="0">
+      <attribute name="port_name">Port 11</attribute>
+      <attribute name="silkscreen_label">11</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="229.8" ytl="258.7" xbr="263.7" ybr="287.5" z_order="0">
+      <attribute name="port_name">Port 12</attribute>
+      <attribute name="silkscreen_label">12</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="274.6" ytl="223.7" xbr="318.1" ybr="257.3" z_order="0">
+      <attribute name="port_name">Port 13</attribute>
+      <attribute name="silkscreen_label">13</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="277.8" ytl="263.0" xbr="308.5" ybr="290.9" z_order="0">
+      <attribute name="port_name">Port 14</attribute>
+      <attribute name="silkscreen_label">14</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="316.8" ytl="228.5" xbr="353.3" ybr="258.7" z_order="0">
+      <attribute name="port_name">Port 15</attribute>
+      <attribute name="silkscreen_label">15</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="309.8" ytl="263.5" xbr="339.8" ybr="290.9" z_order="0">
+      <attribute name="port_name">Port 16</attribute>
+      <attribute name="silkscreen_label">16</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="348.8" ytl="230.4" xbr="382.1" ybr="260.2" z_order="0">
+      <attribute name="port_name">Port 17</attribute>
+      <attribute name="silkscreen_label">17</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="339.8" ytl="264.5" xbr="367.4" ybr="292.3" z_order="0">
+      <attribute name="port_name">Port 18</attribute>
+      <attribute name="silkscreen_label">18</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="375.7" ytl="233.8" xbr="408.3" ybr="262.1" z_order="0">
+      <attribute name="port_name">Port 19</attribute>
+      <attribute name="silkscreen_label">19</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="366.1" ytl="266.4" xbr="394.2" ybr="292.8" z_order="0">
+      <attribute name="port_name">Port 20</attribute>
+      <attribute name="silkscreen_label">20</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="400.6" ytl="235.7" xbr="434.6" ybr="262.6" z_order="0">
+      <attribute name="port_name">Port 21</attribute>
+      <attribute name="silkscreen_label">21</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="393.0" ytl="268.3" xbr="419.2" ybr="294.2" z_order="0">
+      <attribute name="port_name">Port 22</attribute>
+      <attribute name="silkscreen_label">22</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="417.3" ytl="238.6" xbr="441.6" ybr="264.5" z_order="0">
+      <attribute name="port_name">Port 23</attribute>
+      <attribute name="silkscreen_label">23</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="418.6" ytl="270.2" xbr="445.4" ybr="294.7" z_order="0">
+      <attribute name="port_name">Port 24</attribute>
+      <attribute name="silkscreen_label">24</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="455.7" ytl="273.1" xbr="483.2" ybr="297.1" z_order="0">
+      <attribute name="port_name">SFP 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="478.1" ytl="273.6" xbr="505.6" ybr="298.1" z_order="0">
+      <attribute name="port_name">SFP 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="501.8" ytl="275.5" xbr="527.4" ybr="298.6" z_order="0">
+      <attribute name="port_name">SFP 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="522.2" ytl="276.0" xbr="547.8" ybr="299.5" z_order="0">
+      <attribute name="port_name">SFP 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="546.6" ytl="274.6" xbr="575.4" ybr="300.5" z_order="0">
+      <attribute name="port_name">Console</attribute>
+      <attribute name="silkscreen_label">Console</attribute>
+    </box>
+  </image>
+  <image id="6" name="device_04_netgear_gs108.jpg" width="2735" height="1101">
+    <box label="RJ45" occluded="0" xtl="311.8" ytl="767.4" xbr="599.0" ybr="964.5" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="574.4" ytl="767.4" xbr="850.6" ybr="964.5" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="834.2" ytl="770.7" xbr="1104.9" ybr="964.5" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1099.5" ytl="770.7" xbr="1362.0" ybr="964.5" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1367.5" ytl="770.7" xbr="1632.8" ybr="967.8" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1624.6" ytl="770.7" xbr="1889.9" ybr="967.8" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1881.7" ytl="774.0" xbr="2144.2" ybr="967.8" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="2130.6" ytl="774.0" xbr="2412.3" ybr="967.8" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+  </image>
+  <image id="7" name="device_05_brocade_fes24.jpg" width="2816" height="594">
+    <box label="Console" occluded="0" xtl="225.3" ytl="173.4" xbr="416.8" ybr="247.7" z_order="0">
+      <attribute name="port_name">Console</attribute>
+      <attribute name="silkscreen_label">Console</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="101.4" ytl="283.9" xbr="211.2" ybr="364.1" z_order="0">
+      <attribute name="port_name">Port 25C</attribute>
+      <attribute name="silkscreen_label">25C</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="104.2" ytl="371.8" xbr="216.8" ybr="450.3" z_order="0">
+      <attribute name="port_name">Port 26C</attribute>
+      <attribute name="silkscreen_label">26C</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="216.8" ytl="379.0" xbr="312.6" ybr="450.3" z_order="0">
+      <attribute name="port_name">Port 25F</attribute>
+      <attribute name="silkscreen_label">25F</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="371.7" ytl="379.0" xbr="473.1" ybr="450.3" z_order="0">
+      <attribute name="port_name">Port 26F</attribute>
+      <attribute name="silkscreen_label">26F</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="501.2" ytl="292.8" xbr="588.5" ybr="371.8" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="501.2" ytl="380.2" xbr="588.5" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="588.5" ytl="292.8" xbr="673.0" ybr="371.8" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="585.7" ytl="380.2" xbr="670.2" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="670.2" ytl="292.8" xbr="757.5" ybr="371.8" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="670.2" ytl="380.2" xbr="754.7" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="757.5" ytl="292.8" xbr="842.0" ybr="371.8" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="754.7" ytl="380.2" xbr="839.2" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="842.0" ytl="292.8" xbr="926.5" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="839.2" ytl="380.2" xbr="923.6" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 10</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="926.5" ytl="292.8" xbr="1010.9" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 11</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="923.6" ytl="380.2" xbr="1010.9" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 12</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1039.1" ytl="294.0" xbr="1123.6" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 13</attribute>
+      <attribute name="silkscreen_label">13</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1039.1" ytl="380.2" xbr="1123.6" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 14</attribute>
+      <attribute name="silkscreen_label">14</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1123.6" ytl="294.0" xbr="1208.1" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 15</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1123.6" ytl="380.2" xbr="1208.1" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 16</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1208.1" ytl="294.0" xbr="1292.5" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 17</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1208.1" ytl="380.2" xbr="1292.5" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 18</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1292.5" ytl="294.0" xbr="1377.0" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 19</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1292.5" ytl="380.2" xbr="1377.0" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 20</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1377.0" ytl="294.0" xbr="1461.5" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 21</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1377.0" ytl="380.2" xbr="1461.5" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 22</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1461.5" ytl="294.0" xbr="1554.4" ybr="373.0" z_order="0">
+      <attribute name="port_name">Port 23</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1461.5" ytl="380.2" xbr="1557.2" ybr="453.2" z_order="0">
+      <attribute name="port_name">Port 24</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="8" name="device_06_dlink_switch.jpg" width="1280" height="960">
+    <box label="RJ45" occluded="0" xtl="617.0" ytl="306.2" xbr="728.3" ybr="409.0" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="624.6" ytl="370.6" xbr="773.1" ybr="495.4" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="697.6" ytl="282.2" xbr="815.4" ybr="402.2" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="775.7" ytl="271.7" xbr="894.7" ybr="398.4" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="835.8" ytl="261.1" xbr="954.9" ybr="386.9" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="915.2" ytl="246.7" xbr="1041.9" ybr="377.3" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label">9</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="975.4" ytl="237.1" xbr="1095.7" ybr="365.8" z_order="0">
+      <attribute name="port_name">Port 11</attribute>
+      <attribute name="silkscreen_label">11</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1029.1" ytl="229.4" xbr="1148.2" ybr="350.4" z_order="0">
+      <attribute name="port_name">Port 13</attribute>
+      <attribute name="silkscreen_label">13</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1079.0" ytl="219.8" xbr="1196.8" ybr="336.0" z_order="0">
+      <attribute name="port_name">Port 15</attribute>
+      <attribute name="silkscreen_label">15</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1129.0" ytl="208.3" xbr="1255.7" ybr="323.5" z_order="0">
+      <attribute name="port_name">Port 17</attribute>
+      <attribute name="silkscreen_label">17</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1198.1" ytl="195.8" xbr="1278.7" ybr="304.3" z_order="0">
+      <attribute name="port_name">Port 19</attribute>
+      <attribute name="silkscreen_label">19</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="629.8" ytl="545.3" xbr="739.8" ybr="645.1" z_order="0">
+      <attribute name="port_name">Unit 2 Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="634.9" ytl="612.5" xbr="766.7" ybr="724.8" z_order="0">
+      <attribute name="port_name">Unit 2 Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="697.6" ytl="520.3" xbr="782.1" ybr="583.7" z_order="0">
+      <attribute name="port_name">Unit 2 Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="778.2" ytl="504.0" xbr="849.9" ybr="573.1" z_order="0">
+      <attribute name="port_name">Unit 2 Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+  </image>
+  <image id="10" name="device_08_sfp_optical_transceivers.jpg" width="4000" height="2248">
+    <box label="Other" occluded="0" xtl="152.0" ytl="454.1" xbr="560.0" ybr="914.9" z_order="0">
+      <attribute name="port_name">XFP Optical Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="3256.0" ytl="406.9" xbr="3516.0" ybr="937.4" z_order="0">
+      <attribute name="port_name">XFP Electrical Interface</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="188.0" ytl="1425.2" xbr="632.0" ybr="1879.3" z_order="0">
+      <attribute name="port_name">SFP+ Optical Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="2496.0" ytl="1454.5" xbr="2760.0" ybr="1836.6" z_order="0">
+      <attribute name="port_name">SFP+ Electrical Interface</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="13" name="device_11_coaxial_patchpanel.jpg" width="3264" height="2448">
+    <box label="RF" occluded="0" xtl="0.0" ytl="937.6" xbr="447.2" ybr="1429.6" z_order="0">
+      <attribute name="port_name">RF Port 1 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="0.0" ytl="1405.2" xbr="457.0" ybr="1929.0" z_order="0">
+      <attribute name="port_name">RF Port 1 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="424.3" ytl="954.7" xbr="913.9" ybr="1441.9" z_order="0">
+      <attribute name="port_name">RF Port 2 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="453.7" ytl="1392.9" xbr="930.2" ybr="1921.7" z_order="0">
+      <attribute name="port_name">RF Port 2 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="936.8" ytl="947.4" xbr="1374.1" ybr="1429.6" z_order="0">
+      <attribute name="port_name">RF Port 3 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="966.1" ytl="1395.4" xbr="1361.1" ybr="1904.5" z_order="0">
+      <attribute name="port_name">RF Port 3 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="1393.7" ytl="940.0" xbr="1811.5" ybr="1419.8" z_order="0">
+      <attribute name="port_name">RF Port 4 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="1410.0" ytl="1402.7" xbr="1808.3" ybr="1889.9" z_order="0">
+      <attribute name="port_name">RF Port 4 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="1821.3" ytl="949.8" xbr="2294.6" ybr="1414.9" z_order="0">
+      <attribute name="port_name">RF Port 5 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="1834.4" ytl="1397.8" xbr="2268.5" ybr="1887.4" z_order="0">
+      <attribute name="port_name">RF Port 5 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="2239.1" ytl="954.7" xbr="2761.3" ybr="1410.0" z_order="0">
+      <attribute name="port_name">RF Port 6 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="2248.9" ytl="1388.0" xbr="2741.8" ybr="1872.7" z_order="0">
+      <attribute name="port_name">RF Port 6 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="2656.9" ytl="947.4" xbr="3228.1" ybr="1378.2" z_order="0">
+      <attribute name="port_name">RF Port 7 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="2663.4" ytl="1373.3" xbr="3198.7" ybr="1858.0" z_order="0">
+      <attribute name="port_name">RF Port 7 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="3074.7" ytl="954.7" xbr="3264.0" ybr="1366.0" z_order="0">
+      <attribute name="port_name">RF Port 8 Upper</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="3055.1" ytl="1356.2" xbr="3264.0" ybr="1774.8" z_order="0">
+      <attribute name="port_name">RF Port 8 Lower</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="14" name="device_12_atlantis_switch_front.jpg" width="2272" height="1704"/>
+  <image id="15" name="device_13_atlantis_switch_rear.jpg" width="2010" height="1493">
+    <box label="RJ45" occluded="0" xtl="597.0" ytl="755.5" xbr="737.7" ybr="921.2" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="733.6" ytl="833.1" xbr="876.4" ybr="997.3" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="872.3" ytl="913.7" xbr="1015.0" ybr="1077.9" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1013.0" ytl="994.3" xbr="1157.8" ybr="1163.0" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="1151.7" ytl="1073.5" xbr="1306.5" ybr="1248.1" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="1716.5" ytl="861.5" xbr="1784.9" ybr="970.5" z_order="0">
+      <attribute name="port_name">DC Power</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="17" name="device_15_ericsson_radio_panel.jpg" width="960" height="540">
+    <box label="RF" occluded="0" xtl="115.2" ytl="286.7" xbr="193.0" ybr="362.9" z_order="0">
+      <attribute name="port_name">RF 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="277.4" ytl="286.2" xbr="355.2" ybr="362.9" z_order="0">
+      <attribute name="port_name">RF 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="SFP" occluded="0" xtl="431.0" ytl="270.5" xbr="508.8" ybr="378.5" z_order="0">
+      <attribute name="port_name">SFP+ 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="SFP" occluded="0" xtl="576.0" ytl="270.0" xbr="652.8" ybr="378.5" z_order="0">
+      <attribute name="port_name">SFP+ 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="728.6" ytl="246.8" xbr="826.6" ybr="400.7" z_order="0">
+      <attribute name="port_name">-48V DC Power</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="18" name="commscope_antenna_10port_egrzv-65d-r5n43.jpg" width="1280" height="683">
+    <box label="RF" occluded="0" xtl="147.2" ytl="95.6" xbr="238.1" ybr="198.1" z_order="0">
+      <attribute name="port_name">RF Port 3 (+45°)</attribute>
+      <attribute name="silkscreen_label">R2 880-960 MHz</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="266.2" ytl="95.6" xbr="358.4" ybr="198.1" z_order="0">
+      <attribute name="port_name">RF Port 4 (-45°)</attribute>
+      <attribute name="silkscreen_label">R2 RET 2</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="522.2" ytl="102.5" xbr="617.0" ybr="204.9" z_order="0">
+      <attribute name="port_name">RF Port 7 (+45°)</attribute>
+      <attribute name="silkscreen_label">Y1 1427-2690 MHz</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="660.5" ytl="102.5" xbr="753.9" ybr="204.9" z_order="0">
+      <attribute name="port_name">RF Port 8 (-45°)</attribute>
+      <attribute name="silkscreen_label">Y1 RET 4</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="915.2" ytl="109.3" xbr="1008.6" ybr="208.3" z_order="0">
+      <attribute name="port_name">RF Port 9 (+45°)</attribute>
+      <attribute name="silkscreen_label">Y2 RET 5</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="1041.9" ytl="109.3" xbr="1136.6" ybr="208.3" z_order="0">
+      <attribute name="port_name">RF Port 10 (-45°)</attribute>
+      <attribute name="silkscreen_label">Y2 1695-2690 MHz</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="418.6" ytl="358.6" xbr="482.6" ybr="423.5" z_order="0">
+      <attribute name="port_name">AISG 2 OUT</attribute>
+      <attribute name="silkscreen_label">OUT AISG 2</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="515.8" ytl="358.6" xbr="579.8" ybr="423.5" z_order="0">
+      <attribute name="port_name">AISG 2 IN</attribute>
+      <attribute name="silkscreen_label">AISG 2 IN</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="689.9" ytl="358.6" xbr="753.9" ybr="423.5" z_order="0">
+      <attribute name="port_name">AISG 1 OUT</attribute>
+      <attribute name="silkscreen_label">OUT AISG 1</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="785.9" ytl="358.6" xbr="849.9" ybr="423.5" z_order="0">
+      <attribute name="port_name">AISG 1 IN</attribute>
+      <attribute name="silkscreen_label">AISG 1 IN</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="166.4" ytl="341.5" xbr="256.0" ybr="435.8" z_order="0">
+      <attribute name="port_name">RF Port 1 (+45°)</attribute>
+      <attribute name="silkscreen_label">R1 694-862 MHz</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="226.6" ytl="450.8" xbr="314.9" ybr="543.7" z_order="0">
+      <attribute name="port_name">RF Port 2 (-45°)</attribute>
+      <attribute name="silkscreen_label">R1 RET 1</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="1020.2" ytl="355.2" xbr="1111.0" ybr="443.9" z_order="0">
+      <attribute name="port_name">RF Port 6 (-45°)</attribute>
+      <attribute name="silkscreen_label">R3 694-960 MHz</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="956.2" ytl="461.0" xbr="1047.0" ybr="551.9" z_order="0">
+      <attribute name="port_name">RF Port 5 (+45°)</attribute>
+      <attribute name="silkscreen_label">R3 RET 3</attribute>
+    </box>
+  </image>
+  <image id="19" name="custom_094540bc.jpg" width="363" height="199">
+    <box label="Other" occluded="0" xtl="21.1" ytl="39.6" xbr="71.1" ybr="60.3" z_order="0">
+      <attribute name="port_name">HDMI</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="91.5" ytl="42.6" xbr="136.1" ybr="61.3" z_order="0">
+      <attribute name="port_name">USB-A</attribute>
+      <attribute name="silkscreen_label">USB symbol</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="156.5" ytl="46.6" xbr="188.4" ybr="59.9" z_order="0">
+      <attribute name="port_name">USB-C</attribute>
+      <attribute name="silkscreen_label">SS symbol</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="209.5" ytl="51.7" xbr="251.2" ybr="59.3" z_order="0">
+      <attribute name="port_name">SD Card Reader</attribute>
+      <attribute name="silkscreen_label">SD</attribute>
+    </box>
+  </image>
+  <image id="20" name="custom_1c30bf7e.jpg" width="900" height="516">
+    <box label="RF" occluded="0" xtl="301.5" ytl="387.0" xbr="339.3" ybr="436.5" z_order="0">
+      <attribute name="port_name">RF Coaxial Connector 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="397.8" ytl="387.0" xbr="435.6" ybr="436.5" z_order="0">
+      <attribute name="port_name">RF Coaxial Connector 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="465.3" ytl="387.0" xbr="502.2" ybr="436.5" z_order="0">
+      <attribute name="port_name">RF Coaxial Connector 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="561.6" ytl="387.0" xbr="599.4" ybr="433.4" z_order="0">
+      <attribute name="port_name">RF Coaxial Connector 4</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="21" name="custom_1e1c3c72.jpg" width="1143" height="822">
+    <box label="RF" occluded="0" xtl="65.2" ytl="549.9" xbr="141.7" ybr="614.0" z_order="0">
+      <attribute name="port_name">RF Port 1 (+45°)</attribute>
+      <attribute name="silkscreen_label">R1</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="174.9" ytl="549.9" xbr="245.7" ybr="614.9" z_order="0">
+      <attribute name="port_name">RF Port 2 (-45°)</attribute>
+      <attribute name="silkscreen_label">R2</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="352.0" ytl="549.9" xbr="417.2" ybr="614.9" z_order="0">
+      <attribute name="port_name">RF Port 3 (+45°)</attribute>
+      <attribute name="silkscreen_label">Y1</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="457.2" ytl="549.9" xbr="520.1" ybr="614.9" z_order="0">
+      <attribute name="port_name">RF Port 4 (-45°)</attribute>
+      <attribute name="silkscreen_label">Y2</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="625.2" ytl="549.9" xbr="685.8" ybr="614.0" z_order="0">
+      <attribute name="port_name">RF Port 5 (+45°)</attribute>
+      <attribute name="silkscreen_label">Y3</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="728.1" ytl="549.9" xbr="791.0" ybr="614.0" z_order="0">
+      <attribute name="port_name">RF Port 6 (-45°)</attribute>
+      <attribute name="silkscreen_label">Y4</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="899.5" ytl="549.9" xbr="968.1" ybr="614.9" z_order="0">
+      <attribute name="port_name">RF Port 7 (+45°)</attribute>
+      <attribute name="silkscreen_label">B1</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="1001.3" ytl="549.9" xbr="1074.4" ybr="614.9" z_order="0">
+      <attribute name="port_name">RF Port 8 (-45°)</attribute>
+      <attribute name="silkscreen_label">B2</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="179.5" ytl="439.8" xbr="245.7" ybr="499.8" z_order="0">
+      <attribute name="port_name">RF Port 9 (Low-Band 1)</attribute>
+      <attribute name="silkscreen_label">L1</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="283.5" ytl="439.8" xbr="346.3" ybr="499.0" z_order="0">
+      <attribute name="port_name">RF Port 10 (Low-Band 2)</attribute>
+      <attribute name="silkscreen_label">L2</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="794.4" ytl="439.8" xbr="859.5" ybr="499.8" z_order="0">
+      <attribute name="port_name">RF Port 11 (High-Band 1)</attribute>
+      <attribute name="silkscreen_label">H1</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="895.0" ytl="439.8" xbr="962.4" ybr="499.8" z_order="0">
+      <attribute name="port_name">RF Port 12 (High-Band 2)</attribute>
+      <attribute name="silkscreen_label">H2</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="493.8" ytl="443.9" xbr="537.2" ybr="486.6" z_order="0">
+      <attribute name="port_name">AISG / RET Port 1</attribute>
+      <attribute name="silkscreen_label">RET 1</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="597.8" ytl="443.9" xbr="640.1" ybr="486.6" z_order="0">
+      <attribute name="port_name">AISG / RET Port 2</attribute>
+      <attribute name="silkscreen_label">RET 2</attribute>
+    </box>
+  </image>
+  <image id="22" name="custom_23934620.jpg" width="633" height="530">
+    <box label="Other" occluded="0" xtl="207.0" ytl="455.8" xbr="230.4" ybr="478.6" z_order="0">
+      <attribute name="port_name">3.5mm Headphone Jack</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="308.9" ytl="450.0" xbr="346.9" ybr="484.9" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="361.4" ytl="434.6" xbr="398.8" ybr="468.5" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="414.0" ytl="421.9" xbr="447.5" ybr="454.7" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+  </image>
+  <image id="23" name="custom_23adfd5d.jpg" width="3000" height="3000">
+    <box label="Ground" occluded="0" xtl="909.0" ytl="1380.0" xbr="1005.0" ybr="1539.0" z_order="0">
+      <attribute name="port_name">Ground Lug</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="1020.0" ytl="1398.0" xbr="1143.0" ybr="1539.0" z_order="0">
+      <attribute name="port_name">AC Power Connector</attribute>
+      <attribute name="silkscreen_label">100-250V</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="1251.0" ytl="1425.0" xbr="1344.0" ybr="1521.0" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="1383.0" ytl="1410.0" xbr="1485.0" ybr="1509.0" z_order="0">
+      <attribute name="port_name">Maintenance / Test Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Console" occluded="0" xtl="1533.0" ytl="1413.0" xbr="1665.0" ybr="1476.0" z_order="0">
+      <attribute name="port_name">External Alarm Terminal</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="SFP" occluded="0" xtl="1737.0" ytl="1362.0" xbr="1890.0" ybr="1515.0" z_order="0">
+      <attribute name="port_name">Optical SFP Fronthaul 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1926.0" ytl="1356.0" xbr="2103.0" ybr="1527.0" z_order="0">
+      <attribute name="port_name">Optical SFP Fronthaul 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+  </image>
+  <image id="24" name="custom_264d4c39.jpg" width="760" height="385">
+    <box label="USB" occluded="0" xtl="120.8" ytl="69.3" xbr="275.9" ybr="172.5" z_order="0">
+      <attribute name="port_name">USB Port 1</attribute>
+      <attribute name="silkscreen_label">USB icon</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="379.2" ytl="111.7" xbr="528.2" ybr="219.1" z_order="0">
+      <attribute name="port_name">USB Port 2</attribute>
+      <attribute name="silkscreen_label">SS5</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="612.6" ytl="152.1" xbr="760.0" ybr="255.3" z_order="0">
+      <attribute name="port_name">HDMI</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+  </image>
+  <image id="25" name="custom_3bef8a29.jpg" width="635" height="275">
+    <box label="Other" occluded="0" xtl="5.7" ytl="224.1" xbr="33.0" ybr="251.1" z_order="0">
+      <attribute name="port_name">3.5mm Audio Jack</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="76.8" ytl="174.1" xbr="156.8" ybr="237.1" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="198.1" ytl="133.1" xbr="271.1" ybr="191.9" z_order="0">
+      <attribute name="port_name">USB 3.0 (PowerShare)</attribute>
+      <attribute name="silkscreen_label">SS Battery</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="299.7" ytl="94.0" xbr="377.8" ybr="151.0" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="393.7" ytl="63.0" xbr="473.7" ybr="140.0" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="502.3" ytl="48.1" xbr="530.2" ybr="82.0" z_order="0">
+      <attribute name="port_name">Kensington Security Slot</attribute>
+      <attribute name="silkscreen_label">Lock</attribute>
+    </box>
+  </image>
+  <image id="26" name="custom_48deff85.jpg" width="900" height="516">
+    <box label="RF" occluded="0" xtl="348.3" ytl="225.0" xbr="362.7" ybr="238.9" z_order="0">
+      <attribute name="port_name">TX MON RF Port</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="369.0" ytl="220.8" xbr="399.6" ybr="234.3" z_order="0">
+      <attribute name="port_name">Alarm / Ext Port</attribute>
+      <attribute name="silkscreen_label">ALARM</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="405.0" ytl="217.8" xbr="429.3" ybr="243.0" z_order="0">
+      <attribute name="port_name">Optical SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="432.9" ytl="218.8" xbr="455.4" ybr="241.0" z_order="0">
+      <attribute name="port_name">Optical SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="471.6" ytl="225.0" xbr="484.2" ybr="238.9" z_order="0">
+      <attribute name="port_name">Digital Control Interface</attribute>
+      <attribute name="silkscreen_label">CTRL</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="497.7" ytl="225.0" xbr="513.9" ybr="239.9" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="537.3" ytl="221.9" xbr="556.2" ybr="243.0" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="27" name="custom_4a62c598.jpg" width="727" height="466">
+    <box label="USB" occluded="0" xtl="64.0" ytl="233.9" xbr="221.7" ybr="297.8" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="263.9" ytl="241.9" xbr="347.5" ybr="279.6" z_order="0">
+      <attribute name="port_name">USB-C SuperSpeed</attribute>
+      <attribute name="silkscreen_label">SS USB-C</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="391.9" ytl="197.6" xbr="475.5" ybr="263.8" z_order="0">
+      <attribute name="port_name">USB 3.0 (Powered)</attribute>
+      <attribute name="silkscreen_label">USB Battery</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="499.4" ytl="173.8" xbr="591.8" ybr="235.8" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="615.8" ytl="149.6" xbr="723.4" ybr="227.9" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+  </image>
+  <image id="28" name="custom_5096dcb1.jpg" width="747" height="285">
+    <box label="RJ45" occluded="0" xtl="212.9" ytl="110.9" xbr="238.3" ybr="133.9" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="257.7" ytl="86.9" xbr="280.9" ybr="107.7" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="294.3" ytl="151.9" xbr="324.9" ybr="163.9" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="349.6" ytl="146.8" xbr="375.7" ybr="168.7" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="368.3" ytl="135.9" xbr="455.7" ybr="177.8" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="400.4" ytl="95.8" xbr="561.7" ybr="181.8" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="449.7" ytl="149.9" xbr="484.8" ybr="183.0" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="542.3" ytl="100.9" xbr="555.8" ybr="124.8" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="570.0" ytl="110.9" xbr="602.8" ybr="175.0" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label">9</attribute>
+    </box>
+  </image>
+  <image id="29" name="custom_52f9814b.jpg" width="3000" height="3000">
+    <box label="RF" occluded="0" xtl="957.0" ytl="1314.0" xbr="1107.0" ybr="1377.0" z_order="0">
+      <attribute name="port_name">TX MON RF Port</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="1182.0" ytl="1326.0" xbr="1251.0" ybr="1395.0" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label">AUX</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1296.0" ytl="1305.0" xbr="1440.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI/CPRI 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1464.0" ytl="1305.0" xbr="1608.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI/CPRI 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1635.0" ytl="1305.0" xbr="1776.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI/CPRI 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="1800.0" ytl="1305.0" xbr="1944.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Multistandard / Sync Port</attribute>
+      <attribute name="silkscreen_label">SYNC</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="2022.0" ytl="1326.0" xbr="2118.0" ybr="1422.0" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V Max:22A</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="2136.0" ytl="1305.0" xbr="2208.0" ybr="1434.0" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="30" name="custom_56d7f23f.jpg" width="519" height="206">
+    <box label="USB" occluded="0" xtl="68.5" ytl="32.8" xbr="78.9" ybr="43.7" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="93.9" ytl="51.9" xbr="116.8" ybr="59.9" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="168.7" ytl="40.8" xbr="191.5" ybr="48.8" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="200.9" ytl="40.8" xbr="239.8" ybr="49.9" z_order="0">
+      <attribute name="port_name">SDXC Card Slot</attribute>
+      <attribute name="silkscreen_label">SD</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="248.6" ytl="32.8" xbr="267.8" ybr="40.8" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+  </image>
+  <image id="31" name="custom_60190616.jpg" width="3000" height="3000">
+    <box label="Console" occluded="0" xtl="996.0" ytl="1245.0" xbr="1185.0" ybr="1326.0" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label">EXT</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1206.0" ytl="1245.0" xbr="1332.0" ybr="1371.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1353.0" ytl="1245.0" xbr="1479.0" ybr="1371.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1500.0" ytl="1245.0" xbr="1626.0" ybr="1371.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1647.0" ytl="1245.0" xbr="1773.0" ybr="1371.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="1812.0" ytl="1281.0" xbr="1872.0" ybr="1350.0" z_order="0">
+      <attribute name="port_name">TX MON RF Port</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="1926.0" ytl="1269.0" xbr="2016.0" ybr="1356.0" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V Max:50A</attribute>
+    </box>
+  </image>
+  <image id="32" name="custom_6598b68c.jpg" width="900" height="516">
+    <box label="RF" occluded="0" xtl="252.0" ytl="204.9" xbr="272.7" ybr="220.8" z_order="0">
+      <attribute name="port_name">TX MON RF Port</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="287.1" ytl="200.7" xbr="321.3" ybr="233.2" z_order="0">
+      <attribute name="port_name">Optical SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="328.5" ytl="199.2" xbr="363.6" ybr="233.2" z_order="0">
+      <attribute name="port_name">Optical SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="483.3" ytl="203.3" xbr="508.5" ybr="226.5" z_order="0">
+      <attribute name="port_name">Alarm / Ext Port</attribute>
+      <attribute name="silkscreen_label">ALARM</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="525.6" ytl="204.9" xbr="559.8" ybr="238.4" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V Max:28A</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="569.7" ytl="202.3" xbr="591.3" ybr="241.0" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="33" name="custom_6e2253fc.jpg" width="900" height="516">
+    <box label="Ground" occluded="0" xtl="330.3" ytl="219.3" xbr="344.7" ybr="246.1" z_order="0">
+      <attribute name="port_name">Grounding Point</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="SFP" occluded="0" xtl="354.6" ytl="224.5" xbr="384.3" ybr="237.9" z_order="0">
+      <attribute name="port_name">Optical eCPRI 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Console" occluded="0" xtl="393.3" ytl="226.5" xbr="409.5" ybr="241.5" z_order="0">
+      <attribute name="port_name">Console / AISG</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="413.1" ytl="222.4" xbr="440.1" ybr="250.3" z_order="0">
+      <attribute name="port_name">RF Port A</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="442.8" ytl="222.4" xbr="468.9" ybr="250.8" z_order="0">
+      <attribute name="port_name">RF Port B</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="471.6" ytl="223.4" xbr="498.6" ybr="250.8" z_order="0">
+      <attribute name="port_name">RF Port C</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="501.3" ytl="224.5" xbr="527.4" ybr="249.2" z_order="0">
+      <attribute name="port_name">RF Port D</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="537.3" ytl="226.5" xbr="557.1" ybr="248.7" z_order="0">
+      <attribute name="port_name">-48V DC Power</attribute>
+      <attribute name="silkscreen_label">-48V DC</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="559.8" ytl="227.6" xbr="570.6" ybr="249.7" z_order="0">
+      <attribute name="port_name">Grounding Lug</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="34" name="custom_714feaa7.jpg" width="900" height="516">
+    <box label="RF" occluded="0" xtl="298.8" ytl="386.0" xbr="342.9" ybr="438.6" z_order="0">
+      <attribute name="port_name">RF Port 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="396.0" ytl="386.0" xbr="439.2" ybr="438.6" z_order="0">
+      <attribute name="port_name">RF Port 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="461.7" ytl="386.0" xbr="506.7" ybr="438.6" z_order="0">
+      <attribute name="port_name">RF Port 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="555.3" ytl="384.4" xbr="603.0" ybr="438.6" z_order="0">
+      <attribute name="port_name">RF Port 4</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="35" name="custom_7309f8c7.jpg" width="727" height="466">
+    <box label="Other" occluded="0" xtl="85.1" ytl="233.0" xbr="112.0" ybr="257.2" z_order="0">
+      <attribute name="port_name">3.5mm Headphone Jack</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="143.9" ytl="239.1" xbr="188.3" ybr="254.0" z_order="0">
+      <attribute name="port_name">USB-C SuperSpeed</attribute>
+      <attribute name="silkscreen_label">USB-C</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="223.2" ytl="233.9" xbr="285.7" ybr="260.0" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">USB 3.0</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="309.0" ytl="234.9" xbr="370.8" ybr="261.0" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">USB 3.0</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="401.3" ytl="237.2" xbr="469.6" ybr="261.0" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="524.9" ytl="239.1" xbr="542.3" ybr="253.0" z_order="0">
+      <attribute name="port_name">DC Power In</attribute>
+      <attribute name="silkscreen_label">Power</attribute>
+    </box>
+  </image>
+  <image id="36" name="custom_7434cc45.jpg" width="3000" height="3000">
+    <box label="RF" occluded="0" xtl="957.0" ytl="1314.0" xbr="1107.0" ybr="1377.0" z_order="0">
+      <attribute name="port_name">TX MON RF Port</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="1182.0" ytl="1326.0" xbr="1251.0" ybr="1395.0" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label">AUX</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1296.0" ytl="1305.0" xbr="1440.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI/CPRI 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1464.0" ytl="1305.0" xbr="1608.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI/CPRI 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1635.0" ytl="1305.0" xbr="1776.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical eCPRI/CPRI 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="1800.0" ytl="1305.0" xbr="1944.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Multistandard / Sync Port</attribute>
+      <attribute name="silkscreen_label">SYNC</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="2022.0" ytl="1326.0" xbr="2118.0" ybr="1422.0" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V Max:22A</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="2136.0" ytl="1305.0" xbr="2208.0" ybr="1434.0" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="37" name="custom_7cce41b9.jpg" width="747" height="285">
+    <box label="RJ45" occluded="0" xtl="35.9" ytl="109.7" xbr="62.7" ybr="156.8" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="68.7" ytl="114.0" xbr="95.6" ybr="160.7" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="102.3" ytl="118.0" xbr="130.7" ybr="164.7" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="136.7" ytl="122.0" xbr="165.8" ybr="168.7" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="171.8" ytl="126.0" xbr="201.7" ybr="173.0" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="207.7" ytl="130.0" xbr="238.3" ybr="177.8" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="244.3" ytl="132.8" xbr="276.4" ybr="181.8" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="282.4" ytl="168.7" xbr="296.6" ybr="177.8" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+  </image>
+  <image id="38" name="custom_7e019a7b.jpg" width="760" height="385">
+    <box label="RJ45" occluded="0" xtl="27.4" ytl="194.8" xbr="47.9" ybr="221.0" z_order="0">
+      <attribute name="port_name">Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="114.0" ytl="231.0" xbr="140.6" ybr="304.9" z_order="0">
+      <attribute name="port_name">Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="150.5" ytl="193.7" xbr="187.7" ybr="207.9" z_order="0">
+      <attribute name="port_name">Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="206.0" ytl="201.7" xbr="217.4" ybr="216.8" z_order="0">
+      <attribute name="port_name">Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="272.8" ytl="181.7" xbr="285.8" ybr="201.7" z_order="0">
+      <attribute name="port_name">Port 5</attribute>
+      <attribute name="silkscreen_label">5</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="318.4" ytl="101.6" xbr="349.6" ybr="184.8" z_order="0">
+      <attribute name="port_name">Port 6</attribute>
+      <attribute name="silkscreen_label">6</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="546.4" ytl="193.7" xbr="570.0" ybr="219.8" z_order="0">
+      <attribute name="port_name">Port 7</attribute>
+      <attribute name="silkscreen_label">7</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="599.6" ytl="149.8" xbr="760.0" ybr="263.0" z_order="0">
+      <attribute name="port_name">Port 8</attribute>
+      <attribute name="silkscreen_label">8</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="616.4" ytl="232.9" xbr="628.5" ybr="246.8" z_order="0">
+      <attribute name="port_name">Port 9</attribute>
+      <attribute name="silkscreen_label">9</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="715.9" ytl="226.0" xbr="760.0" ybr="242.9" z_order="0">
+      <attribute name="port_name">Port 10</attribute>
+      <attribute name="silkscreen_label">10</attribute>
+    </box>
+  </image>
+  <image id="39" name="custom_89200d8c.jpg" width="697" height="382">
+    <box label="Power" occluded="0" xtl="27.9" ytl="43.9" xbr="96.9" ybr="69.1" z_order="0">
+      <attribute name="port_name">MagSafe 2 Power</attribute>
+      <attribute name="silkscreen_label">Power</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="131.7" ytl="42.0" xbr="197.9" ybr="71.8" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="218.9" ytl="43.2" xbr="285.1" ybr="73.0" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="312.3" ytl="45.8" xbr="354.1" ybr="71.1" z_order="0">
+      <attribute name="port_name">Thunderbolt 2</attribute>
+      <attribute name="silkscreen_label">TB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="384.0" ytl="48.9" xbr="407.7" ybr="71.8" z_order="0">
+      <attribute name="port_name">3.5mm Headphone</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="6.3" ytl="149.0" xbr="64.8" ybr="171.9" z_order="0">
+      <attribute name="port_name">MagSafe Power</attribute>
+      <attribute name="silkscreen_label">Power</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="82.9" ytl="139.0" xbr="140.8" ybr="181.8" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="160.3" ytl="142.9" xbr="206.3" ybr="181.1" z_order="0">
+      <attribute name="port_name">FireWire 800</attribute>
+      <attribute name="silkscreen_label">FW800</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="225.1" ytl="149.0" xbr="260.7" ybr="173.0" z_order="0">
+      <attribute name="port_name">Mini DisplayPort</attribute>
+      <attribute name="silkscreen_label">MiniDP</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="278.8" ytl="149.0" xbr="338.0" ybr="175.0" z_order="0">
+      <attribute name="port_name">USB 2.0 Port 1</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="352.7" ytl="149.0" xbr="413.3" ybr="175.0" z_order="0">
+      <attribute name="port_name">USB 2.0 Port 2</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="428.0" ytl="149.0" xbr="487.9" ybr="176.1" z_order="0">
+      <attribute name="port_name">USB 2.0 Port 3</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="506.0" ytl="155.9" xbr="623.1" ybr="171.1" z_order="0">
+      <attribute name="port_name">SDXC Card Slot</attribute>
+      <attribute name="silkscreen_label">SD</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="646.8" ytl="153.2" xbr="669.8" ybr="173.8" z_order="0">
+      <attribute name="port_name">3.5mm Headphone</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="7.7" ytl="278.1" xbr="69.0" ybr="301.0" z_order="0">
+      <attribute name="port_name">MagSafe Power</attribute>
+      <attribute name="silkscreen_label">Power</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="89.9" ytl="270.8" xbr="142.9" ybr="312.9" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="181.9" ytl="268.9" xbr="308.8" ybr="314.0" z_order="0">
+      <attribute name="port_name">DVI-I Dual-Link</attribute>
+      <attribute name="silkscreen_label">DVI</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="351.3" ytl="273.9" xbr="395.9" ybr="314.0" z_order="0">
+      <attribute name="port_name">FireWire 400</attribute>
+      <attribute name="silkscreen_label">FW400</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="414.7" ytl="280.0" xbr="467.7" ybr="306.0" z_order="0">
+      <attribute name="port_name">USB 2.0 Port 1</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="476.1" ytl="281.2" xbr="529.0" ybr="307.1" z_order="0">
+      <attribute name="port_name">USB 2.0 Port 2</attribute>
+      <attribute name="silkscreen_label">USB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="552.7" ytl="283.8" xbr="575.7" ybr="306.0" z_order="0">
+      <attribute name="port_name">3.5mm Headphone Out</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="616.1" ytl="283.8" xbr="639.8" ybr="306.0" z_order="0">
+      <attribute name="port_name">3.5mm Audio In (Mic)</attribute>
+      <attribute name="silkscreen_label">Mic</attribute>
+    </box>
+  </image>
+  <image id="40" name="custom_8cfae681.jpg" width="900" height="516">
+    <box label="RF" occluded="0" xtl="104.4" ytl="115.1" xbr="154.8" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port A</attribute>
+      <attribute name="silkscreen_label">A</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="192.6" ytl="115.1" xbr="245.7" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port B</attribute>
+      <attribute name="silkscreen_label">B</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="283.5" ytl="115.1" xbr="334.8" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port C</attribute>
+      <attribute name="silkscreen_label">C</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="373.5" ytl="115.1" xbr="425.7" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port D</attribute>
+      <attribute name="silkscreen_label">D</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="463.5" ytl="115.1" xbr="514.8" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port E</attribute>
+      <attribute name="silkscreen_label">E</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="553.5" ytl="115.1" xbr="604.8" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port F</attribute>
+      <attribute name="silkscreen_label">F</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="643.5" ytl="115.1" xbr="695.7" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port G</attribute>
+      <attribute name="silkscreen_label">G</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="733.5" ytl="115.1" xbr="785.7" ybr="164.6" z_order="0">
+      <attribute name="port_name">RF Port H</attribute>
+      <attribute name="silkscreen_label">H</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="90.0" ytl="202.8" xbr="143.1" ybr="256.5" z_order="0">
+      <attribute name="port_name">ANT CAL</attribute>
+      <attribute name="silkscreen_label">ANT CAL</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="301.5" ytl="181.1" xbr="359.1" ybr="237.9" z_order="0">
+      <attribute name="port_name">Fan/Alarm Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Console" occluded="0" xtl="380.7" ytl="181.1" xbr="439.2" ybr="237.9" z_order="0">
+      <attribute name="port_name">ALD</attribute>
+      <attribute name="silkscreen_label">ALD</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="458.1" ytl="202.8" xbr="558.0" ybr="301.3" z_order="0">
+      <attribute name="port_name">Optical SFP 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="569.7" ytl="202.8" xbr="668.7" ybr="301.3" z_order="0">
+      <attribute name="port_name">Optical SFP 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="676.8" ytl="174.9" xbr="752.4" ybr="254.9" z_order="0">
+      <attribute name="port_name">-48V DC Power</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="793.8" ytl="133.6" xbr="817.2" ybr="160.0" z_order="0">
+      <attribute name="port_name">Ground</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="41" name="custom_8e03f1c0.jpg" width="900" height="516">
+    <box label="RJ45" occluded="0" xtl="290.7" ytl="222.4" xbr="360.0" ybr="291.5" z_order="0">
+      <attribute name="port_name">Ethernet / SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="374.4" ytl="222.4" xbr="443.7" ybr="291.5" z_order="0">
+      <attribute name="port_name">Ethernet / SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="525.6" ytl="226.5" xbr="558.0" ybr="285.9" z_order="0">
+      <attribute name="port_name">Grounding Terminal</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="563.4" ytl="223.4" xbr="616.5" ybr="289.0" z_order="0">
+      <attribute name="port_name">AC Power Connector</attribute>
+      <attribute name="silkscreen_label">100-250 V~ Max 5A; 50/60 Hz</attribute>
+    </box>
+  </image>
+  <image id="42" name="custom_90d015b3.jpg" width="412" height="297">
+    <box label="USB" occluded="0" xtl="36.3" ytl="242.6" xbr="92.7" ybr="271.2" z_order="0">
+      <attribute name="port_name">USB Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="109.2" ytl="233.7" xbr="154.9" ybr="262.0" z_order="0">
+      <attribute name="port_name">FireWire Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="178.0" ytl="223.9" xbr="216.3" ybr="255.1" z_order="0">
+      <attribute name="port_name">USB Port 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="240.2" ytl="216.5" xbr="282.6" ybr="251.9" z_order="0">
+      <attribute name="port_name">Ethernet RJ45</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="318.9" ytl="204.9" xbr="392.6" ybr="242.6" z_order="0">
+      <attribute name="port_name">DVI Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="43" name="custom_92f6893c.jpg" width="900" height="516">
+    <box label="SFP" occluded="0" xtl="270.9" ytl="187.3" xbr="356.4" ybr="271.4" z_order="0">
+      <attribute name="port_name">Optical SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="369.0" ytl="187.3" xbr="452.7" ybr="271.4" z_order="0">
+      <attribute name="port_name">Optical SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="559.8" ytl="194.5" xbr="630.9" ybr="264.7" z_order="0">
+      <attribute name="port_name">AC Power Input</attribute>
+      <attribute name="silkscreen_label">100-240V ~ Max:6A</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="481.5" ytl="204.3" xbr="549.9" ybr="278.6" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="44" name="custom_95ca7e0d.jpg" width="412" height="297">
+    <box label="USB" occluded="0" xtl="36.3" ytl="242.6" xbr="92.7" ybr="271.2" z_order="0">
+      <attribute name="port_name">USB Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="109.2" ytl="233.7" xbr="154.9" ybr="262.0" z_order="0">
+      <attribute name="port_name">FireWire Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="178.0" ytl="223.9" xbr="216.3" ybr="255.1" z_order="0">
+      <attribute name="port_name">USB Port 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="240.2" ytl="216.5" xbr="282.6" ybr="251.9" z_order="0">
+      <attribute name="port_name">Ethernet RJ45</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="318.9" ytl="204.9" xbr="392.6" ybr="242.6" z_order="0">
+      <attribute name="port_name">DVI Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="45" name="custom_9d8635f7.jpg" width="900" height="516">
+    <box label="Console" occluded="0" xtl="207.0" ytl="226.0" xbr="249.3" ybr="271.4" z_order="0">
+      <attribute name="port_name">AISG/RET Control Port</attribute>
+      <attribute name="silkscreen_label">RBS A/DCK</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="232.2" ytl="311.1" xbr="301.5" ybr="380.3" z_order="0">
+      <attribute name="port_name">RF Coaxial Port A</attribute>
+      <attribute name="silkscreen_label">ANT A</attribute>
+    </box>
+    <box label="RF" occluded="0" xtl="319.5" ytl="324.6" xbr="392.4" ybr="386.5" z_order="0">
+      <attribute name="port_name">RF Coaxial Port B</attribute>
+      <attribute name="silkscreen_label">ANT B</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="392.4" ytl="419.5" xbr="434.7" ybr="455.1" z_order="0">
+      <attribute name="port_name">Ground Screw Terminal</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="46" name="custom_a2cefa38.jpg" width="633" height="530">
+    <box label="Other" occluded="0" xtl="207.0" ytl="455.8" xbr="230.4" ybr="478.6" z_order="0">
+      <attribute name="port_name">3.5mm Headphone Jack</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="308.9" ytl="450.0" xbr="346.9" ybr="484.9" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="361.4" ytl="434.6" xbr="398.8" ybr="468.5" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="414.0" ytl="421.9" xbr="447.5" ybr="454.7" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+  </image>
+  <image id="47" name="custom_a59b1fd7.jpg" width="900" height="516">
+    <box label="SFP" occluded="0" xtl="346.5" ytl="258.0" xbr="363.6" ybr="269.9" z_order="0">
+      <attribute name="port_name">Optical SFP Fronthaul 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="367.2" ytl="258.0" xbr="383.4" ybr="269.9" z_order="0">
+      <attribute name="port_name">Optical SFP Fronthaul 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="387.9" ytl="258.0" xbr="405.9" ybr="269.4" z_order="0">
+      <attribute name="port_name">Optical SFP Fronthaul 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="408.6" ytl="258.0" xbr="425.7" ybr="269.4" z_order="0">
+      <attribute name="port_name">Optical SFP Fronthaul 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="432.0" ytl="258.0" xbr="455.4" ybr="267.8" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="405.9" ytl="315.3" xbr="490.5" ybr="331.3" z_order="0">
+      <attribute name="port_name">-48V DC Power Terminal</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="450.9" ytl="307.0" xbr="510.3" ybr="326.6" z_order="0">
+      <attribute name="port_name">Grounding Point</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="48" name="custom_ab3844a5.jpg" width="900" height="516">
+    <box label="SFP" occluded="0" xtl="268.2" ytl="247.7" xbr="295.2" ybr="274.5" z_order="0">
+      <attribute name="port_name">Optical SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="308.7" ytl="247.7" xbr="334.8" ybr="274.5" z_order="0">
+      <attribute name="port_name">Optical SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="372.6" ytl="252.3" xbr="416.7" ybr="268.8" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label">ALARM</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="582.3" ytl="251.3" xbr="606.6" ybr="277.1" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="612.0" ytl="250.8" xbr="632.7" ybr="277.6" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="49" name="custom_b0b58177.jpg" width="727" height="466">
+    <box label="USB" occluded="0" xtl="293.7" ytl="223.7" xbr="307.5" ybr="230.7" z_order="0">
+      <attribute name="port_name">USB-C 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="319.2" ytl="223.7" xbr="327.1" ybr="230.2" z_order="0">
+      <attribute name="port_name">USB-C 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="245.7" ytl="251.6" xbr="263.9" ybr="260.0" z_order="0">
+      <attribute name="port_name">USB-A 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="239.2" ytl="277.3" xbr="258.8" ybr="286.6" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="270.4" ytl="277.3" xbr="290.8" ybr="286.1" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="308.2" ytl="278.7" xbr="321.3" ybr="285.2" z_order="0">
+      <attribute name="port_name">USB-C 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="496.5" ytl="242.8" xbr="519.8" ybr="254.0" z_order="0">
+      <attribute name="port_name">USB Type-A 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="544.5" ytl="242.3" xbr="565.6" ybr="254.0" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RJ45" occluded="0" xtl="594.7" ytl="241.4" xbr="618.0" ybr="254.4" z_order="0">
+      <attribute name="port_name">Ethernet</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="403.5" ytl="271.2" xbr="429.7" ybr="290.8" z_order="0">
+      <attribute name="port_name">DC Power In</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="USB" occluded="0" xtl="621.6" ytl="272.6" xbr="641.2" ybr="282.9" z_order="0">
+      <attribute name="port_name">USB Type-A 3</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Other" occluded="0" xtl="651.4" ytl="272.1" xbr="663.0" ybr="282.4" z_order="0">
+      <attribute name="port_name">Audio Jack</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="50" name="custom_b51c8ecf.jpg" width="633" height="530">
+    <box label="Other" occluded="0" xtl="207.0" ytl="455.8" xbr="230.4" ybr="478.6" z_order="0">
+      <attribute name="port_name">3.5mm Headphone Jack</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="308.9" ytl="450.0" xbr="346.9" ybr="484.9" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="361.4" ytl="434.6" xbr="398.8" ybr="468.5" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="414.0" ytl="421.9" xbr="447.5" ybr="454.7" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+  </image>
+  <image id="51" name="custom_b6b87e7a.jpg" width="635" height="275">
+    <box label="Other" occluded="0" xtl="5.7" ytl="224.1" xbr="33.0" ybr="251.1" z_order="0">
+      <attribute name="port_name">3.5mm Audio Jack</attribute>
+      <attribute name="silkscreen_label">Audio</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="76.8" ytl="174.1" xbr="156.8" ybr="237.1" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="198.1" ytl="133.1" xbr="271.1" ybr="191.9" z_order="0">
+      <attribute name="port_name">USB 3.0 (PowerShare)</attribute>
+      <attribute name="silkscreen_label">SS Battery</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="299.7" ytl="94.0" xbr="377.8" ybr="151.0" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="393.7" ytl="63.0" xbr="473.7" ybr="140.0" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="502.3" ytl="48.1" xbr="530.2" ybr="82.0" z_order="0">
+      <attribute name="port_name">Kensington Security Slot</attribute>
+      <attribute name="silkscreen_label">Lock</attribute>
+    </box>
+  </image>
+  <image id="52" name="custom_c29f1854.jpg" width="900" height="516">
+    <box label="RF" occluded="0" xtl="299.7" ytl="277.1" xbr="349.2" ybr="326.1" z_order="0">
+      <attribute name="port_name">RF Antenna Port A</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="290.7" ytl="405.6" xbr="339.3" ybr="447.4" z_order="0">
+      <attribute name="port_name">RF Antenna Port B</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="309.6" ytl="371.5" xbr="323.1" ybr="387.0" z_order="0">
+      <attribute name="port_name">Calibration / Monitoring Port</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+  </image>
+  <image id="53" name="custom_c6a2bf6c.jpg" width="900" height="516">
+    <box label="SFP" occluded="0" xtl="268.2" ytl="247.7" xbr="295.2" ybr="274.5" z_order="0">
+      <attribute name="port_name">Optical SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="308.7" ytl="247.7" xbr="334.8" ybr="274.5" z_order="0">
+      <attribute name="port_name">Optical SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="372.6" ytl="252.3" xbr="416.7" ybr="268.8" z_order="0">
+      <attribute name="port_name">Alarm / Control Port</attribute>
+      <attribute name="silkscreen_label">ALARM</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="582.3" ytl="251.3" xbr="606.6" ybr="277.1" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="612.0" ytl="250.8" xbr="632.7" ybr="277.6" z_order="0">
+      <attribute name="port_name">Chassis Ground Terminal</attribute>
+      <attribute name="silkscreen_label">Ground</attribute>
+    </box>
+  </image>
+  <image id="54" name="custom_c924526e.jpg" width="727" height="466">
+    <box label="USB" occluded="0" xtl="64.0" ytl="233.9" xbr="221.7" ybr="297.8" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="263.9" ytl="241.9" xbr="347.5" ybr="279.6" z_order="0">
+      <attribute name="port_name">USB-C SuperSpeed</attribute>
+      <attribute name="silkscreen_label">SS USB-C</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="391.9" ytl="197.6" xbr="475.5" ybr="263.8" z_order="0">
+      <attribute name="port_name">USB 3.0 (Powered)</attribute>
+      <attribute name="silkscreen_label">USB Battery</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="499.4" ytl="173.8" xbr="591.8" ybr="235.8" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="615.8" ytl="149.6" xbr="723.4" ybr="227.9" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+  </image>
+  <image id="55" name="custom_d0d12193.jpg" width="616" height="399">
+    <box label="Other" occluded="0" xtl="123.8" ytl="195.9" xbr="141.7" ybr="213.9" z_order="0">
+      <attribute name="port_name">3.5mm Audio Jack</attribute>
+      <attribute name="silkscreen_label">Headphone</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="168.2" ytl="178.0" xbr="221.8" ybr="207.9" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="248.2" ytl="168.0" xbr="300.0" ybr="193.9" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="338.2" ytl="158.0" xbr="383.8" ybr="183.9" z_order="0">
+      <attribute name="port_name">USB 3.0 (Powered)</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="404.1" ytl="140.0" xbr="444.1" ybr="176.0" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="455.8" ytl="144.0" xbr="527.9" ybr="156.0" z_order="0">
+      <attribute name="port_name">SD Card Reader</attribute>
+      <attribute name="silkscreen_label">SD</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="542.1" ytl="144.0" xbr="561.8" ybr="156.0" z_order="0">
+      <attribute name="port_name">Kensington Security Lock</attribute>
+      <attribute name="silkscreen_label">Lock</attribute>
+    </box>
+  </image>
+  <image id="56" name="custom_d6534537.jpg" width="3000" height="3000">
+    <box label="RF" occluded="0" xtl="951.0" ytl="1200.0" xbr="993.0" ybr="1248.0" z_order="0">
+      <attribute name="port_name">TX MON RF Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Console" occluded="0" xtl="1041.0" ytl="1245.0" xbr="1164.0" ybr="1299.0" z_order="0">
+      <attribute name="port_name">Maintenance / External Interface Port</attribute>
+      <attribute name="silkscreen_label">EXT</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1326.0" ytl="1197.0" xbr="1449.0" ybr="1320.0" z_order="0">
+      <attribute name="port_name">Optical Fronthaul SFP Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1467.0" ytl="1197.0" xbr="1587.0" ybr="1320.0" z_order="0">
+      <attribute name="port_name">Optical Fronthaul SFP Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1614.0" ytl="1197.0" xbr="1734.0" ybr="1320.0" z_order="0">
+      <attribute name="port_name">Optical Fronthaul SFP Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1758.0" ytl="1197.0" xbr="1878.0" ybr="1320.0" z_order="0">
+      <attribute name="port_name">Optical Fronthaul SFP Port 4</attribute>
+      <attribute name="silkscreen_label">4</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="1893.0" ytl="1200.0" xbr="1989.0" ybr="1323.0" z_order="0">
+      <attribute name="port_name">-48V DC Power Input</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="2010.0" ytl="1260.0" xbr="2067.0" ybr="1317.0" z_order="0">
+      <attribute name="port_name">Grounding Point</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="57" name="custom_e1069637.jpg" width="3000" height="3000">
+    <box label="SFP" occluded="0" xtl="516.0" ytl="1158.0" xbr="717.0" ybr="1347.0" z_order="0">
+      <attribute name="port_name">Optical SFP 1</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="SFP" occluded="0" xtl="774.0" ytl="1158.0" xbr="969.0" ybr="1347.0" z_order="0">
+      <attribute name="port_name">Optical SFP 2</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Console" occluded="0" xtl="1038.0" ytl="1209.0" xbr="1149.0" ybr="1317.0" z_order="0">
+      <attribute name="port_name">Console / AISG</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="RF" occluded="0" xtl="1689.0" ytl="1212.0" xbr="1752.0" ybr="1266.0" z_order="0">
+      <attribute name="port_name">TX MON RF</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="2196.0" ytl="1200.0" xbr="2349.0" ybr="1329.0" z_order="0">
+      <attribute name="port_name">-48V DC Power</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="2424.0" ytl="1149.0" xbr="2541.0" ybr="1338.0" z_order="0">
+      <attribute name="port_name">Ground</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="58" name="custom_eb3db6dd.jpg" width="900" height="516">
+    <box label="RJ45" occluded="0" xtl="293.4" ytl="223.4" xbr="359.1" ybr="290.5" z_order="0">
+      <attribute name="port_name">Optical/Ethernet Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="375.3" ytl="222.9" xbr="441.9" ybr="290.5" z_order="0">
+      <attribute name="port_name">Optical/Ethernet Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="529.2" ytl="227.6" xbr="555.3" ybr="284.8" z_order="0">
+      <attribute name="port_name">Grounding Terminal</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="566.1" ytl="223.4" xbr="615.6" ybr="288.4" z_order="0">
+      <attribute name="port_name">AC Power Connector</attribute>
+      <attribute name="silkscreen_label">100-250 V~ Max 5A; 50/60 Hz</attribute>
+    </box>
+  </image>
+  <image id="59" name="custom_f65ed90f.jpg" width="727" height="466">
+    <box label="USB" occluded="0" xtl="64.0" ytl="233.9" xbr="221.7" ybr="297.8" z_order="0">
+      <attribute name="port_name">USB 3.0 Type-A</attribute>
+      <attribute name="silkscreen_label">SS USB</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="263.9" ytl="241.9" xbr="347.5" ybr="279.6" z_order="0">
+      <attribute name="port_name">USB-C SuperSpeed</attribute>
+      <attribute name="silkscreen_label">SS USB-C</attribute>
+    </box>
+    <box label="USB" occluded="0" xtl="391.9" ytl="197.6" xbr="475.5" ybr="263.8" z_order="0">
+      <attribute name="port_name">USB 3.0 (Powered)</attribute>
+      <attribute name="silkscreen_label">USB Battery</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="499.4" ytl="173.8" xbr="591.8" ybr="235.8" z_order="0">
+      <attribute name="port_name">HDMI Video Output</attribute>
+      <attribute name="silkscreen_label">HDMI</attribute>
+    </box>
+    <box label="RJ45" occluded="0" xtl="615.8" ytl="149.6" xbr="723.4" ybr="227.9" z_order="0">
+      <attribute name="port_name">RJ45 Gigabit Ethernet</attribute>
+      <attribute name="silkscreen_label">LAN</attribute>
+    </box>
+  </image>
+  <image id="60" name="custom_f6f6636e.jpg" width="3000" height="3000">
+    <box label="Ground" occluded="0" xtl="909.0" ytl="1314.0" xbr="969.0" ybr="1401.0" z_order="0">
+      <attribute name="port_name">Grounding Point</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Console" occluded="0" xtl="1026.0" ytl="1287.0" xbr="1209.0" ybr="1365.0" z_order="0">
+      <attribute name="port_name">Console / Alarm Port</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="SFP" occluded="0" xtl="1230.0" ytl="1269.0" xbr="1380.0" ybr="1413.0" z_order="0">
+      <attribute name="port_name">Optical Fronthaul SFP 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1404.0" ytl="1266.0" xbr="1542.0" ybr="1413.0" z_order="0">
+      <attribute name="port_name">Optical Fronthaul SFP 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="Other" occluded="0" xtl="1623.0" ytl="1311.0" xbr="1707.0" ybr="1386.0" z_order="0">
+      <attribute name="port_name">External Interface / AUX</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+    <box label="Power" occluded="0" xtl="1773.0" ytl="1299.0" xbr="1872.0" ybr="1404.0" z_order="0">
+      <attribute name="port_name">-48V DC Power Connector</attribute>
+      <attribute name="silkscreen_label">-48V Max: 34A</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="2004.0" ytl="1257.0" xbr="2118.0" ybr="1413.0" z_order="0">
+      <attribute name="port_name">Dual Ground Stud</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+  <image id="61" name="custom_f76a3909.jpg" width="3000" height="3000">
+    <box label="RF" occluded="0" xtl="843.0" ytl="1299.0" xbr="894.0" ybr="1341.0" z_order="0">
+      <attribute name="port_name">TX MON RF</attribute>
+      <attribute name="silkscreen_label">TX MON</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="951.0" ytl="1314.0" xbr="1110.0" ybr="1383.0" z_order="0">
+      <attribute name="port_name">Optical SFP</attribute>
+      <attribute name="silkscreen_label">XRD</attribute>
+    </box>
+    <box label="Console" occluded="0" xtl="1293.0" ytl="1305.0" xbr="1437.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">AUX</attribute>
+      <attribute name="silkscreen_label">AUX</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1458.0" ytl="1305.0" xbr="1608.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical/Data Port 3</attribute>
+      <attribute name="silkscreen_label">3</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1626.0" ytl="1305.0" xbr="1776.0" ybr="1449.0" z_order="0">
+      <attribute name="port_name">Optical/Data Port 2</attribute>
+      <attribute name="silkscreen_label">2</attribute>
+    </box>
+    <box label="SFP" occluded="0" xtl="1797.0" ytl="1305.0" xbr="1947.0" ybr="1443.0" z_order="0">
+      <attribute name="port_name">Optical/Data Port 1</attribute>
+      <attribute name="silkscreen_label">1</attribute>
+    </box>
+    <box label="Power" occluded="0" xtl="2016.0" ytl="1329.0" xbr="2121.0" ybr="1425.0" z_order="0">
+      <attribute name="port_name">-48V DC Power</attribute>
+      <attribute name="silkscreen_label">-48V</attribute>
+    </box>
+    <box label="Ground" occluded="0" xtl="2145.0" ytl="1335.0" xbr="2190.0" ybr="1380.0" z_order="0">
+      <attribute name="port_name">Grounding Point</attribute>
+      <attribute name="silkscreen_label"/>
+    </box>
+  </image>
+</annotations>

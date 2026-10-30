@@ -1,0 +1,86 @@
+{
+  "device_model": "Lenovo ThinkPad T480 / Laptop (Right Side I/O)",
+  "device_type": "Laptop / PC",
+  "view_perspective": "Right Side I/O Panel",
+  "ports_visible": true,
+  "perspective_notes": "Perspective view showing 7 hardware ports along the right chassis edge: 3.5mm audio jack, USB 3.0 Type-A, HDMI video output, Powered USB 3.0, RJ45 Gigabit Ethernet, SD card reader slot, and Kensington security lock.",
+  "ports": [
+    {
+      "port_name": "3.5mm Audio Jack",
+      "port_type": "Other",
+      "silkscreen_label": "Headphone",
+      "box_2d": [
+        491,
+        201,
+        536,
+        230
+      ]
+    },
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB",
+      "box_2d": [
+        446,
+        273,
+        521,
+        360
+      ]
+    },
+    {
+      "port_name": "HDMI Video Output",
+      "port_type": "Other",
+      "silkscreen_label": "HDMI",
+      "box_2d": [
+        421,
+        403,
+        486,
+        487
+      ]
+    },
+    {
+      "port_name": "USB 3.0 (Powered)",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB",
+      "box_2d": [
+        396,
+        549,
+        461,
+        623
+      ]
+    },
+    {
+      "port_name": "RJ45 Gigabit Ethernet",
+      "port_type": "RJ45",
+      "silkscreen_label": "LAN",
+      "box_2d": [
+        351,
+        656,
+        441,
+        721
+      ]
+    },
+    {
+      "port_name": "SD Card Reader",
+      "port_type": "Other",
+      "silkscreen_label": "SD",
+      "box_2d": [
+        361,
+        740,
+        391,
+        857
+      ]
+    },
+    {
+      "port_name": "Kensington Security Lock",
+      "port_type": "Other",
+      "silkscreen_label": "Lock",
+      "box_2d": [
+        361,
+        880,
+        391,
+        912
+      ]
+    }
+  ]
+}

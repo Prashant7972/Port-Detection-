@@ -1,0 +1,60 @@
+{
+  "device_model": "Lenovo ThinkPad X220 Laptop",
+  "ports": [
+    {
+      "port_name": "USB 2.0 (Left)",
+      "port_type": "USB",
+      "silkscreen_label": "USB",
+      "box_2d": [
+        400,
+        336,
+        770,
+        396
+      ]
+    },
+    {
+      "port_name": "VGA Display Output",
+      "port_type": "RF",
+      "silkscreen_label": "Monitor",
+      "box_2d": [
+        370,
+        428,
+        860,
+        574
+      ]
+    },
+    {
+      "port_name": "DisplayPort (++DP)",
+      "port_type": "Console",
+      "silkscreen_label": "++DP",
+      "box_2d": [
+        520,
+        592,
+        880,
+        696
+      ]
+    },
+    {
+      "port_name": "USB 2.0 (Right)",
+      "port_type": "USB",
+      "silkscreen_label": "USB",
+      "box_2d": [
+        540,
+        714,
+        850,
+        778
+      ]
+    },
+    {
+      "port_name": "Wi-Fi / Bluetooth Radio Switch",
+      "port_type": "Other",
+      "silkscreen_label": "Wireless",
+      "box_2d": [
+        540,
+        830,
+        815,
+        875
+      ]
+    }
+  ]
+}

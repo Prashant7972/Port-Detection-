@@ -1,0 +1,53 @@
+{
+  "device_model": "Ericsson Radio AC Unit (KRD 901 258/1)",
+  "device_type": "Cellular Radio Unit (AC Power)",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "Ericsson cellular radio unit with AC Power input (100-240V ~ Max 6A), 2x SFP/optical data cages (labeled 1 and 2), and chassis ground.",
+  "ports": [
+    {
+      "port_name": "Optical SFP Port 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        363,
+        301,
+        526,
+        396
+      ]
+    },
+    {
+      "port_name": "Optical SFP Port 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        363,
+        410,
+        526,
+        503
+      ]
+    },
+    {
+      "port_name": "AC Power Input",
+      "port_type": "Power",
+      "silkscreen_label": "100-240V ~ Max:6A",
+      "box_2d": [
+        377,
+        622,
+        513,
+        701
+      ]
+    },
+    {
+      "port_name": "Chassis Ground Terminal",
+      "port_type": "Ground",
+      "silkscreen_label": "Ground",
+      "box_2d": [
+        396,
+        535,
+        540,
+        611
+      ]
+    }
+  ]
+}

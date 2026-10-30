@@ -1,0 +1,53 @@
+{
+  "device_model": "Generic Cellular Base Station Antenna",
+  "device_type": "Base Station Antenna",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "ports": [
+    {
+      "port_name": "RF Port 1",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        748,
+        332,
+        850,
+        381
+      ]
+    },
+    {
+      "port_name": "RF Port 2",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        748,
+        440,
+        850,
+        488
+      ]
+    },
+    {
+      "port_name": "RF Port 3",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        748,
+        513,
+        850,
+        563
+      ]
+    },
+    {
+      "port_name": "RF Port 4",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        745,
+        617,
+        850,
+        670
+      ]
+    }
+  ],
+  "perspective_notes": "Bottom connector panel of a multi-band cellular base station antenna showing multiple coaxial RF connector interfaces (such as 4.3-10 or 7/16 DIN connectors) along with adjustable tilt rods."
+}

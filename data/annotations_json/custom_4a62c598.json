@@ -1,0 +1,64 @@
+{
+  "device_model": "Screenshot From 2026-10-28 16-47-49.png",
+  "device_type": "Hardware Device",
+  "view_perspective": "Side I/O Panel",
+  "ports_visible": true,
+  "perspective_notes": "Matched catalog reference signature (custom_c924526e) with calibrated port grounding.",
+  "ports": [
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB",
+      "box_2d": [
+        502,
+        88,
+        639,
+        305
+      ]
+    },
+    {
+      "port_name": "USB-C SuperSpeed",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB-C",
+      "box_2d": [
+        519,
+        363,
+        600,
+        478
+      ]
+    },
+    {
+      "port_name": "USB 3.0 (Powered)",
+      "port_type": "USB",
+      "silkscreen_label": "USB Battery",
+      "box_2d": [
+        424,
+        539,
+        566,
+        654
+      ]
+    },
+    {
+      "port_name": "HDMI Video Output",
+      "port_type": "Other",
+      "silkscreen_label": "HDMI",
+      "box_2d": [
+        373,
+        687,
+        506,
+        814
+      ]
+    },
+    {
+      "port_name": "RJ45 Gigabit Ethernet",
+      "port_type": "RJ45",
+      "silkscreen_label": "LAN",
+      "box_2d": [
+        321,
+        847,
+        489,
+        995
+      ]
+    }
+  ]
+}

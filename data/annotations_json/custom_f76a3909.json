@@ -1,0 +1,97 @@
+{
+  "device_model": "AIR 3239 B78C",
+  "device_type": "5G Massive MIMO / Macro RRU",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "ports": [
+    {
+      "port_name": "TX MON RF",
+      "port_type": "RF",
+      "silkscreen_label": "TX MON",
+      "box_2d": [
+        433,
+        281,
+        447,
+        298
+      ]
+    },
+    {
+      "port_name": "Optical SFP",
+      "port_type": "SFP",
+      "silkscreen_label": "XRD",
+      "box_2d": [
+        438,
+        317,
+        461,
+        370
+      ]
+    },
+    {
+      "port_name": "AUX",
+      "port_type": "Console",
+      "silkscreen_label": "AUX",
+      "box_2d": [
+        435,
+        431,
+        483,
+        479
+      ]
+    },
+    {
+      "port_name": "Optical/Data Port 3",
+      "port_type": "SFP",
+      "silkscreen_label": "3",
+      "box_2d": [
+        435,
+        486,
+        483,
+        536
+      ]
+    },
+    {
+      "port_name": "Optical/Data Port 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        435,
+        542,
+        483,
+        592
+      ]
+    },
+    {
+      "port_name": "Optical/Data Port 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        435,
+        599,
+        481,
+        649
+      ]
+    },
+    {
+      "port_name": "-48V DC Power",
+      "port_type": "Power",
+      "silkscreen_label": "-48V",
+      "box_2d": [
+        443,
+        672,
+        475,
+        707
+      ]
+    },
+    {
+      "port_name": "Grounding Point",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        445,
+        715,
+        460,
+        730
+      ]
+    }
+  ],
+  "perspective_notes": "The bottom interface panel of the Ericsson AIR 3239 B78C Massive MIMO radio is shown, featuring RF calibration ports, optical SFP transceiver interfaces, auxiliary control ports, and a -48V DC power connector protected within a weather-resistant housing above cooling fins."
+}

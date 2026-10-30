@@ -1,0 +1,42 @@
+{
+  "device_model": "Ericsson Radio 4415 / Macro RRU",
+  "device_type": "Macro RRU / Telecom Radio",
+  "view_perspective": "Bottom Interface Panel and Front RF/Connector Panel",
+  "ports_visible": true,
+  "ports": [
+    {
+      "port_name": "RF Antenna Port A",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        537,
+        333,
+        632,
+        388
+      ]
+    },
+    {
+      "port_name": "RF Antenna Port B",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        786,
+        323,
+        867,
+        377
+      ]
+    },
+    {
+      "port_name": "Calibration / Monitoring Port",
+      "port_type": "RF",
+      "silkscreen_label": "TX MON",
+      "box_2d": [
+        720,
+        344,
+        750,
+        359
+      ]
+    }
+  ],
+  "perspective_notes": "The image shows a telecom macro radio unit (such as Ericsson Radio 4415) featuring large cooling fins on top, a patterned metallic faceplate, and several high-frequency RF coaxial connectors along the bottom interface panel."
+}

@@ -1,0 +1,108 @@
+{
+  "device_model": "Ericsson Radio KRD90110411",
+  "device_type": "Macro RRU / Remote Radio Unit",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "The view clearly displays the bottom connection interface panel of the Ericsson Macro RRU. Visible ports include optical SFP/eCPRI, circular AISG/console, multiple 4.3-10 RF antenna ports, a -48V DC power connector, and grounding screws/lugs. Heatsink cooling fins are located directly below the interface panel.",
+  "ports": [
+    {
+      "port_name": "Grounding Point",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        425,
+        367,
+        477,
+        383
+      ]
+    },
+    {
+      "port_name": "Optical eCPRI 1",
+      "port_type": "SFP",
+      "silkscreen_label": "",
+      "box_2d": [
+        435,
+        394,
+        461,
+        427
+      ]
+    },
+    {
+      "port_name": "Console / AISG",
+      "port_type": "Console",
+      "silkscreen_label": "",
+      "box_2d": [
+        439,
+        437,
+        468,
+        455
+      ]
+    },
+    {
+      "port_name": "RF Port A",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        431,
+        459,
+        485,
+        489
+      ]
+    },
+    {
+      "port_name": "RF Port B",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        431,
+        492,
+        486,
+        521
+      ]
+    },
+    {
+      "port_name": "RF Port C",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        433,
+        524,
+        486,
+        554
+      ]
+    },
+    {
+      "port_name": "RF Port D",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        435,
+        557,
+        483,
+        586
+      ]
+    },
+    {
+      "port_name": "-48V DC Power",
+      "port_type": "Power",
+      "silkscreen_label": "-48V DC",
+      "box_2d": [
+        439,
+        597,
+        482,
+        619
+      ]
+    },
+    {
+      "port_name": "Grounding Lug",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        441,
+        622,
+        484,
+        634
+      ]
+    }
+  ]
+}

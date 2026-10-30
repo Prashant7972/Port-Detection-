@@ -1,0 +1,317 @@
+{
+  "device_model": "Cisco Small Business SG300-28 28-Port Gigabit Switch",
+  "device_type": "Managed Gigabit Switch",
+  "view_perspective": "Front Panel (180\u00b0 Inverted / Upside Down)",
+  "ports_visible": true,
+  "perspective_notes": "Inverted orientation corrected; all 28 ports located accurately on hardware.",
+  "ports": [
+    {
+      "port_name": "Port 1",
+      "port_type": "RJ45",
+      "silkscreen_label": "1",
+      "box_2d": [
+        285,
+        416,
+        312,
+        450
+      ]
+    },
+    {
+      "port_name": "Port 2",
+      "port_type": "RJ45",
+      "silkscreen_label": "2",
+      "box_2d": [
+        253,
+        416,
+        285,
+        450
+      ]
+    },
+    {
+      "port_name": "Port 3",
+      "port_type": "RJ45",
+      "silkscreen_label": "3",
+      "box_2d": [
+        285,
+        382,
+        312,
+        416
+      ]
+    },
+    {
+      "port_name": "Port 4",
+      "port_type": "RJ45",
+      "silkscreen_label": "4",
+      "box_2d": [
+        253,
+        382,
+        285,
+        416
+      ]
+    },
+    {
+      "port_name": "Port 5",
+      "port_type": "RJ45",
+      "silkscreen_label": "5",
+      "box_2d": [
+        285,
+        348,
+        312,
+        382
+      ]
+    },
+    {
+      "port_name": "Port 6",
+      "port_type": "RJ45",
+      "silkscreen_label": "6",
+      "box_2d": [
+        253,
+        348,
+        285,
+        382
+      ]
+    },
+    {
+      "port_name": "Port 7",
+      "port_type": "RJ45",
+      "silkscreen_label": "7",
+      "box_2d": [
+        285,
+        314,
+        312,
+        348
+      ]
+    },
+    {
+      "port_name": "Port 8",
+      "port_type": "RJ45",
+      "silkscreen_label": "8",
+      "box_2d": [
+        253,
+        314,
+        285,
+        348
+      ]
+    },
+    {
+      "port_name": "Port 9",
+      "port_type": "RJ45",
+      "silkscreen_label": "9",
+      "box_2d": [
+        285,
+        280,
+        312,
+        314
+      ]
+    },
+    {
+      "port_name": "Port 10",
+      "port_type": "RJ45",
+      "silkscreen_label": "10",
+      "box_2d": [
+        253,
+        280,
+        285,
+        314
+      ]
+    },
+    {
+      "port_name": "Port 11",
+      "port_type": "RJ45",
+      "silkscreen_label": "11",
+      "box_2d": [
+        285,
+        246,
+        312,
+        280
+      ]
+    },
+    {
+      "port_name": "Port 12",
+      "port_type": "RJ45",
+      "silkscreen_label": "12",
+      "box_2d": [
+        253,
+        246,
+        285,
+        280
+      ]
+    },
+    {
+      "port_name": "Port 13",
+      "port_type": "RJ45",
+      "silkscreen_label": "13",
+      "box_2d": [
+        287,
+        214,
+        314,
+        246
+      ]
+    },
+    {
+      "port_name": "Port 14",
+      "port_type": "RJ45",
+      "silkscreen_label": "14",
+      "box_2d": [
+        259,
+        214,
+        287,
+        246
+      ]
+    },
+    {
+      "port_name": "Port 15",
+      "port_type": "RJ45",
+      "silkscreen_label": "15",
+      "box_2d": [
+        287,
+        184,
+        314,
+        214
+      ]
+    },
+    {
+      "port_name": "Port 16",
+      "port_type": "RJ45",
+      "silkscreen_label": "16",
+      "box_2d": [
+        259,
+        184,
+        287,
+        214
+      ]
+    },
+    {
+      "port_name": "Port 17",
+      "port_type": "RJ45",
+      "silkscreen_label": "17",
+      "box_2d": [
+        287,
+        154,
+        314,
+        184
+      ]
+    },
+    {
+      "port_name": "Port 18",
+      "port_type": "RJ45",
+      "silkscreen_label": "18",
+      "box_2d": [
+        259,
+        154,
+        287,
+        184
+      ]
+    },
+    {
+      "port_name": "Port 19",
+      "port_type": "RJ45",
+      "silkscreen_label": "19",
+      "box_2d": [
+        287,
+        124,
+        314,
+        154
+      ]
+    },
+    {
+      "port_name": "Port 20",
+      "port_type": "RJ45",
+      "silkscreen_label": "20",
+      "box_2d": [
+        259,
+        124,
+        287,
+        154
+      ]
+    },
+    {
+      "port_name": "Port 21",
+      "port_type": "RJ45",
+      "silkscreen_label": "21",
+      "box_2d": [
+        287,
+        93,
+        314,
+        124
+      ]
+    },
+    {
+      "port_name": "Port 22",
+      "port_type": "RJ45",
+      "silkscreen_label": "22",
+      "box_2d": [
+        259,
+        93,
+        287,
+        124
+      ]
+    },
+    {
+      "port_name": "Port 23",
+      "port_type": "RJ45",
+      "silkscreen_label": "23",
+      "box_2d": [
+        287,
+        63,
+        314,
+        93
+      ]
+    },
+    {
+      "port_name": "Port 24",
+      "port_type": "RJ45",
+      "silkscreen_label": "24",
+      "box_2d": [
+        259,
+        63,
+        287,
+        93
+      ]
+    },
+    {
+      "port_name": "Port 25",
+      "port_type": "RJ45",
+      "silkscreen_label": "25",
+      "box_2d": [
+        289,
+        32,
+        316,
+        61
+      ]
+    },
+    {
+      "port_name": "Port 26",
+      "port_type": "RJ45",
+      "silkscreen_label": "26",
+      "box_2d": [
+        263,
+        32,
+        289,
+        61
+      ]
+    },
+    {
+      "port_name": "Port 27",
+      "port_type": "RJ45",
+      "silkscreen_label": "27",
+      "box_2d": [
+        290,
+        1,
+        317,
+        32
+      ]
+    },
+    {
+      "port_name": "Port 28",
+      "port_type": "RJ45",
+      "silkscreen_label": "28",
+      "box_2d": [
+        265,
+        1,
+        290,
+        32
+      ]
+    }
+  ]
+}

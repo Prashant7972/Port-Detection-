@@ -1,0 +1,171 @@
+{
+  "device_model": "D-Link DES-1024D",
+  "ports": [
+    {
+      "port_name": "Port 1",
+      "port_type": "RJ45",
+      "box_2d": [
+        319,
+        482,
+        426,
+        569
+      ],
+      "silkscreen_label": "1"
+    },
+    {
+      "port_name": "Port 2",
+      "port_type": "RJ45",
+      "box_2d": [
+        386,
+        488,
+        516,
+        604
+      ],
+      "silkscreen_label": "2"
+    },
+    {
+      "port_name": "Port 3",
+      "port_type": "RJ45",
+      "box_2d": [
+        294,
+        545,
+        419,
+        637
+      ],
+      "silkscreen_label": "3"
+    },
+    {
+      "port_name": "Port 5",
+      "port_type": "RJ45",
+      "box_2d": [
+        283,
+        606,
+        415,
+        699
+      ],
+      "silkscreen_label": "5"
+    },
+    {
+      "port_name": "Port 7",
+      "port_type": "RJ45",
+      "box_2d": [
+        272,
+        653,
+        403,
+        746
+      ],
+      "silkscreen_label": "7"
+    },
+    {
+      "port_name": "Port 9",
+      "port_type": "RJ45",
+      "box_2d": [
+        257,
+        715,
+        393,
+        814
+      ],
+      "silkscreen_label": "9"
+    },
+    {
+      "port_name": "Port 11",
+      "port_type": "RJ45",
+      "box_2d": [
+        247,
+        762,
+        381,
+        856
+      ],
+      "silkscreen_label": "11"
+    },
+    {
+      "port_name": "Port 13",
+      "port_type": "RJ45",
+      "box_2d": [
+        239,
+        804,
+        365,
+        897
+      ],
+      "silkscreen_label": "13"
+    },
+    {
+      "port_name": "Port 15",
+      "port_type": "RJ45",
+      "box_2d": [
+        229,
+        843,
+        350,
+        935
+      ],
+      "silkscreen_label": "15"
+    },
+    {
+      "port_name": "Port 17",
+      "port_type": "RJ45",
+      "box_2d": [
+        217,
+        882,
+        337,
+        981
+      ],
+      "silkscreen_label": "17"
+    },
+    {
+      "port_name": "Port 19",
+      "port_type": "RJ45",
+      "box_2d": [
+        204,
+        936,
+        317,
+        999
+      ],
+      "silkscreen_label": "19"
+    },
+    {
+      "port_name": "Unit 2 Port 1",
+      "port_type": "RJ45",
+      "box_2d": [
+        568,
+        492,
+        672,
+        578
+      ],
+      "silkscreen_label": "1"
+    },
+    {
+      "port_name": "Unit 2 Port 2",
+      "port_type": "RJ45",
+      "box_2d": [
+        638,
+        496,
+        755,
+        599
+      ],
+      "silkscreen_label": "2"
+    },
+    {
+      "port_name": "Unit 2 Port 3",
+      "port_type": "RJ45",
+      "box_2d": [
+        542,
+        545,
+        608,
+        611
+      ],
+      "silkscreen_label": "3"
+    },
+    {
+      "port_name": "Unit 2 Port 5",
+      "port_type": "RJ45",
+      "box_2d": [
+        525,
+        608,
+        597,
+        664
+      ],
+      "silkscreen_label": "5"
+    }
+  ],
+  "device_type": "Fast Ethernet Switch"
+}

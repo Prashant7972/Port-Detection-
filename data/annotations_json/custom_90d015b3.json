@@ -1,0 +1,61 @@
+{
+  "device": "Apple PowerBook G4 (Side Ports)",
+  "view": "Side Ports",
+  "ports": [
+    {
+      "port_name": "USB Port",
+      "port_type": "USB",
+      "silkscreen_label": "",
+      "box_2d": [
+        817,
+        88,
+        913,
+        225
+      ]
+    },
+    {
+      "port_name": "FireWire Port",
+      "port_type": "Other",
+      "silkscreen_label": "",
+      "box_2d": [
+        787,
+        265,
+        882,
+        376
+      ]
+    },
+    {
+      "port_name": "USB Port 2",
+      "port_type": "USB",
+      "silkscreen_label": "",
+      "box_2d": [
+        754,
+        432,
+        859,
+        525
+      ]
+    },
+    {
+      "port_name": "Ethernet RJ45",
+      "port_type": "RJ45",
+      "silkscreen_label": "",
+      "box_2d": [
+        729,
+        583,
+        848,
+        686
+      ]
+    },
+    {
+      "port_name": "DVI Port",
+      "port_type": "Other",
+      "silkscreen_label": "",
+      "box_2d": [
+        690,
+        774,
+        817,
+        953
+      ]
+    }
+  ]
+}

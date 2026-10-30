@@ -1,0 +1,174 @@
+{
+  "device_model": "Ericsson Radio 8808",
+  "device_type": "Macro RRU / Telecom Radio",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "ports": [
+    {
+      "port_name": "RF Port A",
+      "port_type": "RF",
+      "silkscreen_label": "A",
+      "box_2d": [
+        223,
+        116,
+        319,
+        172
+      ]
+    },
+    {
+      "port_name": "RF Port B",
+      "port_type": "RF",
+      "silkscreen_label": "B",
+      "box_2d": [
+        223,
+        214,
+        319,
+        273
+      ]
+    },
+    {
+      "port_name": "RF Port C",
+      "port_type": "RF",
+      "silkscreen_label": "C",
+      "box_2d": [
+        223,
+        315,
+        319,
+        372
+      ]
+    },
+    {
+      "port_name": "RF Port D",
+      "port_type": "RF",
+      "silkscreen_label": "D",
+      "box_2d": [
+        223,
+        415,
+        319,
+        473
+      ]
+    },
+    {
+      "port_name": "RF Port E",
+      "port_type": "RF",
+      "silkscreen_label": "E",
+      "box_2d": [
+        223,
+        515,
+        319,
+        572
+      ]
+    },
+    {
+      "port_name": "RF Port F",
+      "port_type": "RF",
+      "silkscreen_label": "F",
+      "box_2d": [
+        223,
+        615,
+        319,
+        672
+      ]
+    },
+    {
+      "port_name": "RF Port G",
+      "port_type": "RF",
+      "silkscreen_label": "G",
+      "box_2d": [
+        223,
+        715,
+        319,
+        773
+      ]
+    },
+    {
+      "port_name": "RF Port H",
+      "port_type": "RF",
+      "silkscreen_label": "H",
+      "box_2d": [
+        223,
+        815,
+        319,
+        873
+      ]
+    },
+    {
+      "port_name": "ANT CAL",
+      "port_type": "RF",
+      "silkscreen_label": "ANT CAL",
+      "box_2d": [
+        393,
+        100,
+        497,
+        159
+      ]
+    },
+    {
+      "port_name": "Fan/Alarm Port",
+      "port_type": "Console",
+      "silkscreen_label": "",
+      "box_2d": [
+        351,
+        335,
+        461,
+        399
+      ]
+    },
+    {
+      "port_name": "ALD",
+      "port_type": "Console",
+      "silkscreen_label": "ALD",
+      "box_2d": [
+        351,
+        423,
+        461,
+        488
+      ]
+    },
+    {
+      "port_name": "Optical SFP 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        393,
+        509,
+        584,
+        620
+      ]
+    },
+    {
+      "port_name": "Optical SFP 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        393,
+        633,
+        584,
+        743
+      ]
+    },
+    {
+      "port_name": "-48V DC Power",
+      "port_type": "Power",
+      "silkscreen_label": "-48V",
+      "box_2d": [
+        339,
+        752,
+        494,
+        836
+      ]
+    },
+    {
+      "port_name": "Ground",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        259,
+        882,
+        310,
+        908
+      ]
+    }
+  ],
+  "perspective_notes": "View of the bottom interface panel of an Ericsson Radio 8808 unit showing multiple 4.3-10 RF antenna ports labeled A through H, ANT CAL port, Fan/Alarm and ALD connectors, dual optical SFP fronthaul ports, -48V DC power connector, grounding point, and integrated cooling heatsink fins extending downwards."
+}

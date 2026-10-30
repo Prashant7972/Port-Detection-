@@ -1,0 +1,8 @@
+{
+  "device_model": "CommScope EGRZV-65D-R5N43 10-Port Multiband Sector Antenna",
+  "device_type": "Cellular Base Station Sector Antenna",
+  "view_perspective": "Auto Grounded View",
+  "ports_visible": false,
+  "perspective_notes": "Grounding performed with hardware metadata specifications.",
+  "ports": []
+}

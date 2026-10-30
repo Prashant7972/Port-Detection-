@@ -1,0 +1,75 @@
+{
+  "device_model": "Acer / Asus Ultrabook Side I/O Interface",
+  "device_type": "Ultrabook Laptop",
+  "view_perspective": "Left-Side I/O Panel (Perspective View)",
+  "ports_visible": true,
+  "perspective_notes": "High-precision computer vision detected 6 physical ports on laptop chassis panel. Table reflection and keyboard keys rejected.",
+  "ports": [
+    {
+      "port_name": "3.5mm Headphone Jack",
+      "port_type": "Other",
+      "silkscreen_label": "Audio",
+      "box_2d": [
+        500,
+        117,
+        552,
+        154
+      ]
+    },
+    {
+      "port_name": "USB-C SuperSpeed",
+      "port_type": "USB",
+      "silkscreen_label": "USB-C",
+      "box_2d": [
+        513,
+        198,
+        545,
+        259
+      ]
+    },
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "USB 3.0",
+      "box_2d": [
+        502,
+        307,
+        558,
+        393
+      ]
+    },
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "USB 3.0",
+      "box_2d": [
+        504,
+        425,
+        560,
+        510
+      ]
+    },
+    {
+      "port_name": "HDMI Video Output",
+      "port_type": "Other",
+      "silkscreen_label": "HDMI",
+      "box_2d": [
+        509,
+        552,
+        560,
+        646
+      ]
+    },
+    {
+      "port_name": "DC Power In",
+      "port_type": "Power",
+      "silkscreen_label": "Power",
+      "box_2d": [
+        513,
+        722,
+        543,
+        746
+      ]
+    }
+  ]
+}

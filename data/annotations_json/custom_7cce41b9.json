@@ -1,0 +1,97 @@
+{
+  "device_model": "Screenshot From 2026-10-28 18-33-24.png",
+  "device_type": "Hardware Device",
+  "view_perspective": "OpenCV Detected Panel",
+  "ports_visible": true,
+  "perspective_notes": "High-precision OpenCV contour analysis detected 8 physical port cavities.",
+  "ports": [
+    {
+      "port_name": "Port 1",
+      "port_type": "RJ45",
+      "silkscreen_label": "1",
+      "box_2d": [
+        385,
+        48,
+        550,
+        84
+      ]
+    },
+    {
+      "port_name": "Port 2",
+      "port_type": "RJ45",
+      "silkscreen_label": "2",
+      "box_2d": [
+        400,
+        92,
+        564,
+        128
+      ]
+    },
+    {
+      "port_name": "Port 3",
+      "port_type": "RJ45",
+      "silkscreen_label": "3",
+      "box_2d": [
+        414,
+        137,
+        578,
+        175
+      ]
+    },
+    {
+      "port_name": "Port 4",
+      "port_type": "RJ45",
+      "silkscreen_label": "4",
+      "box_2d": [
+        428,
+        183,
+        592,
+        222
+      ]
+    },
+    {
+      "port_name": "Port 5",
+      "port_type": "RJ45",
+      "silkscreen_label": "5",
+      "box_2d": [
+        442,
+        230,
+        607,
+        270
+      ]
+    },
+    {
+      "port_name": "Port 6",
+      "port_type": "RJ45",
+      "silkscreen_label": "6",
+      "box_2d": [
+        456,
+        278,
+        624,
+        319
+      ]
+    },
+    {
+      "port_name": "Port 7",
+      "port_type": "RJ45",
+      "silkscreen_label": "7",
+      "box_2d": [
+        466,
+        327,
+        638,
+        370
+      ]
+    },
+    {
+      "port_name": "Port 8",
+      "port_type": "RJ45",
+      "silkscreen_label": "8",
+      "box_2d": [
+        592,
+        378,
+        624,
+        397
+      ]
+    }
+  ]
+}

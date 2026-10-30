@@ -1,0 +1,50 @@
+{
+  "device_model": "10 Gbit XFP and SFP Optical Transceivers",
+  "ports": [
+    {
+      "port_name": "XFP Optical Port",
+      "port_type": "Other",
+      "box_2d": [
+        202,
+        38,
+        407,
+        140
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "XFP Electrical Interface",
+      "port_type": "Other",
+      "box_2d": [
+        181,
+        814,
+        417,
+        879
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "SFP+ Optical Port",
+      "port_type": "Other",
+      "box_2d": [
+        634,
+        47,
+        836,
+        158
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "SFP+ Electrical Interface",
+      "port_type": "Other",
+      "box_2d": [
+        647,
+        624,
+        817,
+        690
+      ],
+      "silkscreen_label": ""
+    }
+  ],
+  "device_type": "Transceiver Module"
+}

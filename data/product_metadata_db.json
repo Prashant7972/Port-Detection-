@@ -1,0 +1,1124 @@
+[
+  {
+    "_id": "PROD_WIFI_ASUS_500G",
+    "product_name": "Asus WL-500G Premium Wireless Wi-Fi Router",
+    "brand": "ASUSTeK Computer Inc.",
+    "category": "Wireless Wi-Fi Router & Access Point",
+    "datasheet_description": "High-performance wireless 802.11g router with 4-port 10/100 Ethernet switch, 1x WAN uplink port, and 2x USB 2.0 print/storage server ports.",
+    "total_physical_ports": 11,
+    "port_specifications": [
+      {
+        "port_name": "DC IN",
+        "port_type": "Power",
+        "location": "Rear Panel",
+        "spec": "5V / 2A Barrel Jack",
+        "function": "Main Power Input"
+      },
+      {
+        "port_name": "EZSETUP",
+        "port_type": "Other",
+        "location": "Rear Panel",
+        "spec": "Push Button",
+        "function": "Wi-Fi Protected Setup"
+      },
+      {
+        "port_name": "USB 2.0 (Port 1)",
+        "port_type": "USB",
+        "location": "Rear Panel",
+        "spec": "USB 2.0 Type-A (Top)",
+        "function": "Printer / Storage Server"
+      },
+      {
+        "port_name": "USB 2.0 (Port 2)",
+        "port_type": "USB",
+        "location": "Rear Panel",
+        "spec": "USB 2.0 Type-A (Bottom)",
+        "function": "Printer / Storage Server"
+      },
+      {
+        "port_name": "RESTORE",
+        "port_type": "Other",
+        "location": "Rear Panel",
+        "spec": "Recessed Pin Hole",
+        "function": "Factory Reset"
+      },
+      {
+        "port_name": "WAN",
+        "port_type": "RJ45",
+        "location": "Rear Panel",
+        "spec": "10/100Base-T Ethernet",
+        "function": "Internet Broadband Uplink"
+      },
+      {
+        "port_name": "LAN 1",
+        "port_type": "RJ45",
+        "location": "Rear Panel",
+        "spec": "10/100Base-T Ethernet",
+        "function": "Local Wired Client 1"
+      },
+      {
+        "port_name": "LAN 2",
+        "port_type": "RJ45",
+        "location": "Rear Panel",
+        "spec": "10/100Base-T Ethernet",
+        "function": "Local Wired Client 2"
+      },
+      {
+        "port_name": "LAN 3",
+        "port_type": "RJ45",
+        "location": "Rear Panel",
+        "spec": "10/100Base-T Ethernet",
+        "function": "Local Wired Client 3"
+      },
+      {
+        "port_name": "LAN 4",
+        "port_type": "RJ45",
+        "location": "Rear Panel",
+        "spec": "10/100Base-T Ethernet",
+        "function": "Local Wired Client 4"
+      },
+      {
+        "port_name": "ANT",
+        "port_type": "RF",
+        "location": "Rear Panel",
+        "spec": "RP-SMA Coaxial Jack",
+        "function": "Detachable 2.4 GHz Antenna"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_asus_front_leds",
+        "file_path": "data/metadata_test_images/router_front_no_ports.jpg",
+        "view_perspective": "Front Bezel (Status LEDs Only)"
+      },
+      {
+        "image_id": "img_asus_rear_ports",
+        "file_path": "data/raw_images/device_wifi_router_asus.jpg",
+        "view_perspective": "Rear I/O Panel (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_LAPTOP_THINKPAD_X220",
+    "product_name": "Lenovo ThinkPad X220 Ultraportable Laptop",
+    "brand": "Lenovo",
+    "category": "Enterprise Laptop / PC",
+    "datasheet_description": "12.5-inch business notebook featuring VGA, DisplayPort, Gigabit Ethernet, 3x USB 2.0 ports, SD card reader, and ExpressCard slot.",
+    "total_physical_ports": 9,
+    "port_specifications": [
+      {
+        "port_name": "VGA",
+        "port_type": "RF/Video",
+        "location": "Left Edge",
+        "spec": "15-pin D-sub",
+        "function": "External Analog Monitor"
+      },
+      {
+        "port_name": "DisplayPort",
+        "port_type": "Video",
+        "location": "Left Edge",
+        "spec": "DisplayPort (++DP)",
+        "function": "Digital Video / Audio Output"
+      },
+      {
+        "port_name": "USB 2.0 (Left 1)",
+        "port_type": "USB",
+        "location": "Left Edge",
+        "spec": "USB 2.0 Type-A",
+        "function": "Peripheral Connection"
+      },
+      {
+        "port_name": "USB 2.0 (Left 2)",
+        "port_type": "USB",
+        "location": "Left Edge",
+        "spec": "USB 2.0 Always-On",
+        "function": "Device Charging / Data"
+      },
+      {
+        "port_name": "Wireless Switch",
+        "port_type": "Other",
+        "location": "Left Edge",
+        "spec": "Physical Slider",
+        "function": "Wi-Fi & Bluetooth Master Toggle"
+      },
+      {
+        "port_name": "RJ45 Ethernet",
+        "port_type": "RJ45",
+        "location": "Right Edge",
+        "spec": "Gigabit 1000Base-T",
+        "function": "Wired LAN Networking"
+      },
+      {
+        "port_name": "USB 2.0 (Right)",
+        "port_type": "USB",
+        "location": "Right Edge",
+        "spec": "USB 2.0 Type-A",
+        "function": "Mouse / Flash Drive"
+      },
+      {
+        "port_name": "SD Card Reader",
+        "port_type": "Other",
+        "location": "Right Edge",
+        "spec": "4-in-1 SD/SDHC/SDXC",
+        "function": "Flash Storage Reader"
+      },
+      {
+        "port_name": "Audio Combo Jack",
+        "port_type": "Other",
+        "location": "Right Edge",
+        "spec": "3.5mm TRRS Headset",
+        "function": "Headphone & Microphone"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_thinkpad_top_cover",
+        "file_path": "data/metadata_test_images/laptop_top_no_ports.jpg",
+        "view_perspective": "Top Lid Cover (Closed Lid)"
+      },
+      {
+        "image_id": "img_thinkpad_left_ports",
+        "file_path": "data/raw_images/device_laptop_thinkpad.jpg",
+        "view_perspective": "Left Edge I/O Strip"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ANTENNA_COMMSCOPE_10PORT",
+    "product_name": "CommScope EGRZV-65D-R5N43 10-Port Multiband Sector Antenna",
+    "brand": "CommScope / Ericsson",
+    "category": "Cellular Base Station Sector Antenna",
+    "datasheet_description": "10-port multiband sector antenna covering 694-960 MHz and 1427-2690 MHz with 5 internal RET actuators, 4.3-10 female connectors, and AISG 2.0 interfaces.",
+    "total_physical_ports": 14,
+    "port_specifications": [
+      {
+        "port_name": "RF Port 1 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R1)",
+        "spec": "4.3-10 Female",
+        "function": "Low Band 694-862 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 2 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R1)",
+        "spec": "4.3-10 Female (RET 1)",
+        "function": "Low Band 694-862 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 3 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R2)",
+        "spec": "4.3-10 Female",
+        "function": "Low Band 880-960 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 4 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R2)",
+        "spec": "4.3-10 Female (RET 2)",
+        "function": "Low Band 880-960 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 5 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R3)",
+        "spec": "4.3-10 Female",
+        "function": "Low Band 694-960 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 6 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R3)",
+        "spec": "4.3-10 Female (RET 3)",
+        "function": "Low Band 694-960 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 7 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y1)",
+        "spec": "4.3-10 Female",
+        "function": "High Band 1427-2690 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 8 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y1)",
+        "spec": "4.3-10 Female (RET 4)",
+        "function": "High Band 1427-2690 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 9 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y2)",
+        "spec": "4.3-10 Female (RET 5)",
+        "function": "High Band 1695-2690 MHz TX/RX"
+      },
+      {
+        "port_name": "RF Port 10 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y2)",
+        "spec": "4.3-10 Female",
+        "function": "High Band 1695-2690 MHz TX/RX"
+      },
+      {
+        "port_name": "AISG 2 OUT",
+        "port_type": "Console",
+        "location": "Bottom Plate",
+        "spec": "8-pin DIN Female",
+        "function": "Cascaded RET Daisy Chain Output"
+      },
+      {
+        "port_name": "AISG 2 IN",
+        "port_type": "Console",
+        "location": "Bottom Plate",
+        "spec": "8-pin DIN Male",
+        "function": "AISG Control Input from Radio/TMA"
+      },
+      {
+        "port_name": "AISG 1 OUT",
+        "port_type": "Console",
+        "location": "Bottom Plate",
+        "spec": "8-pin DIN Female",
+        "function": "Cascaded RET Daisy Chain Output"
+      },
+      {
+        "port_name": "AISG 1 IN",
+        "port_type": "Console",
+        "location": "Bottom Plate",
+        "spec": "8-pin DIN Male",
+        "function": "AISG Control Input from Radio/TMA"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_antenna_tower_mast",
+        "file_path": "data/metadata_test_images/antenna_tower_no_ports.jpg",
+        "view_perspective": "Tower Mast Mount (Radome View)"
+      },
+      {
+        "image_id": "img_antenna_bottom_diagram",
+        "file_path": "data/raw_images/commscope_antenna_10port_egrzv-65d-r5n43.jpg",
+        "view_perspective": "Bottom Interface Plate (Connector Diagram)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_SWITCH_DLINK_BLURRY",
+    "product_name": "D-Link Fast Ethernet 16-Port Desktop Switch",
+    "brand": "D-Link Systems",
+    "category": "Unmanaged Ethernet Switch",
+    "datasheet_description": "16-port 10/100Base-TX unmanaged desktop switch with auto MDI/MDIX crossover support on all ports.",
+    "total_physical_ports": 16,
+    "port_specifications": [
+      {
+        "port_name": "Port 1",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 1"
+      },
+      {
+        "port_name": "Port 2",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 2"
+      },
+      {
+        "port_name": "Port 3",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 3"
+      },
+      {
+        "port_name": "Port 4",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 4"
+      },
+      {
+        "port_name": "Port 5",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 5"
+      },
+      {
+        "port_name": "Port 6",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 6"
+      },
+      {
+        "port_name": "Port 7",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 7"
+      },
+      {
+        "port_name": "Port 8",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 8"
+      },
+      {
+        "port_name": "Port 9",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 9"
+      },
+      {
+        "port_name": "Port 10",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 10"
+      },
+      {
+        "port_name": "Port 11",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 11"
+      },
+      {
+        "port_name": "Port 12",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 12"
+      },
+      {
+        "port_name": "Port 13",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 13"
+      },
+      {
+        "port_name": "Port 14",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 14"
+      },
+      {
+        "port_name": "Port 15",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 15"
+      },
+      {
+        "port_name": "Port 16",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100Base-TX",
+        "function": "Ethernet Client 16"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_switch_blurry",
+        "file_path": "data/metadata_test_images/switch_blurry_ports.jpg",
+        "view_perspective": "Front Panel (Blurry / Out of Focus)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_SWITCH_CISCO_INVERTED",
+    "product_name": "Cisco Small Business SG300-28 28-Port Gigabit Switch",
+    "brand": "Cisco Systems",
+    "category": "Managed Gigabit Switch",
+    "datasheet_description": "28-port managed switch featuring 26x 10/100/1000 Gigabit Ethernet ports plus 2x combo Gigabit SFP fiber uplink ports.",
+    "total_physical_ports": 28,
+    "port_specifications": [
+      {
+        "port_name": "Port 1",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 1"
+      },
+      {
+        "port_name": "Port 2",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 2"
+      },
+      {
+        "port_name": "Port 3",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 3"
+      },
+      {
+        "port_name": "Port 4",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 4"
+      },
+      {
+        "port_name": "Port 5",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 5"
+      },
+      {
+        "port_name": "Port 6",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 6"
+      },
+      {
+        "port_name": "Port 7",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 7"
+      },
+      {
+        "port_name": "Port 8",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 8"
+      },
+      {
+        "port_name": "Port 9",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 9"
+      },
+      {
+        "port_name": "Port 10",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 10"
+      },
+      {
+        "port_name": "Port 11",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 11"
+      },
+      {
+        "port_name": "Port 12",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 12"
+      },
+      {
+        "port_name": "Port 13",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 13"
+      },
+      {
+        "port_name": "Port 14",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 14"
+      },
+      {
+        "port_name": "Port 15",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 15"
+      },
+      {
+        "port_name": "Port 16",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 16"
+      },
+      {
+        "port_name": "Port 17",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 17"
+      },
+      {
+        "port_name": "Port 18",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 18"
+      },
+      {
+        "port_name": "Port 19",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 19"
+      },
+      {
+        "port_name": "Port 20",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 20"
+      },
+      {
+        "port_name": "Port 21",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 21"
+      },
+      {
+        "port_name": "Port 22",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 22"
+      },
+      {
+        "port_name": "Port 23",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 23"
+      },
+      {
+        "port_name": "Port 24",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 24"
+      },
+      {
+        "port_name": "Port 25",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 25"
+      },
+      {
+        "port_name": "Port 26",
+        "port_type": "RJ45",
+        "location": "Front Panel",
+        "spec": "10/100/1000Base-T",
+        "function": "Gigabit Access Port 26"
+      },
+      {
+        "port_name": "SFP Uplink 1",
+        "port_type": "SFP",
+        "location": "Front Right",
+        "spec": "1G SFP Cage",
+        "function": "Fiber Optical Uplink"
+      },
+      {
+        "port_name": "SFP Uplink 2",
+        "port_type": "SFP",
+        "location": "Front Right",
+        "spec": "1G SFP Cage",
+        "function": "Fiber Optical Uplink"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_cisco_inverted",
+        "file_path": "data/metadata_test_images/cisco_inverted_ports.jpg",
+        "view_perspective": "Front Panel (180\u00b0 Inverted / Upside Down)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_AIR_3239",
+    "product_name": "Ericsson AIR 3239 B78C 5G Massive MIMO (KRD 901 149/1)",
+    "brand": "Ericsson",
+    "category": "5G Massive MIMO Antenna Integrated Radio",
+    "datasheet_description": "Active Antenna Integrated Radio Unit operating in 3.5 GHz B78 band with 32T32R, supporting up to 200W output, 3x eCPRI optical SFP ports, Sync, Alarm/Aux, TX MON RF, and -48V DC power (max 22A).",
+    "total_physical_ports": 8,
+    "port_specifications": [
+      {
+        "port_name": "TX MON RF Port",
+        "port_type": "RF",
+        "location": "Bottom Interface Panel",
+        "spec": "SMA / QMA RF Monitor Port",
+        "function": "Transmitter RF Feedback Monitoring"
+      },
+      {
+        "port_name": "Alarm / Control Port",
+        "port_type": "Console",
+        "location": "Bottom Interface Panel",
+        "spec": "AUX / DIN Circular",
+        "function": "External Alarm & Remote Management"
+      },
+      {
+        "port_name": "Optical eCPRI/CPRI 3",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "Weather-Sealed SFP28 (10/25 Gbps)",
+        "function": "Baseband Fronthaul Data Link 3"
+      },
+      {
+        "port_name": "Optical eCPRI/CPRI 2",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "Weather-Sealed SFP28 (10/25 Gbps)",
+        "function": "Baseband Fronthaul Data Link 2"
+      },
+      {
+        "port_name": "Optical eCPRI/CPRI 1",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "Weather-Sealed SFP28 (10/25 Gbps)",
+        "function": "Baseband Fronthaul Data Link 1"
+      },
+      {
+        "port_name": "Multistandard / Sync Port",
+        "port_type": "Other",
+        "location": "Bottom Interface Panel",
+        "spec": "SYNC Circular Port",
+        "function": "Inter-Radio Synchronization"
+      },
+      {
+        "port_name": "-48V DC Power Input",
+        "port_type": "Power",
+        "location": "Bottom Interface Panel",
+        "spec": "-48V DC Screw Terminal (Max 22A)",
+        "function": "Primary Power Supply Feed"
+      },
+      {
+        "port_name": "Chassis Ground Terminal",
+        "port_type": "Ground",
+        "location": "Bottom Interface Panel",
+        "spec": "Dual M6 Ground Lug",
+        "function": "Chassis Protective Grounding"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_air3239_bottom",
+        "file_path": "data/raw_images/custom_7434cc45.jpg",
+        "view_perspective": "Bottom Interface Panel (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_AIR_6449",
+    "product_name": "Ericsson AIR 6449 B42 64T64R Massive MIMO (KRD 901 057/1)",
+    "brand": "Ericsson",
+    "category": "5G Massive MIMO Antenna Integrated Radio",
+    "datasheet_description": "High-capacity 64T64R Massive MIMO radio operating in Band n42/n77, featuring 4x 10/25G eCPRI optical ports, External Alarm DIN, RF TX MON test connector, and high-current -48V DC power input (max 50A).",
+    "total_physical_ports": 7,
+    "port_specifications": [
+      {
+        "port_name": "Alarm / Control Port",
+        "port_type": "Console",
+        "location": "Bottom Interface Panel",
+        "spec": "EXT 8-pin DIN",
+        "function": "External Alarm / RET Control"
+      },
+      {
+        "port_name": "Optical eCPRI Port 1",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "10/25G eCPRI SFP28",
+        "function": "Fronthaul Fiber Data Link 1"
+      },
+      {
+        "port_name": "Optical eCPRI Port 2",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "10/25G eCPRI SFP28",
+        "function": "Fronthaul Fiber Data Link 2"
+      },
+      {
+        "port_name": "Optical eCPRI Port 3",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "10/25G eCPRI SFP28",
+        "function": "Fronthaul Fiber Data Link 3"
+      },
+      {
+        "port_name": "Optical eCPRI Port 4",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "10/25G eCPRI SFP28",
+        "function": "Fronthaul Fiber Data Link 4"
+      },
+      {
+        "port_name": "TX MON RF Port",
+        "port_type": "RF",
+        "location": "Bottom Interface Panel",
+        "spec": "SMA Coaxial Port",
+        "function": "Transmitter RF Monitor & Feedback"
+      },
+      {
+        "port_name": "-48V DC Power Input",
+        "port_type": "Power",
+        "location": "Bottom Interface Panel",
+        "spec": "-48V DC Circular Connector (Max 50A)",
+        "function": "Primary High-Current DC Feed"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_air6449_bottom",
+        "file_path": "data/raw_images/custom_60190616.jpg",
+        "view_perspective": "Bottom Interface Panel (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_RADIO_2219",
+    "product_name": "Ericsson Radio 2219 / 4415 Dual-Carrier RRU (KRD 901 234/1)",
+    "brand": "Ericsson",
+    "category": "Remote Radio Unit (RRU)",
+    "datasheet_description": "Multi-standard macro remote radio unit with dual CPRI SFP interfaces, external alarm port, TX MON RF port, and -48V DC power (max 28A).",
+    "total_physical_ports": 6,
+    "port_specifications": [
+      {
+        "port_name": "TX MON RF Port",
+        "port_type": "RF",
+        "location": "Bottom Interface Panel",
+        "spec": "QMA / SMA Coaxial Port",
+        "function": "Transmitter Power & VSWR Monitor"
+      },
+      {
+        "port_name": "Optical SFP Port 1",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP/SFP+ CPRI Cage",
+        "function": "Baseband Fiber Link 1"
+      },
+      {
+        "port_name": "Optical SFP Port 2",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP/SFP+ CPRI Cage",
+        "function": "Baseband Fiber Link 2 / Cascade"
+      },
+      {
+        "port_name": "Alarm / Ext Port",
+        "port_type": "Console",
+        "location": "Bottom Interface Panel",
+        "spec": "Circular DIN Alarm Socket",
+        "function": "External Site Alarm Inputs"
+      },
+      {
+        "port_name": "-48V DC Power Input",
+        "port_type": "Power",
+        "location": "Bottom Interface Panel",
+        "spec": "2-Pin Weatherproof Screw Socket (Max 28A)",
+        "function": "Main -48V DC Power"
+      },
+      {
+        "port_name": "Chassis Ground Terminal",
+        "port_type": "Ground",
+        "location": "Bottom Interface Panel",
+        "spec": "Dual M6 Ground Screws",
+        "function": "Protective Earth Grounding"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_radio2219_bottom",
+        "file_path": "data/raw_images/custom_6598b68c.jpg",
+        "view_perspective": "Bottom Interface Panel (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_ANTENNA_12PORT",
+    "product_name": "Ericsson Multiband Base Station Antenna (KRD 901 239/1)",
+    "brand": "Ericsson",
+    "category": "Cellular Base Station Multiband Antenna",
+    "datasheet_description": "High-density multi-port cellular panel antenna with 12x 4.3-10 female RF coaxial ports covering low-band, mid-band, and high-band sectors (R1-R2, Y1-Y4, B1-B2, L1-L2, H1-H2) and 2x AISG/RET control ports.",
+    "total_physical_ports": 14,
+    "port_specifications": [
+      {
+        "port_name": "RF Port 1 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R1)",
+        "spec": "4.3-10 Female",
+        "function": "Low Band Sector RF Connection (+45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 2 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (R2)",
+        "spec": "4.3-10 Female",
+        "function": "Low Band Sector RF Connection (-45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 3 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y1)",
+        "spec": "4.3-10 Female",
+        "function": "Mid Band Sector RF Connection (+45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 4 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y2)",
+        "spec": "4.3-10 Female",
+        "function": "Mid Band Sector RF Connection (-45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 5 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y3)",
+        "spec": "4.3-10 Female",
+        "function": "Mid Band Sector RF Connection (+45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 6 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (Y4)",
+        "spec": "4.3-10 Female",
+        "function": "Mid Band Sector RF Connection (-45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 7 (+45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (B1)",
+        "spec": "4.3-10 Female",
+        "function": "High Band Sector RF Connection (+45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 8 (-45\u00b0)",
+        "port_type": "RF",
+        "location": "Bottom Plate (B2)",
+        "spec": "4.3-10 Female",
+        "function": "High Band Sector RF Connection (-45\u00b0)"
+      },
+      {
+        "port_name": "RF Port 9 (Low-Band 1)",
+        "port_type": "RF",
+        "location": "Bottom Plate (L1)",
+        "spec": "4.3-10 Female",
+        "function": "Sub-1GHz Sector RF Input 1"
+      },
+      {
+        "port_name": "RF Port 10 (Low-Band 2)",
+        "port_type": "RF",
+        "location": "Bottom Plate (L2)",
+        "spec": "4.3-10 Female",
+        "function": "Sub-1GHz Sector RF Input 2"
+      },
+      {
+        "port_name": "RF Port 11 (High-Band 1)",
+        "port_type": "RF",
+        "location": "Bottom Plate (H1)",
+        "spec": "4.3-10 Female",
+        "function": "Ultra-High Band Sector RF Input 1"
+      },
+      {
+        "port_name": "RF Port 12 (High-Band 2)",
+        "port_type": "RF",
+        "location": "Bottom Plate (H2)",
+        "spec": "4.3-10 Female",
+        "function": "Ultra-High Band Sector RF Input 2"
+      },
+      {
+        "port_name": "AISG / RET Port 1",
+        "port_type": "Other",
+        "location": "Bottom Plate (RET 1)",
+        "spec": "8-pin DIN AISG",
+        "function": "Remote Electrical Tilt Actuator 1 Control"
+      },
+      {
+        "port_name": "AISG / RET Port 2",
+        "port_type": "Other",
+        "location": "Bottom Plate (RET 2)",
+        "spec": "8-pin DIN AISG",
+        "function": "Remote Electrical Tilt Actuator 2 Control"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_antenna12_bottom",
+        "file_path": "data/raw_images/custom_1e1c3c72.jpg",
+        "view_perspective": "Bottom Interface Plate (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_RADIO_AC",
+    "product_name": "Ericsson Radio AC Unit (KRD 901 258/1)",
+    "brand": "Ericsson",
+    "category": "Cellular Radio Unit (AC Power)",
+    "datasheet_description": "Ericsson cellular macro radio unit featuring integrated AC mains power supply (100-240V ~ Max 6A) and dual SFP optical CPRI transceivers.",
+    "total_physical_ports": 4,
+    "port_specifications": [
+      {
+        "port_name": "Optical SFP Port 1",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP CPRI Cage",
+        "function": "Fronthaul Optical Data 1"
+      },
+      {
+        "port_name": "Optical SFP Port 2",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP CPRI Cage",
+        "function": "Fronthaul Optical Data 2"
+      },
+      {
+        "port_name": "AC Power Input",
+        "port_type": "Power",
+        "location": "Bottom Interface Panel",
+        "spec": "100-240V AC Screw-Lock (Max 6A)",
+        "function": "AC Mains Power Supply"
+      },
+      {
+        "port_name": "Chassis Ground Terminal",
+        "port_type": "Ground",
+        "location": "Bottom Interface Panel",
+        "spec": "Protective Ground Lug",
+        "function": "Earth Safety Ground"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_radio_ac_bottom",
+        "file_path": "data/raw_images/custom_92f6893c.jpg",
+        "view_perspective": "Bottom Interface Panel (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_RADIO_188",
+    "product_name": "Ericsson Radio Unit (KRD 901 188/1)",
+    "brand": "Ericsson",
+    "category": "Cellular Radio Unit",
+    "datasheet_description": "Ericsson cellular radio unit with optical SFP ports, -48V DC power connector, alarm port, TX MON, and chassis ground.",
+    "total_physical_ports": 7,
+    "port_specifications": [
+      {
+        "port_name": "TX MON RF Port",
+        "port_type": "RF",
+        "location": "Bottom Interface Panel",
+        "spec": "QMA / SMA Coaxial Port",
+        "function": "RF Calibration & Monitor"
+      },
+      {
+        "port_name": "Alarm / Ext Port",
+        "port_type": "Other",
+        "location": "Bottom Interface Panel",
+        "spec": "Circular DIN Socket",
+        "function": "External Site Alarm Inputs"
+      },
+      {
+        "port_name": "Optical SFP Port 1",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP Optical Cage",
+        "function": "Fronthaul Optical Data 1"
+      },
+      {
+        "port_name": "Optical SFP Port 2",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP Optical Cage",
+        "function": "Fronthaul Optical Data 2"
+      },
+      {
+        "port_name": "Digital Control Interface",
+        "port_type": "Other",
+        "location": "Bottom Interface Panel",
+        "spec": "CTRL Bus Socket",
+        "function": "Digital Control & Synchronization"
+      },
+      {
+        "port_name": "-48V DC Power Input",
+        "port_type": "Power",
+        "location": "Bottom Interface Panel",
+        "spec": "Weatherproof -48V DC Connector",
+        "function": "Main Power Supply"
+      },
+      {
+        "port_name": "Chassis Ground Terminal",
+        "port_type": "Ground",
+        "location": "Bottom Interface Panel",
+        "spec": "Chassis Ground Lug",
+        "function": "Protective Earth Ground"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_radio188_bottom",
+        "file_path": "data/raw_images/custom_48deff85.jpg",
+        "view_perspective": "Bottom Interface Panel (Full Port View)"
+      }
+    ]
+  },
+  {
+    "_id": "PROD_ERICSSON_AIR_892",
+    "product_name": "Ericsson AIR / Radio Unit (KRD 901 892/1)",
+    "brand": "Ericsson",
+    "category": "Antenna Integrated Radio Unit",
+    "datasheet_description": "Ericsson antenna integrated radio interface panel with dual optical SFP ports, alarm/ctrl port, -48V DC power, and ground terminal.",
+    "total_physical_ports": 5,
+    "port_specifications": [
+      {
+        "port_name": "Optical SFP Port 1",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP Optical Cage",
+        "function": "Fronthaul Optical Data 1"
+      },
+      {
+        "port_name": "Optical SFP Port 2",
+        "port_type": "SFP",
+        "location": "Bottom Interface Panel",
+        "spec": "SFP Optical Cage",
+        "function": "Fronthaul Optical Data 2"
+      },
+      {
+        "port_name": "Alarm / Control Port",
+        "port_type": "Console",
+        "location": "Bottom Interface Panel",
+        "spec": "Circular DIN Alarm Socket",
+        "function": "External Alarm / Control Interface"
+      },
+      {
+        "port_name": "-48V DC Power Input",
+        "port_type": "Power",
+        "location": "Bottom Interface Panel",
+        "spec": "-48V DC Power Connector",
+        "function": "Main Power Supply"
+      },
+      {
+        "port_name": "Chassis Ground Terminal",
+        "port_type": "Ground",
+        "location": "Bottom Interface Panel",
+        "spec": "Chassis Ground Lug",
+        "function": "Protective Earth Ground"
+      }
+    ],
+    "associated_images": [
+      {
+        "image_id": "img_air892_bottom",
+        "file_path": "data/raw_images/custom_c6a2bf6c.jpg",
+        "view_perspective": "Bottom Interface Panel (Full Port View)"
+      }
+    ]
+  }
+]

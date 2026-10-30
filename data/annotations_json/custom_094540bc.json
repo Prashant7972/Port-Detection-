@@ -1,0 +1,52 @@
+{
+  "device_info": {
+    "hardware_device": "Laptop",
+    "view_perspective": "Side Ports"
+  },
+  "ports": [
+    {
+      "port_name": "HDMI",
+      "port_type": "Other",
+      "silkscreen_label": "HDMI",
+      "box_2d": [
+        199,
+        58,
+        303,
+        196
+      ]
+    },
+    {
+      "port_name": "USB-A",
+      "port_type": "USB",
+      "silkscreen_label": "USB symbol",
+      "box_2d": [
+        214,
+        252,
+        308,
+        375
+      ]
+    },
+    {
+      "port_name": "USB-C",
+      "port_type": "USB",
+      "silkscreen_label": "SS symbol",
+      "box_2d": [
+        234,
+        431,
+        301,
+        519
+      ]
+    },
+    {
+      "port_name": "SD Card Reader",
+      "port_type": "Other",
+      "silkscreen_label": "SD",
+      "box_2d": [
+        260,
+        577,
+        298,
+        692
+      ]
+    }
+  ]
+}

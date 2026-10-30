@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecom Hardware Port Vision & MongoDB Metadata Lineage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .port-box {
+      position: absolute;
+      border: 2px solid;
+      pointer-events: auto;
+      cursor: move;
+      transition: box-shadow 0.15s ease-in-out;
+      user-select: none;
+    }
+    .port-box:hover {
+      box-shadow: 0 0 14px rgba(255, 255, 255, 0.9);
+      z-index: 50;
+    }
+    .port-box.selected-box {
+      border-color: #f59e0b !important;
+      box-shadow: 0 0 16px rgba(245, 158, 11, 0.9);
+      z-index: 60;
+    }
+    .port-tag {
+      position: absolute;
+      transform: translateY(-100%);
+      font-size: 10px;
+      font-weight: 700;
+      white-space: nowrap;
+      padding: 1px 5px;
+      border-radius: 3px;
+      pointer-events: none;
+    }
+    .resize-handle {
+      position: absolute;
+      right: -4px;
+      bottom: -4px;
+      width: 9px;
+      height: 9px;
+      background-color: #ffffff;
+      border: 1.5px solid #0f172a;
+      cursor: se-resize;
+      border-radius: 2px;
+      z-index: 70;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans flex flex-col">
+
+  <!-- Top Header Navigation -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40 px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20">
+        <i class="fa-solid fa-microchip text-white text-lg"></i>
+      </div>
+      <div>
+        <h1 class="font-bold text-lg tracking-wide text-white flex items-center gap-2">
+          Hardware Port Vision & Metadata Inspector
+          <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-medium">OpenCV + MongoDB Schema</span>
+        </h1>
+        <p class="text-xs text-slate-400">Computer Vision Grounding & Catalog Port Lineage for Blurry, Inverted, and Non-Port Photos</p>
+      </div>
+    </div>
+
+    <!-- Mode Switcher & Global Actions -->
+    <div class="flex items-center space-x-2.5">
+      <!-- Navigation Tabs -->
+      <div class="bg-slate-950 border border-slate-800 rounded-lg p-0.5 flex text-xs mr-2">
+        <button onclick="switchMainView('gallery')" id="navTabGallery" class="px-3 py-1.5 rounded-md bg-sky-600 text-white font-semibold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-images"></i> Port Gallery
+        </button>
+        <button onclick="switchMainView('metadata')" id="navTabMetadata" class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white font-semibold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-database text-emerald-400"></i> Metadata & Non-Port Auditor
+        </button>
+      </div>
+
+      <button onclick="openPdfModal()" class="px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
+        <i class="fa-solid fa-file-pdf"></i> Extract PDF
+      </button>
+      <button onclick="openUploadModal()" class="px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-sm">
+        <i class="fa-solid fa-cloud-arrow-up"></i> Detect Image
+      </button>
+      <a href="/export/cvat" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-medium flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-file-code text-indigo-400"></i> CVAT XML
+      </a>
+      <a href="/export/coco" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-medium flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-database text-amber-400"></i> COCO JSON
+      </a>
+      <a href="/export/yolo" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-medium flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-brain text-emerald-400"></i> YOLO Dataset
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== VIEW 1: STANDARD PORT GALLERY ==================== -->
+  <main id="galleryView" class="flex-1 max-w-7xl w-full mx-auto px-6 py-6">
+
+    <!-- Overview Stats & Filter Bar -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+      <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Total Devices</p>
+          <p class="text-2xl font-bold text-white mt-1" id="statTotalDevices">...</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-server"></i>
+        </div>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Total Detected Ports</p>
+          <p class="text-2xl font-bold text-emerald-400 mt-1" id="statTotalPorts">...</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-network-wired"></i>
+        </div>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Metadata Lineage</p>
+          <p class="text-2xl font-bold text-emerald-400 mt-1">Active</p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-database"></i>
+        </div>
+      </div>
+      <div class="bg-slate-900/60 border border-slate-800/80 rounded-xl p-4 flex items-center justify-between">
+        <div>
+          <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Annotation Quality</p>
+          <p class="text-sm font-semibold text-emerald-400 mt-1 flex items-center gap-1.5">
+            <i class="fa-solid fa-check-double"></i> CVAT / COCO Verified
+          </p>
+        </div>
+        <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-user-check"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center space-x-2 text-xs">
+        <span class="text-slate-400 font-medium mr-2">Filter Ports:</span>
+        <button onclick="filterDevices('all')" class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-200 border border-slate-700 font-medium filter-btn" data-filter="all">All Devices</button>
+        <button onclick="filterDevices('RF')" class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 filter-btn" data-filter="RF">RF Antennas</button>
+        <button onclick="filterDevices('RJ45')" class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 filter-btn" data-filter="RJ45">RJ45 Ethernet</button>
+        <button onclick="filterDevices('SFP')" class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 filter-btn" data-filter="SFP">SFP Optical</button>
+        <button onclick="filterDevices('USB')" class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 filter-btn" data-filter="USB">USB / Laptop</button>
+        <button onclick="filterDevices('Power')" class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 filter-btn" data-filter="Power">Power</button>
+      </div>
+      <div class="text-xs text-slate-400">
+        Click any device card to inspect & edit port annotations
+      </div>
+    </div>
+
+    <!-- Devices Grid -->
+    <div id="devicesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="col-span-full py-16 text-center text-slate-500">
+        <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-3 text-sky-500"></i>
+        <p>Loading devices and port detections...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==================== VIEW 2: METADATA LINEAGE & NON-PORT AUDITOR ==================== -->
+  <main id="metadataView" class="flex-1 max-w-7xl w-full mx-auto px-6 py-6 hidden">
+    
+    <!-- Section Introduction Banner -->
+    <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/40 border border-slate-800 rounded-2xl p-6 mb-6">
+      <div class="flex items-start justify-between">
+        <div>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-database mr-1"></i> MongoDB Relational Schema
+          </span>
+          <h2 class="text-xl font-bold text-white mt-2">Product Metadata & Image Port Lineage Auditor</h2>
+          <p class="text-xs text-slate-300 mt-1 max-w-3xl leading-relaxed">
+            In enterprise catalogs, product images are frequently <strong>blurry, inverted, or show perspectives where ports are completely hidden</strong> (e.g., front LED bezels, closed laptop lids, or tower-mounted radomes). This engine cross-references the image against the MongoDB product metadata record to verify exactly which ports the hardware possesses and where they are physically located.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Selection Tabs -->
+    <div class="flex items-center space-x-3 mb-6 overflow-x-auto pb-2 border-b border-slate-800 text-xs" id="metaProductTabs">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Deep Audit Card: Split View (Image Audit vs. Expected Metadata Ports) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+      
+      <!-- Left Column: Perspective Image & Condition (5 cols) -->
+      <div class="lg:col-span-5 flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Associated Image Perspective</span>
+          <div class="flex items-center gap-1.5" id="perspectivePills">
+            <!-- Perspective toggle buttons injected here -->
+          </div>
+        </div>
+
+        <!-- Image Container -->
+        <div class="relative bg-black rounded-xl overflow-hidden border border-slate-800 aspect-video flex items-center justify-center">
+          <img id="metaAuditImage" src="" alt="Hardware Perspective" class="max-w-full max-h-full object-contain">
+          <div id="metaQualityBadge" class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-xs font-bold border backdrop-blur shadow-lg">
+            <!-- Badge injected here -->
+          </div>
+        </div>
+
+        <!-- Quality Metrics Table -->
+        <div class="mt-4 bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-xs">
+          <div class="font-bold text-slate-300 mb-2 flex items-center gap-1.5">
+            <i class="fa-solid fa-chart-simple text-sky-400"></i> Image Condition Metrics
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-slate-400" id="metaQualityMetrics">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Reconciliation & Expected Ports Inventory (7 cols) -->
+      <div class="lg:col-span-7 flex flex-col justify-between">
+        
+        <div>
+          <!-- Reconciliation Alert Banner -->
+          <div id="metaReconciliationBanner" class="p-4 rounded-xl border mb-4 text-xs">
+            <!-- Injected by JS -->
+          </div>
+
+          <!-- Product Details Header -->
+          <div class="flex items-center justify-between mb-2">
+            <div>
+              <h3 id="metaProductName" class="text-base font-bold text-white">Product Name</h3>
+              <p id="metaProductCategory" class="text-xs text-slate-400">Category & Manufacturer</p>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-slate-400 block font-medium">True Physical Ports</span>
+              <span id="metaTotalPortsBadge" class="text-lg font-bold text-emerald-400">0 Ports</span>
+            </div>
+          </div>
+
+          <!-- Expected Hardware Ports Inventory Table -->
+          <div class="mt-4 border border-slate-800 rounded-xl overflow-hidden">
+            <div class="bg-slate-950 px-4 py-2 border-b border-slate-800 flex items-center justify-between text-xs font-bold text-slate-400">
+              <span>Catalog Port Inventory (From Product Metadata)</span>
+              <span class="text-[11px] text-sky-400 font-normal">Physical Location on Device</span>
+            </div>
+            <div class="max-h-[260px] overflow-y-auto">
+              <table class="w-full text-left text-xs text-slate-300">
+                <thead class="bg-slate-950/80 text-slate-400 border-b border-slate-800 sticky top-0">
+                  <tr>
+                    <th class="p-2.5">Port Name</th>
+                    <th class="p-2.5">Type</th>
+                    <th class="p-2.5">Location</th>
+                    <th class="p-2.5">Connector / Function</th>
+                  </tr>
+                </thead>
+                <tbody id="metaPortsTableBody" class="divide-y divide-slate-800/60">
+                  <!-- Injected by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footnote / Lineage Assurance -->
+        <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+          <span class="flex items-center gap-1.5 text-slate-300">
+            <i class="fa-solid fa-link text-emerald-400"></i> Linked via MongoDB <code>product_id</code>
+          </span>
+          <span class="text-slate-500">
+            Guarantees zero port inventory loss on occluded angles
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Deep Inspection & Review Modal -->
+  <div id="inspectorModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-6xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
+        <div>
+          <h2 id="modalDeviceName" class="text-base font-bold text-white flex items-center gap-2">
+            Device Inspection
+          </h2>
+          <p id="modalDeviceCategory" class="text-xs text-slate-400">Hardware Model & Port Grounding</p>
+        </div>
+        <div class="flex items-center space-x-3">
+          <div class="bg-slate-950 border border-slate-800 rounded-lg p-0.5 flex text-xs">
+            <button onclick="setModalView('marketplace')" id="tabMarketplace" class="px-3 py-1 rounded-md bg-emerald-600 text-white font-medium transition flex items-center gap-1">
+              <i class="fa-solid fa-diagram-project text-xs"></i> Marketplace
+            </button>
+            <button onclick="setModalView('annotated')" id="tabAnnotated" class="px-3 py-1 rounded-md text-slate-400 hover:text-white transition">
+              Industrial HUD
+            </button>
+            <button onclick="setModalView('interactive')" id="tabInteractive" class="px-3 py-1 rounded-md text-slate-400 hover:text-white transition">
+              Interactive
+            </button>
+            <button onclick="setModalView('raw')" id="tabRaw" class="px-3 py-1 rounded-md text-slate-400 hover:text-white transition">
+              Raw
+            </button>
+          </div>
+          <button onclick="closeInspectorModal()" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Split: Image Viewer + Specs & Ports Table) -->
+      <div class="flex-1 overflow-y-auto grid grid-cols-1 lg:grid-cols-12 gap-0">
+        
+        <!-- Left: Image Viewer (7 cols) -->
+        <div class="lg:col-span-7 p-4 bg-slate-950 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-800 min-h-[380px]">
+          <div class="relative max-w-full max-h-[520px] rounded-lg overflow-hidden border border-slate-800 bg-black flex items-center justify-center" id="imageWrapper">
+            <img id="viewerImage" src="" alt="Device" class="max-w-full max-h-[500px] object-contain block">
+            <div id="boxesOverlay" class="absolute inset-0 pointer-events-none hidden"></div>
+          </div>
+          <div class="mt-3 text-xs text-slate-400 flex items-center justify-between w-full px-2">
+            <span id="portCounterText" class="font-medium text-slate-300">0 Ports Detected</span>
+            <span class="text-slate-500">Labels rendered strictly above connector bounding boxes</span>
+          </div>
+        </div>
+
+        <!-- Right: Specs Panel + Editable Ports Review Table (5 cols) -->
+        <div class="lg:col-span-5 p-4 flex flex-col bg-slate-900/60 max-h-[580px] overflow-y-auto">
+          
+          <!-- Extracted PDF Specs Banner (conditionally displayed) -->
+          <div id="pdfSpecsContainer" class="mb-4 bg-slate-950 border border-rose-500/30 rounded-xl p-3.5 hidden">
+            <div class="flex items-center gap-2 text-rose-400 font-bold text-xs uppercase tracking-wider mb-2">
+              <i class="fa-solid fa-file-pdf"></i> Extracted PDF Specifications
+            </div>
+            <div id="pdfSpecsDetails" class="grid grid-cols-2 gap-2 text-xs text-slate-300">
+              <!-- Injected by JavaScript -->
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Port Inventory & Annotations</h3>
+            <div class="flex items-center space-x-1.5">
+              <button onclick="toggleDrawMode()" id="drawModeBtn" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-medium border border-slate-700 flex items-center gap-1">
+                <i class="fa-solid fa-vector-square"></i> Draw Box
+              </button>
+              <button onclick="addCustomPortRow()" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-sky-400 text-xs font-medium border border-slate-700 flex items-center gap-1">
+                <i class="fa-solid fa-plus text-[10px]"></i> Add Port
+              </button>
+            </div>
+          </div>
+
+          <!-- Scrollable Table -->
+          <div class="flex-1 overflow-y-auto border border-slate-800 rounded-lg min-h-[220px]">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-slate-950 text-slate-400 border-b border-slate-800 sticky top-0">
+                <tr>
+                  <th class="p-2">Name & Box</th>
+                  <th class="p-2">Type</th>
+                  <th class="p-2">Silkscreen</th>
+                  <th class="p-2 text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="portsTableBody" class="divide-y divide-slate-800/60">
+                <!-- Injected by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bottom Footer in Modal -->
+          <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+            <button onclick="triggerReanalyze()" id="reanalyzeBtn" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md transition flex items-center gap-1.5">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Re-Run AI Detection
+            </button>
+            <button onclick="savePortChanges()" id="saveBtn" class="px-4 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-md transition flex items-center gap-1.5">
+              <i class="fa-solid fa-floppy-disk"></i> Save & Sync All Diagrams
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PDF Upload & Extraction Modal -->
+  <div id="pdfModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-lg p-6 shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-file-pdf text-rose-500"></i> Extract Data & Diagram from PDF
+        </h3>
+        <button onclick="closePdfModal()" class="text-slate-400 hover:text-white">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+        Upload a technical PDF datasheet or installation guide (e.g., CommScope, Ericsson, Nokia antenna specs). The engine extracts technical specifications, isolates the connector layout diagram, and automatically renders OpenCV upper-label badges.
+      </p>
+
+      <input type="file" id="pdfFileInput" accept=".pdf" class="w-full text-xs text-slate-300 file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-rose-600 file:text-white hover:file:bg-rose-500 bg-slate-950 p-2 rounded-lg border border-slate-800 mb-4 cursor-pointer">
+
+      <div id="pdfStatus" class="text-xs text-rose-400 mb-4 hidden flex items-center gap-2">
+        <i class="fa-solid fa-circle-notch fa-spin"></i> Parsing PDF specifications & rendering diagram...
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button onclick="submitPdfUpload()" class="flex-1 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold shadow-md transition">
+          Parse & Extract PDF
+        </button>
+        <button onclick="loadSamplePdf()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-medium transition flex items-center gap-1.5">
+          <i class="fa-solid fa-bolt text-amber-400"></i> Try Sample Datasheet
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Upload Modal -->
+  <div id="uploadModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-md p-6 shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-cloud-arrow-up text-sky-400"></i> Upload Hardware Image
+        </h3>
+        <button onclick="closeUploadModal()" class="text-slate-400 hover:text-white">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <p class="text-xs text-slate-400 mb-3">
+        Upload any 2D photo, 3D CAD/render, or diagram. The engine will identify the perspective, detect ports, and align them with metadata.
+      </p>
+      <input type="file" id="deviceFileInput" accept="image/*" class="w-full text-xs text-slate-300 file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-sky-600 file:text-white hover:file:bg-sky-500 bg-slate-950 p-2 rounded-lg border border-slate-800 mb-3 cursor-pointer">
+
+      <!-- Optional Metadata Link -->
+      <div class="mb-4 bg-slate-950/60 border border-slate-800 rounded-xl p-3">
+        <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+          <i class="fa-solid fa-link text-emerald-400"></i> Link with Catalog Metadata (Optional)
+        </label>
+        <select id="uploadProductSelect" onchange="toggleCustomMetaInput()" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2 text-xs text-slate-200 mb-2">
+          <option value="">Auto-Detect (Zero-Shot Vision Grounding)</option>
+          <option value="PROD_WIFI_ASUS_500G">Asus WL-500G Router (11 Catalog Ports)</option>
+          <option value="PROD_LAPTOP_THINKPAD_X220">Lenovo ThinkPad X220 Laptop (9 Catalog Ports)</option>
+          <option value="PROD_ANTENNA_COMMSCOPE_10PORT">CommScope 10-Port Antenna (14 Catalog Ports)</option>
+          <option value="PROD_SWITCH_DLINK_BLURRY">D-Link 16-Port Switch (16 Catalog Ports)</option>
+          <option value="PROD_SWITCH_CISCO_INVERTED">Cisco SG300-28 Switch (28 Catalog Ports)</option>
+          <option value="CUSTOM">Custom Technical Description...</option>
+        </select>
+        <textarea id="uploadCustomMetaText" placeholder="e.g., 24x 10/100 Ethernet Ports, 2x Gigabit SFP Cages, 1x Console RJ45, 1x AC Power Input" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2 text-xs text-slate-200 hidden" rows="2"></textarea>
+      </div>
+
+      <div id="uploadStatus" class="text-xs text-sky-400 mb-4 hidden flex items-center gap-2">
+        <i class="fa-solid fa-circle-notch fa-spin"></i> Analyzing image & grounding with metadata...
+      </div>
+      <button onclick="submitUpload()" class="w-full py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-xs font-semibold shadow-md transition">
+        Run Grounding & Annotation
+      </button>
+    </div>
+  </div>
+
+  <!-- Frontend Logic -->
+  <script>
+    let allDevices = [];
+    let currentDevice = null;
+    let currentView = 'annotated';
+    let metadataProducts = [];
+    let selectedMetaProd = null;
+    let selectedMetaImageId = null;
+
+    const TYPE_COLORS = {
+      'RF': { border: '#ff9900', bg: 'rgba(255, 153, 0, 0.25)', text: '#ffb84d' },
+      'SFP': { border: '#00ccff', bg: 'rgba(0, 204, 255, 0.25)', text: '#66e0ff' },
+      'RJ45': { border: '#10b981', bg: 'rgba(16, 185, 129, 0.25)', text: '#34d399' },
+      'Power': { border: '#ef4444', bg: 'rgba(239, 68, 68, 0.25)', text: '#f87171' },
+      'Console': { border: '#a855f7', bg: 'rgba(168, 85, 247, 0.25)', text: '#c084fc' },
+      'USB': { border: '#eab308', bg: 'rgba(234, 179, 8, 0.25)', text: '#facc15' },
+      'Ground': { border: '#94a3b8', bg: 'rgba(148, 163, 184, 0.25)', text: '#cbd5e1' },
+      'Other': { border: '#06b6d4', bg: 'rgba(6, 182, 212, 0.25)', text: '#67e8f9' }
+    };
+
+    function switchMainView(view) {
+      const gView = document.getElementById('galleryView');
+      const mView = document.getElementById('metadataView');
+      const gTab = document.getElementById('navTabGallery');
+      const mTab = document.getElementById('navTabMetadata');
+
+      if (view === 'gallery') {
+        gView.classList.remove('hidden');
+        mView.classList.add('hidden');
+        gTab.className = 'px-3 py-1.5 rounded-md bg-sky-600 text-white font-semibold transition flex items-center gap-1.5';
+        mTab.className = 'px-3 py-1.5 rounded-md text-slate-400 hover:text-white font-semibold transition flex items-center gap-1.5';
+      } else {
+        gView.classList.add('hidden');
+        mView.classList.remove('hidden');
+        mTab.className = 'px-3 py-1.5 rounded-md bg-emerald-600 text-white font-semibold transition flex items-center gap-1.5';
+        gTab.className = 'px-3 py-1.5 rounded-md text-slate-400 hover:text-white font-semibold transition flex items-center gap-1.5';
+        loadMetadataView();
+      }
+    }
+
+    // --- METADATA SECTION LOGIC ---
+    async function loadMetadataView() {
+      if (metadataProducts.length === 0) {
+        try {
+          const res = await fetch('/api/metadata/products');
+          metadataProducts = await res.json();
+          renderMetaProductTabs();
+          if (metadataProducts.length > 0) {
+            selectMetaProduct(metadataProducts[0]._id);
+          }
+        } catch (err) {
+          console.error('Failed to load metadata products:', err);
+        }
+      }
+    }
+
+    function renderMetaProductTabs() {
+      const tabs = document.getElementById('metaProductTabs');
+      tabs.innerHTML = '';
+      metadataProducts.forEach(p => {
+        const btn = document.createElement('button');
+        btn.id = `metaTab_${p._id}`;
+        btn.className = 'px-3.5 py-1.5 rounded-lg border border-slate-800 bg-slate-900 text-slate-400 hover:text-white whitespace-nowrap font-medium transition flex items-center gap-2';
+        btn.onclick = () => selectMetaProduct(p._id);
+        btn.innerHTML = `<i class="fa-solid fa-cube text-emerald-400"></i> ${p.product_name.substring(0, 32)}...`;
+        tabs.appendChild(btn);
+      });
+    }
+
+    function selectMetaProduct(prodId) {
+      selectedMetaProd = metadataProducts.find(p => p._id === prodId);
+      if (!selectedMetaProd) return;
+
+      document.querySelectorAll('#metaProductTabs button').forEach(b => {
+        b.className = 'px-3.5 py-1.5 rounded-lg border border-slate-800 bg-slate-900 text-slate-400 hover:text-white whitespace-nowrap font-medium transition flex items-center gap-2';
+      });
+      const activeBtn = document.getElementById(`metaTab_${prodId}`);
+      if (activeBtn) {
+        activeBtn.className = 'px-3.5 py-1.5 rounded-lg border border-emerald-500/40 bg-emerald-950/40 text-emerald-300 whitespace-nowrap font-bold transition flex items-center gap-2 shadow-sm';
+      }
+
+      // Render perspective switcher pills
+      const pillsContainer = document.getElementById('perspectivePills');
+      pillsContainer.innerHTML = '';
+      const images = selectedMetaProd.associated_images || [];
+      images.forEach((img, idx) => {
+        const pill = document.createElement('button');
+        pill.className = `px-2.5 py-1 rounded-md text-[11px] font-medium border transition ${idx === 0 ? 'bg-sky-600 text-white border-sky-500' : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-white'}`;
+        pill.textContent = img.view_perspective.split('(')[0].trim();
+        pill.onclick = () => {
+          document.querySelectorAll('#perspectivePills button').forEach(b => {
+            b.className = 'px-2.5 py-1 rounded-md text-[11px] font-medium border bg-slate-800 text-slate-400 border-slate-700 hover:text-white transition';
+          });
+          pill.className = 'px-2.5 py-1 rounded-md text-[11px] font-medium border bg-sky-600 text-white border-sky-500 transition';
+          loadAuditDetail(prodId, img.image_id);
+        };
+        pillsContainer.appendChild(pill);
+      });
+
+      if (images.length > 0) {
+        loadAuditDetail(prodId, images[0].image_id);
+      }
+    }
+
+    async function loadAuditDetail(prodId, imageId) {
+      try {
+        const res = await fetch(`/api/metadata/audit/${prodId}/${imageId}`);
+        const audit = await res.json();
+
+        // 1. Image
+        const imgEl = document.getElementById('metaAuditImage');
+        const imgPath = (selectedMetaProd.associated_images.find(i => i.image_id === imageId) || {}).file_path || '';
+        if (audit.labeled_image) {
+          imgEl.src = `${audit.labeled_image}?t=${Date.now()}`;
+        } else if (imgPath.startsWith('data/raw_images/')) {
+          imgEl.src = `/images/raw/${imgPath.replace('data/raw_images/', '').replace('.jpg', '')}.jpg`;
+        } else if (imgPath.startsWith('data/metadata_test_images/')) {
+          imgEl.src = `/images/test/${imgPath.replace('data/metadata_test_images/', '')}`;
+        } else {
+          imgEl.src = `/${imgPath}`;
+        }
+
+        // 2. Quality Badge
+        const qBadge = document.getElementById('metaQualityBadge');
+        if (audit.audit_status === 'PORTS_OCCLUDED_OR_HIDDEN') {
+          qBadge.className = 'absolute top-3 left-3 px-2.5 py-1 rounded-lg text-xs font-bold border backdrop-blur shadow-lg bg-rose-950/80 text-rose-300 border-rose-500/40';
+          qBadge.innerHTML = '<i class="fa-solid fa-eye-slash mr-1"></i> Ports Hidden (Front/Lid View)';
+        } else if (audit.audit_status === 'IMAGE_BLURRY') {
+          qBadge.className = 'absolute top-3 left-3 px-2.5 py-1 rounded-lg text-xs font-bold border backdrop-blur shadow-lg bg-amber-950/80 text-amber-300 border-amber-500/40';
+          qBadge.innerHTML = '<i class="fa-solid fa-water mr-1"></i> Blurry (Degraded Quality)';
+        } else if (audit.audit_status === 'IMAGE_INVERTED') {
+          qBadge.className = 'absolute top-3 left-3 px-2.5 py-1 rounded-lg text-xs font-bold border backdrop-blur shadow-lg bg-purple-950/80 text-purple-300 border-purple-500/40';
+          qBadge.innerHTML = '<i class="fa-solid fa-rotate mr-1"></i> Inverted (180° Rotated)';
+        } else {
+          qBadge.className = 'absolute top-3 left-3 px-2.5 py-1 rounded-lg text-xs font-bold border backdrop-blur shadow-lg bg-emerald-950/80 text-emerald-300 border-emerald-500/40';
+          qBadge.innerHTML = `<i class="fa-solid fa-check-circle mr-1"></i> ${audit.detected_in_this_image} Ports Grounded`;
+        }
+
+        // 3. Metrics
+        const qm = audit.quality_metrics || {};
+        document.getElementById('metaQualityMetrics').innerHTML = `
+          <div><span class="block text-[10px] uppercase">Sharpness</span> <span class="font-bold ${qm.is_blurry ? 'text-amber-400' : 'text-emerald-400'}">${qm.sharpness_score || 'N/A'}</span></div>
+          <div><span class="block text-[10px] uppercase">Blurry Flag</span> <span class="font-bold ${qm.is_blurry ? 'text-rose-400' : 'text-slate-200'}">${qm.is_blurry ? 'YES' : 'NO'}</span></div>
+          <div><span class="block text-[10px] uppercase">Resolution</span> <span class="font-bold text-slate-200">${qm.resolution || 'N/A'}</span></div>
+        `;
+
+        // 4. Reconciliation Banner
+        const banner = document.getElementById('metaReconciliationBanner');
+        if (audit.audit_status === 'PORTS_OCCLUDED_OR_HIDDEN') {
+          banner.className = 'p-3.5 rounded-xl border bg-rose-950/30 border-rose-500/40 text-rose-200 mb-4 text-xs';
+          banner.innerHTML = `<div class="font-bold flex items-center gap-1.5 mb-1"><i class="fa-solid fa-triangle-exclamation text-rose-400"></i> ${audit.audit_status_title}</div><p class="leading-relaxed">${audit.reconciliation_summary}</p>`;
+        } else if (audit.audit_status === 'IMAGE_BLURRY') {
+          banner.className = 'p-3.5 rounded-xl border bg-amber-950/30 border-amber-500/40 text-amber-200 mb-4 text-xs';
+          banner.innerHTML = `<div class="font-bold flex items-center gap-1.5 mb-1"><i class="fa-solid fa-triangle-exclamation text-amber-400"></i> ${audit.audit_status_title}</div><p class="leading-relaxed">${audit.reconciliation_summary}</p>`;
+        } else if (audit.audit_status === 'IMAGE_INVERTED') {
+          banner.className = 'p-3.5 rounded-xl border bg-purple-950/30 border-purple-500/40 text-purple-200 mb-4 text-xs';
+          banner.innerHTML = `<div class="font-bold flex items-center gap-1.5 mb-1"><i class="fa-solid fa-rotate text-purple-400"></i> ${audit.audit_status_title}</div><p class="leading-relaxed">${audit.reconciliation_summary}</p>`;
+        } else {
+          banner.className = 'p-3.5 rounded-xl border bg-emerald-950/30 border-emerald-500/40 text-emerald-200 mb-4 text-xs';
+          banner.innerHTML = `<div class="font-bold flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> ${audit.audit_status_title}</div><p class="leading-relaxed">${audit.reconciliation_summary}</p>`;
+        }
+
+        // 5. Product Header
+        document.getElementById('metaProductName').textContent = audit.product_name;
+        document.getElementById('metaProductCategory').textContent = `${audit.category} | ${audit.view_perspective}`;
+        document.getElementById('metaTotalPortsBadge').textContent = `${audit.detected_in_this_image} / ${audit.total_expected_ports} Grounded`;
+
+        // 6. Ports Inventory Table with Match Indicators
+        const tbody = document.getElementById('metaPortsTableBody');
+        tbody.innerHTML = '';
+        const matchedNames = (audit.matched_catalog_ports || []).map(m => m.port_name.toLowerCase());
+
+        (audit.expected_ports_inventory || []).forEach(p => {
+          const isGrounded = matchedNames.some(mn => mn.includes(p.port_name.toLowerCase()) || p.port_name.toLowerCase().includes(mn));
+          const tr = document.createElement('tr');
+          tr.className = `transition ${isGrounded ? 'bg-emerald-950/20 hover:bg-emerald-900/30' : 'hover:bg-slate-800/40'}`;
+          const c = TYPE_COLORS[p.port_type] || TYPE_COLORS['Other'];
+          const statusIcon = isGrounded 
+            ? `<span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"><i class="fa-solid fa-check mr-1"></i>Grounded</span>`
+            : `<span class="px-1.5 py-0.5 rounded text-[10px] font-medium bg-slate-800 text-slate-500"><i class="fa-solid fa-circle-dot mr-1"></i>Unseen Side</span>`;
+
+          tr.innerHTML = `
+            <td class="p-2.5 font-bold text-white flex items-center gap-2">
+              ${statusIcon}
+              <span>${p.port_name}</span>
+            </td>
+            <td class="p-2.5"><span class="px-1.5 py-0.5 rounded text-[10px] font-medium" style="background:${c.bg}; color:${c.text}; border:1px solid ${c.border}40">${p.port_type}</span></td>
+            <td class="p-2.5 text-slate-300 font-semibold">${p.location || 'Chassis'}</td>
+            <td class="p-2.5 text-slate-400">${p.spec} - ${p.function}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+
+      } catch (err) {
+        console.error('Failed to load audit detail:', err);
+      }
+    }
+
+    // --- STANDARD GALLERY & INSPECTOR LOGIC ---
+    async function loadDevices() {
+      try {
+        const res = await fetch('/api/devices');
+        allDevices = await res.json();
+        renderGallery(allDevices);
+
+        let totalPorts = allDevices.reduce((sum, d) => sum + (d.port_count || 0), 0);
+        document.getElementById('statTotalDevices').textContent = allDevices.length;
+        document.getElementById('statTotalPorts').textContent = totalPorts;
+      } catch (err) {
+        console.error('Failed to load devices:', err);
+      }
+    }
+
+    function renderGallery(devices) {
+      const grid = document.getElementById('devicesGrid');
+      grid.innerHTML = '';
+
+      if (devices.length === 0) {
+        grid.innerHTML = '<div class="col-span-full py-12 text-center text-slate-500">No devices found.</div>';
+        return;
+      }
+
+      devices.forEach(d => {
+        const card = document.createElement('div');
+        card.className = 'bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 hover:shadow-xl transition flex flex-col cursor-pointer group';
+        card.onclick = () => openInspectorModal(d.id);
+
+        const badgePills = (d.port_types || []).map(t => {
+          const c = TYPE_COLORS[t] || TYPE_COLORS['Other'];
+          return `<span class="px-1.5 py-0.5 rounded text-[10px] font-medium" style="background:${c.bg}; color:${c.text}; border:1px solid ${c.border}40">${t}</span>`;
+        }).join(' ');
+
+        const isPdf = (d.category && d.category.toLowerCase().includes('pdf')) || d.id.includes('commscope');
+        const badgeCategory = isPdf 
+          ? `<span class="px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-400 border border-rose-500/30 text-[10px] font-bold"><i class="fa-solid fa-file-pdf mr-1"></i>PDF Datasheet</span>`
+          : `<span class="font-semibold text-sky-400">${d.category}</span>`;
+
+        const imgSrc = d.marketplace_available ? d.marketplace_image : `/images/annotated/${d.id}_labeled.jpg`;
+        card.innerHTML = `
+          <div class="relative bg-slate-950 aspect-video overflow-hidden border-b border-slate-800 flex items-center justify-center">
+            <img src="${imgSrc}" alt="${d.name}" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
+            <div class="absolute top-2 right-2 bg-slate-950/80 backdrop-blur px-2 py-0.5 rounded text-[11px] font-bold text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+              <i class="fa-solid fa-circle-dot text-[8px]"></i> ${d.port_count} Ports
+            </div>
+            ${d.marketplace_available ? '<div class="absolute top-2 left-2 bg-emerald-950/80 backdrop-blur px-2 py-0.5 rounded text-[10px] font-bold text-emerald-300 border border-emerald-500/30">Marketplace</div>' : ''}
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                ${badgeCategory}
+                <span>ID: ${d.id.substring(0, 16)}</span>
+              </div>
+              <h3 class="font-bold text-sm text-white group-hover:text-sky-300 transition line-clamp-1">${d.name}</h3>
+            </div>
+            <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+              <div class="flex flex-wrap gap-1">${badgePills}</div>
+              <span class="text-xs text-slate-400 group-hover:text-white transition flex items-center gap-1">
+                Inspect <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterDevices(cat) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-slate-800', 'text-slate-200');
+        b.classList.add('bg-slate-900', 'text-slate-400');
+        if (b.dataset.filter === cat) {
+          b.classList.add('bg-slate-800', 'text-slate-200');
+          b.classList.remove('bg-slate-900', 'text-slate-400');
+        }
+      });
+
+      if (cat === 'all') {
+        renderGallery(allDevices);
+      } else {
+        const filtered = allDevices.filter(d => (d.port_types || []).includes(cat));
+        renderGallery(filtered);
+      }
+    }
+
+    async function openInspectorModal(devId) {
+      currentDevice = allDevices.find(d => d.id === devId);
+      if (!currentDevice) return;
+
+      document.getElementById('modalDeviceName').textContent = currentDevice.name;
+      document.getElementById('modalDeviceCategory').textContent = `${currentDevice.category} | ${currentDevice.port_count} ports detected`;
+      document.getElementById('portCounterText').textContent = `${currentDevice.ports.length} Ports Grounded`;
+
+      const specsContainer = document.getElementById('pdfSpecsContainer');
+      const specsDetails = document.getElementById('pdfSpecsDetails');
+      if (currentDevice.specs && Object.keys(currentDevice.specs).length > 0) {
+        const s = currentDevice.specs;
+        specsDetails.innerHTML = `
+          <div><span class="text-slate-400 font-medium">Connector Interface:</span> <span class="text-rose-300">${s.rf_connector_interface || '4.3-10 Female'}</span></div>
+          <div><span class="text-slate-400 font-medium">Total RF Ports:</span> <span class="text-emerald-300 font-bold">${s.rf_connector_total || 10}</span></div>
+          <div><span class="text-slate-400 font-medium">RET Interface:</span> <span class="text-amber-300">${s.ret_interface || '8-pin DIN'}</span></div>
+          <div><span class="text-slate-400 font-medium">Hardware:</span> <span class="text-sky-300">${s.ret_hardware || 'CommRET v2'}</span></div>
+        `;
+        specsContainer.classList.remove('hidden');
+      } else {
+        specsContainer.classList.add('hidden');
+      }
+
+      if (currentDevice.marketplace_available) {
+        setModalView('marketplace');
+      } else {
+        setModalView('annotated');
+      }
+      renderPortsTable(currentDevice.ports);
+      document.getElementById('inspectorModal').classList.remove('hidden');
+    }
+
+    function closeInspectorModal() {
+      document.getElementById('inspectorModal').classList.add('hidden');
+    }
+
+    let drawModeActive = false;
+    let isDrawing = false;
+    let drawStartX = 0, drawStartY = 0;
+    let drawBoxEl = null;
+
+    let dragActiveIdx = null;
+    let dragMode = null; // 'move' or 'resize'
+    let dragStartMouseX = 0, dragStartMouseY = 0;
+    let dragStartBox = null;
+
+    function toggleDrawMode() {
+      drawModeActive = !drawModeActive;
+      const btn = document.getElementById('drawModeBtn');
+      const overlay = document.getElementById('boxesOverlay');
+      if (drawModeActive) {
+        if (currentView !== 'interactive') setModalView('interactive');
+        btn.className = 'px-2 py-1 rounded bg-amber-500 text-slate-950 text-xs font-bold border border-amber-400 flex items-center gap-1 shadow-md';
+        btn.innerHTML = '<i class="fa-solid fa-crosshairs"></i> Drawing Active';
+        overlay.style.cursor = 'crosshair';
+      } else {
+        btn.className = 'px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-medium border border-slate-700 flex items-center gap-1';
+        btn.innerHTML = '<i class="fa-solid fa-vector-square"></i> Draw Box';
+        overlay.style.cursor = 'default';
+      }
+    }
+
+    function setModalView(mode) {
+      currentView = mode;
+      const img = document.getElementById('viewerImage');
+      const overlay = document.getElementById('boxesOverlay');
+
+      ['tabMarketplace', 'tabAnnotated', 'tabInteractive', 'tabRaw'].forEach(id => {
+        const btn = document.getElementById(id);
+        if (btn) {
+          btn.classList.remove('bg-emerald-600', 'bg-sky-600', 'text-white');
+          btn.classList.add('text-slate-400');
+        }
+      });
+
+      const t = Date.now();
+      if (mode === 'marketplace') {
+        const tab = document.getElementById('tabMarketplace');
+        if (tab) tab.classList.add('bg-emerald-600', 'text-white');
+        img.src = currentDevice.marketplace_available 
+          ? (currentDevice.marketplace_image ? `${currentDevice.marketplace_image.split('?')[0]}?t=${t}` : `/images/marketplace/${currentDevice.id}_marketplace.png?t=${t}`)
+          : `/images/annotated/${currentDevice.id}_labeled.jpg?t=${t}`;
+        overlay.classList.add('hidden');
+      } else if (mode === 'annotated') {
+        const tab = document.getElementById('tabAnnotated');
+        if (tab) tab.classList.add('bg-sky-600', 'text-white');
+        img.src = `/images/annotated/${currentDevice.id}_labeled.jpg?t=${t}`;
+        overlay.classList.add('hidden');
+      } else if (mode === 'raw') {
+        const tab = document.getElementById('tabRaw');
+        if (tab) tab.classList.add('bg-sky-600', 'text-white');
+        img.src = `/images/raw/${currentDevice.id}.jpg?t=${t}`;
+        overlay.classList.add('hidden');
+      } else if (mode === 'interactive') {
+        const tab = document.getElementById('tabInteractive');
+        if (tab) tab.classList.add('bg-sky-600', 'text-white');
+        img.src = `/images/raw/${currentDevice.id}.jpg?t=${t}`;
+        overlay.classList.remove('hidden');
+        renderInteractiveBoxes();
+      }
+    }
+
+    function renderInteractiveBoxes() {
+      const overlay = document.getElementById('boxesOverlay');
+      overlay.innerHTML = '';
+      if (!currentDevice || !currentDevice.ports) return;
+
+      currentDevice.ports.forEach((p, idx) => {
+        const [ymin, xmin, ymax, xmax] = p.box_2d || [0,0,0,0];
+        const top = (ymin / 10).toFixed(1) + '%';
+        const left = (xmin / 10).toFixed(1) + '%';
+        const height = ((ymax - ymin) / 10).toFixed(1) + '%';
+        const width = ((xmax - xmin) / 10).toFixed(1) + '%';
+
+        const c = TYPE_COLORS[p.port_type] || TYPE_COLORS['Other'];
+
+        const box = document.createElement('div');
+        box.id = `interactiveBox_${idx}`;
+        box.className = 'port-box';
+        box.style.top = top;
+        box.style.left = left;
+        box.style.width = width;
+        box.style.height = height;
+        box.style.borderColor = c.border;
+        box.style.backgroundColor = c.bg;
+
+        // Port Tag Label
+        const tag = document.createElement('div');
+        tag.className = 'port-tag';
+        tag.style.backgroundColor = c.border;
+        tag.style.color = '#fff';
+        tag.textContent = p.port_name;
+        box.appendChild(tag);
+
+        // Resize Handle
+        const handle = document.createElement('div');
+        handle.className = 'resize-handle';
+        handle.onmousedown = (e) => {
+          e.stopPropagation();
+          initDrag(idx, 'resize', e);
+        };
+        box.appendChild(handle);
+
+        // Move Box Handle
+        box.onmousedown = (e) => {
+          if (e.target === handle) return;
+          initDrag(idx, 'move', e);
+        };
+
+        box.onclick = () => highlightRow(idx);
+        overlay.appendChild(box);
+      });
+
+      setupOverlayDrawing();
+    }
+
+    function initDrag(idx, mode, e) {
+      if (drawModeActive) return;
+      dragActiveIdx = idx;
+      dragMode = mode;
+      dragStartMouseX = e.clientX;
+      dragStartMouseY = e.clientY;
+      dragStartBox = [...(currentDevice.ports[idx].box_2d || [0,0,0,0])];
+
+      document.querySelectorAll('.port-box').forEach(b => b.classList.remove('selected-box'));
+      const activeEl = document.getElementById(`interactiveBox_${idx}`);
+      if (activeEl) activeEl.classList.add('selected-box');
+      highlightRow(idx);
+
+      window.addEventListener('mousemove', onDragMove);
+      window.addEventListener('mouseup', onDragEnd);
+    }
+
+    function onDragMove(e) {
+      if (dragActiveIdx === null || !dragStartBox) return;
+      const overlay = document.getElementById('boxesOverlay');
+      const rect = overlay.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+
+      const deltaX = ((e.clientX - dragStartMouseX) / rect.width) * 1000;
+      const deltaY = ((e.clientY - dragStartMouseY) / rect.height) * 1000;
+
+      let [ymin, xmin, ymax, xmax] = dragStartBox;
+
+      if (dragMode === 'move') {
+        const boxW = xmax - xmin;
+        const boxH = ymax - ymin;
+        xmin = Math.max(0, Math.min(1000 - boxW, Math.round(xmin + deltaX)));
+        ymin = Math.max(0, Math.min(1000 - boxH, Math.round(ymin + deltaY)));
+        xmax = xmin + boxW;
+        ymax = ymin + boxH;
+      } else if (dragMode === 'resize') {
+        xmax = Math.max(xmin + 15, Math.min(1000, Math.round(xmax + deltaX)));
+        ymax = Math.max(ymin + 15, Math.min(1000, Math.round(ymax + deltaY)));
+      }
+
+      currentDevice.ports[dragActiveIdx].box_2d = [ymin, xmin, ymax, xmax];
+
+      const boxEl = document.getElementById(`interactiveBox_${dragActiveIdx}`);
+      if (boxEl) {
+        boxEl.style.top = (ymin / 10).toFixed(1) + '%';
+        boxEl.style.left = (xmin / 10).toFixed(1) + '%';
+        boxEl.style.width = ((xmax - xmin) / 10).toFixed(1) + '%';
+        boxEl.style.height = ((ymax - ymin) / 10).toFixed(1) + '%';
+      }
+
+      const boxCoordEl = document.getElementById(`boxCoord_${dragActiveIdx}`);
+      if (boxCoordEl) {
+        boxCoordEl.textContent = `[${ymin}, ${xmin}, ${ymax}, ${xmax}]`;
+      }
+    }
+
+    function onDragEnd() {
+      dragActiveIdx = null;
+      dragMode = null;
+      dragStartBox = null;
+      window.removeEventListener('mousemove', onDragMove);
+      window.removeEventListener('mouseup', onDragEnd);
+    }
+
+    function setupOverlayDrawing() {
+      const overlay = document.getElementById('boxesOverlay');
+      overlay.onmousedown = (e) => {
+        if (!drawModeActive) return;
+        if (e.target !== overlay) return;
+        isDrawing = true;
+        const rect = overlay.getBoundingClientRect();
+        drawStartX = e.clientX - rect.left;
+        drawStartY = e.clientY - rect.top;
+
+        drawBoxEl = document.createElement('div');
+        drawBoxEl.className = 'port-box border-dashed border-amber-400 bg-amber-400/20';
+        drawBoxEl.style.left = drawStartX + 'px';
+        drawBoxEl.style.top = drawStartY + 'px';
+        drawBoxEl.style.width = '0px';
+        drawBoxEl.style.height = '0px';
+        overlay.appendChild(drawBoxEl);
+
+        const onDrawMove = (me) => {
+          if (!isDrawing || !drawBoxEl) return;
+          const curX = me.clientX - rect.left;
+          const curY = me.clientY - rect.top;
+          const x = Math.min(drawStartX, curX);
+          const y = Math.min(drawStartY, curY);
+          const w = Math.abs(curX - drawStartX);
+          const h = Math.abs(curY - drawStartY);
+          drawBoxEl.style.left = x + 'px';
+          drawBoxEl.style.top = y + 'px';
+          drawBoxEl.style.width = w + 'px';
+          drawBoxEl.style.height = h + 'px';
+        };
+
+        const onDrawEnd = (me) => {
+          isDrawing = false;
+          window.removeEventListener('mousemove', onDrawMove);
+          window.removeEventListener('mouseup', onDrawEnd);
+
+          const curX = me.clientX - rect.left;
+          const curY = me.clientY - rect.top;
+          const x1 = Math.min(drawStartX, curX);
+          const y1 = Math.min(drawStartY, curY);
+          const x2 = Math.max(drawStartX, curX);
+          const y2 = Math.max(drawStartY, curY);
+
+          if (drawBoxEl && drawBoxEl.parentNode) {
+            drawBoxEl.parentNode.removeChild(drawBoxEl);
+          }
+          drawBoxEl = null;
+
+          if (x2 - x1 > 15 && y2 - y1 > 15) {
+            const ymin = Math.max(0, Math.min(1000, Math.round((y1 / rect.height) * 1000)));
+            const xmin = Math.max(0, Math.min(1000, Math.round((x1 / rect.width) * 1000)));
+            const ymax = Math.max(0, Math.min(1000, Math.round((y2 / rect.height) * 1000)));
+            const xmax = Math.max(0, Math.min(1000, Math.round((x2 / rect.width) * 1000)));
+
+            currentDevice.ports.push({
+              port_name: `Port ${currentDevice.ports.length + 1}`,
+              port_type: 'Other',
+              silkscreen_label: '',
+              box_2d: [ymin, xmin, ymax, xmax]
+            });
+
+            renderPortsTable(currentDevice.ports);
+            document.getElementById('portCounterText').textContent = `${currentDevice.ports.length} Ports Grounded`;
+            renderInteractiveBoxes();
+            highlightRow(currentDevice.ports.length - 1);
+          }
+          toggleDrawMode();
+        };
+
+        window.addEventListener('mousemove', onDrawMove);
+        window.addEventListener('mouseup', onDrawEnd);
+      };
+    }
+
+    function renderPortsTable(ports) {
+      const tbody = document.getElementById('portsTableBody');
+      tbody.innerHTML = '';
+
+      ports.forEach((p, idx) => {
+        const tr = document.createElement('tr');
+        tr.id = `portRow_${idx}`;
+        tr.className = 'hover:bg-slate-800/50 transition cursor-pointer';
+        tr.onclick = (e) => {
+          if (['INPUT', 'SELECT', 'BUTTON', 'I'].includes(e.target.tagName)) return;
+          highlightRow(idx);
+        };
+        const box = p.box_2d || [0,0,0,0];
+
+        tr.innerHTML = `
+          <td class="p-2">
+            <input type="text" value="${p.port_name}" onchange="updatePortProp(${idx}, 'port_name', this.value)" class="w-full bg-slate-950 border border-slate-800 rounded px-1.5 py-1 text-slate-100 text-xs font-semibold">
+            <div class="text-[10px] text-slate-500 mt-0.5 font-mono flex items-center gap-1">
+              <span>Box:</span>
+              <span id="boxCoord_${idx}">[${box.join(', ')}]</span>
+            </div>
+          </td>
+          <td class="p-2">
+            <select onchange="updatePortProp(${idx}, 'port_type', this.value)" class="bg-slate-950 border border-slate-800 rounded px-1.5 py-1 text-slate-100 text-xs">
+              ${['RF', 'RJ45', 'SFP', 'Power', 'Console', 'USB', 'Audio', 'HDMI', 'DVI', 'SD_Card', 'Ground', 'Other'].map(t => 
+                `<option value="${t}" ${t === p.port_type ? 'selected' : ''}>${t}</option>`
+              ).join('')}
+            </select>
+          </td>
+          <td class="p-2">
+            <input type="text" value="${p.silkscreen_label || ''}" placeholder="None" onchange="updatePortProp(${idx}, 'silkscreen_label', this.value)" class="w-full bg-slate-950 border border-slate-800 rounded px-1.5 py-1 text-slate-100 text-xs font-mono">
+          </td>
+          <td class="p-2 text-center">
+            <button onclick="removePortRow(${idx})" class="text-rose-400 hover:text-rose-300 p-1" title="Delete Port">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function highlightRow(idx) {
+      document.querySelectorAll('#portsTableBody tr').forEach(r => r.classList.remove('bg-sky-900/40'));
+      const row = document.getElementById(`portRow_${idx}`);
+      if (row) {
+        row.classList.add('bg-sky-900/40');
+        row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      document.querySelectorAll('.port-box').forEach(b => b.classList.remove('selected-box'));
+      const boxEl = document.getElementById(`interactiveBox_${idx}`);
+      if (boxEl) boxEl.classList.add('selected-box');
+    }
+
+    function updatePortProp(idx, prop, val) {
+      if (currentDevice && currentDevice.ports[idx]) {
+        currentDevice.ports[idx][prop] = val;
+        if (currentView === 'interactive') renderInteractiveBoxes();
+      }
+    }
+
+    function removePortRow(idx) {
+      if (currentDevice && currentDevice.ports) {
+        currentDevice.ports.splice(idx, 1);
+        renderPortsTable(currentDevice.ports);
+        document.getElementById('portCounterText').textContent = `${currentDevice.ports.length} Ports Grounded`;
+        if (currentView === 'interactive') renderInteractiveBoxes();
+      }
+    }
+
+    function addCustomPortRow() {
+      if (!currentDevice) return;
+      currentDevice.ports.push({
+        port_name: `Port ${currentDevice.ports.length + 1}`,
+        port_type: 'Other',
+        silkscreen_label: '',
+        box_2d: [400, 400, 600, 600]
+      });
+      renderPortsTable(currentDevice.ports);
+      document.getElementById('portCounterText').textContent = `${currentDevice.ports.length} Ports Grounded`;
+      if (currentView === 'interactive') renderInteractiveBoxes();
+      highlightRow(currentDevice.ports.length - 1);
+    }
+
+    async function triggerReanalyze() {
+      if (!currentDevice) return;
+      const btn = document.getElementById('reanalyzeBtn');
+      btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Re-running AI...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(`/api/device/${currentDevice.id}/reanalyze`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            device_model: currentDevice.name,
+            category: currentDevice.category
+          })
+        });
+        const data = await res.json();
+        if (data.error) throw new Error(data.error);
+
+        currentDevice.ports = data.ports;
+        currentDevice.port_count = data.port_count;
+        currentDevice.marketplace_available = true;
+        currentDevice.marketplace_image = `/images/marketplace/${currentDevice.id}_marketplace.png`;
+
+        renderPortsTable(currentDevice.ports);
+        document.getElementById('portCounterText').textContent = `${currentDevice.ports.length} Ports Grounded`;
+
+        setModalView(currentView);
+        await loadDevices();
+
+        btn.innerHTML = '<i class="fa-solid fa-check"></i> Complete!';
+        setTimeout(() => {
+          btn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i> Re-Run AI Detection';
+          btn.disabled = false;
+        }, 1800);
+      } catch (err) {
+        alert('Reanalysis failed: ' + err.message);
+        btn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i> Re-Run AI Detection';
+        btn.disabled = false;
+      }
+    }
+
+    async function savePortChanges() {
+      const btn = document.getElementById('saveBtn');
+      btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Saving & Syncing...';
+
+      try {
+        const res = await fetch(`/api/device/${currentDevice.id}/update`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            device_model: currentDevice.name,
+            ports: currentDevice.ports
+          })
+        });
+        const data = await res.json();
+        btn.innerHTML = '<i class="fa-solid fa-check"></i> All Synced!';
+        setTimeout(() => {
+          btn.innerHTML = '<i class="fa-solid fa-floppy-disk"></i> Save & Sync All Diagrams';
+        }, 1500);
+
+        currentDevice.marketplace_available = true;
+        currentDevice.marketplace_image = `/images/marketplace/${currentDevice.id}_marketplace.png`;
+        setModalView(currentView);
+        loadDevices();
+      } catch (err) {
+        alert('Failed to save changes: ' + err);
+        btn.innerHTML = '<i class="fa-solid fa-floppy-disk"></i> Save & Sync All Diagrams';
+      }
+    }
+
+    // Modal Control: PDF
+    function openPdfModal() { document.getElementById('pdfModal').classList.remove('hidden'); }
+    function closePdfModal() { document.getElementById('pdfModal').classList.add('hidden'); }
+
+    async function submitPdfUpload() {
+      const fileInput = document.getElementById('pdfFileInput');
+      if (!fileInput.files || fileInput.files.length === 0) {
+        alert('Please select a PDF file first.');
+        return;
+      }
+
+      const status = document.getElementById('pdfStatus');
+      status.classList.remove('hidden');
+
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+
+      try {
+        const res = await fetch('/api/upload_pdf', { method: 'POST', body: formData });
+        const data = await res.json();
+        status.classList.add('hidden');
+        closePdfModal();
+        await loadDevices();
+        openInspectorModal(data.id);
+      } catch (err) {
+        status.classList.add('hidden');
+        alert('PDF Extraction failed: ' + err);
+      }
+    }
+
+    async function loadSamplePdf() {
+      const status = document.getElementById('pdfStatus');
+      status.classList.remove('hidden');
+
+      try {
+        const res = await fetch('/api/sample_pdf');
+        const data = await res.json();
+        status.classList.add('hidden');
+        closePdfModal();
+        await loadDevices();
+        openInspectorModal(data.id);
+      } catch (err) {
+        status.classList.add('hidden');
+        alert('Sample PDF load failed: ' + err);
+      }
+    }
+
+    function toggleCustomMetaInput() {
+      const select = document.getElementById('uploadProductSelect');
+      const customInput = document.getElementById('uploadCustomMetaText');
+      if (select.value === 'CUSTOM') {
+        customInput.classList.remove('hidden');
+      } else {
+        customInput.classList.add('hidden');
+      }
+    }
+
+    // Modal Control: Image
+    function openUploadModal() { document.getElementById('uploadModal').classList.remove('hidden'); }
+    function closeUploadModal() { document.getElementById('uploadModal').classList.add('hidden'); }
+
+    async function submitUpload() {
+      const fileInput = document.getElementById('deviceFileInput');
+      if (!fileInput.files || fileInput.files.length === 0) {
+        alert('Please select an image file first.');
+        return;
+      }
+
+      const status = document.getElementById('uploadStatus');
+      status.classList.remove('hidden');
+
+      const formData = new FormData();
+      formData.append('file', fileInput.files[0]);
+
+      const prodSelect = document.getElementById('uploadProductSelect').value;
+      if (prodSelect && prodSelect !== 'CUSTOM') {
+        formData.append('product_id', prodSelect);
+      } else if (prodSelect === 'CUSTOM') {
+        const customText = document.getElementById('uploadCustomMetaText').value;
+        if (customText) formData.append('metadata_context', customText);
+      }
+
+      try {
+        const res = await fetch('/api/upload', { method: 'POST', body: formData });
+        const data = await res.json();
+        status.classList.add('hidden');
+        closeUploadModal();
+        await loadDevices();
+        openInspectorModal(data.id);
+      } catch (err) {
+        status.classList.add('hidden');
+        alert('Upload/Detection failed: ' + err);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadDevices);
+  </script>
+</body>
+</html>

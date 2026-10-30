@@ -1,0 +1,182 @@
+{
+  "device_model": "Trompeter JSI-52",
+  "ports": [
+    {
+      "port_name": "RF Port 1 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        383,
+        0,
+        584,
+        137
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 1 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        574,
+        0,
+        788,
+        140
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 2 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        390,
+        130,
+        589,
+        280
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 2 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        569,
+        139,
+        785,
+        285
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 3 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        387,
+        287,
+        584,
+        421
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 3 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        570,
+        296,
+        778,
+        417
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 4 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        384,
+        427,
+        580,
+        555
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 4 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        573,
+        432,
+        772,
+        554
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 5 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        388,
+        558,
+        578,
+        703
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 5 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        571,
+        562,
+        771,
+        695
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 6 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        390,
+        686,
+        576,
+        846
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 6 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        567,
+        689,
+        765,
+        840
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 7 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        387,
+        814,
+        563,
+        989
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 7 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        561,
+        816,
+        759,
+        980
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 8 Upper",
+      "port_type": "RF",
+      "box_2d": [
+        390,
+        942,
+        558,
+        1000
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF Port 8 Lower",
+      "port_type": "RF",
+      "box_2d": [
+        554,
+        936,
+        725,
+        1000
+      ],
+      "silkscreen_label": ""
+    }
+  ],
+  "device_type": "Patch Panel"
+}

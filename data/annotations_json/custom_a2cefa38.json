@@ -1,0 +1,53 @@
+{
+  "device_model": "Screenshot From 2026-10-29 14-39-06.png",
+  "device_type": "Hardware Device",
+  "view_perspective": "Two-Stage High-Res Bezel Analysis",
+  "ports_visible": true,
+  "perspective_notes": "Matched catalog reference signature (custom_b51c8ecf) with calibrated port grounding.",
+  "ports": [
+    {
+      "port_name": "3.5mm Headphone Jack",
+      "port_type": "Other",
+      "silkscreen_label": "Audio",
+      "box_2d": [
+        860,
+        327,
+        903,
+        364
+      ]
+    },
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB",
+      "box_2d": [
+        849,
+        488,
+        915,
+        548
+      ]
+    },
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB",
+      "box_2d": [
+        820,
+        571,
+        884,
+        630
+      ]
+    },
+    {
+      "port_name": "USB 3.0 Type-A",
+      "port_type": "USB",
+      "silkscreen_label": "SS USB",
+      "box_2d": [
+        796,
+        654,
+        858,
+        707
+      ]
+    }
+  ]
+}

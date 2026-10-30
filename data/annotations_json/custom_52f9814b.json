@@ -1,0 +1,97 @@
+{
+  "device_model": "Ericsson AIR 3239 B78C (KRD 901 149/1)",
+  "device_type": "Massive MIMO Antenna Integrated Radio",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "Ericsson 5G Antenna Integrated Radio AIR 3239 B78C. Features -48V DC power connection, 3x weather-sealed optical eCPRI/CPRI interfaces, alarm port, TX MON RF port, and ground lug.",
+  "ports": [
+    {
+      "port_name": "TX MON RF Port",
+      "port_type": "RF",
+      "silkscreen_label": "TX MON",
+      "box_2d": [
+        438,
+        319,
+        459,
+        369
+      ]
+    },
+    {
+      "port_name": "Alarm / Control Port",
+      "port_type": "Console",
+      "silkscreen_label": "AUX",
+      "box_2d": [
+        442,
+        394,
+        465,
+        417
+      ]
+    },
+    {
+      "port_name": "Optical eCPRI/CPRI 3",
+      "port_type": "SFP",
+      "silkscreen_label": "3",
+      "box_2d": [
+        435,
+        432,
+        483,
+        480
+      ]
+    },
+    {
+      "port_name": "Optical eCPRI/CPRI 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        435,
+        488,
+        483,
+        536
+      ]
+    },
+    {
+      "port_name": "Optical eCPRI/CPRI 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        435,
+        545,
+        483,
+        592
+      ]
+    },
+    {
+      "port_name": "Multistandard / Sync Port",
+      "port_type": "Other",
+      "silkscreen_label": "SYNC",
+      "box_2d": [
+        435,
+        600,
+        483,
+        648
+      ]
+    },
+    {
+      "port_name": "-48V DC Power Input",
+      "port_type": "Power",
+      "silkscreen_label": "-48V Max:22A",
+      "box_2d": [
+        442,
+        674,
+        474,
+        706
+      ]
+    },
+    {
+      "port_name": "Chassis Ground Terminal",
+      "port_type": "Ground",
+      "silkscreen_label": "Ground",
+      "box_2d": [
+        435,
+        712,
+        478,
+        736
+      ]
+    }
+  ]
+}

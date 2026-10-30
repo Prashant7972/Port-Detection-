@@ -1,0 +1,97 @@
+{
+  "device_model": "Ericsson Radio 6488 (KRD90109711)",
+  "device_type": "5G Massive MIMO / Macro RRU",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "The view clearly displays the bottom interface panel of the Ericsson Radio 6488 unit, featuring optical SFP fronthaul ports, auxiliary interface, TX monitor RF port, and DC power input, with extensive cooling heatsink fins positioned directly underneath.",
+  "ports": [
+    {
+      "port_name": "TX MON RF Port",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        400,
+        317,
+        416,
+        331
+      ]
+    },
+    {
+      "port_name": "Maintenance / External Interface Port",
+      "port_type": "Console",
+      "silkscreen_label": "EXT",
+      "box_2d": [
+        415,
+        347,
+        433,
+        388
+      ]
+    },
+    {
+      "port_name": "Optical Fronthaul SFP Port 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        399,
+        442,
+        440,
+        483
+      ]
+    },
+    {
+      "port_name": "Optical Fronthaul SFP Port 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        399,
+        489,
+        440,
+        529
+      ]
+    },
+    {
+      "port_name": "Optical Fronthaul SFP Port 3",
+      "port_type": "SFP",
+      "silkscreen_label": "3",
+      "box_2d": [
+        399,
+        538,
+        440,
+        578
+      ]
+    },
+    {
+      "port_name": "Optical Fronthaul SFP Port 4",
+      "port_type": "SFP",
+      "silkscreen_label": "4",
+      "box_2d": [
+        399,
+        586,
+        440,
+        626
+      ]
+    },
+    {
+      "port_name": "-48V DC Power Input",
+      "port_type": "Power",
+      "silkscreen_label": "-48V",
+      "box_2d": [
+        400,
+        631,
+        441,
+        663
+      ]
+    },
+    {
+      "port_name": "Grounding Point",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        420,
+        670,
+        439,
+        689
+      ]
+    }
+  ]
+}

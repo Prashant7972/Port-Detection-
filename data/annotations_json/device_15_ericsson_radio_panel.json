@@ -1,0 +1,61 @@
+{
+  "device_model": "Ericsson Radio System",
+  "ports": [
+    {
+      "port_name": "RF 1",
+      "port_type": "RF",
+      "box_2d": [
+        531,
+        120,
+        672,
+        201
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "RF 2",
+      "port_type": "RF",
+      "box_2d": [
+        530,
+        289,
+        672,
+        370
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "SFP+ 1",
+      "port_type": "SFP",
+      "box_2d": [
+        501,
+        449,
+        701,
+        530
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "SFP+ 2",
+      "port_type": "SFP",
+      "box_2d": [
+        500,
+        600,
+        701,
+        680
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "-48V DC Power",
+      "port_type": "Power",
+      "box_2d": [
+        457,
+        759,
+        742,
+        861
+      ],
+      "silkscreen_label": ""
+    }
+  ],
+  "device_type": "Radio Unit"
+}

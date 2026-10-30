@@ -1,0 +1,72 @@
+{
+  "device_model": "Atlantis 5-Port 10/100Mbps Ethernet Switch",
+  "ports": [
+    {
+      "port_name": "Port 1",
+      "port_type": "RJ45",
+      "box_2d": [
+        506,
+        297,
+        617,
+        367
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "Port 2",
+      "port_type": "RJ45",
+      "box_2d": [
+        558,
+        365,
+        668,
+        436
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "Port 3",
+      "port_type": "RJ45",
+      "box_2d": [
+        612,
+        434,
+        722,
+        505
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "Port 4",
+      "port_type": "RJ45",
+      "box_2d": [
+        666,
+        504,
+        779,
+        576
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "Port 5",
+      "port_type": "RJ45",
+      "box_2d": [
+        719,
+        573,
+        836,
+        650
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "DC Power",
+      "port_type": "Power",
+      "box_2d": [
+        577,
+        854,
+        650,
+        888
+      ],
+      "silkscreen_label": ""
+    }
+  ],
+  "device_type": "Switch"
+}

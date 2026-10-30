@@ -1,0 +1,53 @@
+{
+  "device_model": "Ericsson Radio System (Generic Macro RRU/Radio)",
+  "device_type": "Macro RRU",
+  "view_perspective": "Front/Side Interface Panel",
+  "ports_visible": true,
+  "ports": [
+    {
+      "port_name": "AISG/RET Control Port",
+      "port_type": "Console",
+      "silkscreen_label": "RBS A/DCK",
+      "box_2d": [
+        438,
+        230,
+        526,
+        277
+      ]
+    },
+    {
+      "port_name": "RF Coaxial Port A",
+      "port_type": "RF",
+      "silkscreen_label": "ANT A",
+      "box_2d": [
+        603,
+        258,
+        737,
+        335
+      ]
+    },
+    {
+      "port_name": "RF Coaxial Port B",
+      "port_type": "RF",
+      "silkscreen_label": "ANT B",
+      "box_2d": [
+        629,
+        355,
+        749,
+        436
+      ]
+    },
+    {
+      "port_name": "Ground Screw Terminal",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        813,
+        436,
+        882,
+        483
+      ]
+    }
+  ],
+  "perspective_notes": "The image shows an Ericsson radio unit with visible RF coaxial connectors for antenna attachment, an AISG/RET control port (labeled RBS A/DCK), and a grounding stud on the lower housing."
+}

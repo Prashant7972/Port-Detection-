@@ -1,0 +1,53 @@
+{
+  "device_model": "Cellular Base Station Antenna",
+  "device_type": "Base Station Antenna",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "ports": [
+    {
+      "port_name": "RF Coaxial Connector 1",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        750,
+        335,
+        846,
+        377
+      ]
+    },
+    {
+      "port_name": "RF Coaxial Connector 2",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        750,
+        442,
+        846,
+        484
+      ]
+    },
+    {
+      "port_name": "RF Coaxial Connector 3",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        750,
+        517,
+        846,
+        558
+      ]
+    },
+    {
+      "port_name": "RF Coaxial Connector 4",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        750,
+        624,
+        840,
+        666
+      ]
+    }
+  ],
+  "perspective_notes": "View showing the bottom connector panel of a sector/base station antenna, featuring four RF coaxial connectors (such as 4.3-10 or N-type) and AISG/RET control rods or interface slots."
+}

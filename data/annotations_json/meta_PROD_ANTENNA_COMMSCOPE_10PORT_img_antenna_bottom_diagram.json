@@ -1,0 +1,177 @@
+{
+  "device_model": "Commscope_Antenna_10Port_EGRZV-65D-R5N43",
+  "specs": {
+    "device_model": "Commscope_Antenna_10Port_EGRZV-65D-R5N43",
+    "description": "",
+    "rf_connector_interface": "4.3-10 Female",
+    "rf_connector_total": 10,
+    "rf_connector_high_band": 4,
+    "rf_connector_low_band": 6,
+    "ret_interface": "8-pin DIN Female | 8-pin DIN Male",
+    "ret_hardware": "CommRET v2",
+    "frequency_bands": [
+      "1695-2690 MHz",
+      "694-862 MHz",
+      "880-960 MHz",
+      "1427-2690 MHz"
+    ],
+    "impedance": "50 ohm",
+    "page_count": 2
+  },
+  "ports": [
+    {
+      "port_name": "RF Port 3 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R2 880-960 MHz",
+      "box_2d": [
+        140,
+        115,
+        290,
+        186
+      ]
+    },
+    {
+      "port_name": "RF Port 4 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R2 RET 2",
+      "box_2d": [
+        140,
+        208,
+        290,
+        280
+      ]
+    },
+    {
+      "port_name": "RF Port 7 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y1 1427-2690 MHz",
+      "box_2d": [
+        150,
+        408,
+        300,
+        482
+      ]
+    },
+    {
+      "port_name": "RF Port 8 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y1 RET 4",
+      "box_2d": [
+        150,
+        516,
+        300,
+        589
+      ]
+    },
+    {
+      "port_name": "RF Port 9 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y2 RET 5",
+      "box_2d": [
+        160,
+        715,
+        305,
+        788
+      ]
+    },
+    {
+      "port_name": "RF Port 10 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y2 1695-2690 MHz",
+      "box_2d": [
+        160,
+        814,
+        305,
+        888
+      ]
+    },
+    {
+      "port_name": "AISG 2 OUT",
+      "port_type": "Console",
+      "silkscreen_label": "OUT AISG 2",
+      "box_2d": [
+        525,
+        327,
+        620,
+        377
+      ]
+    },
+    {
+      "port_name": "AISG 2 IN",
+      "port_type": "Console",
+      "silkscreen_label": "AISG 2 IN",
+      "box_2d": [
+        525,
+        403,
+        620,
+        453
+      ]
+    },
+    {
+      "port_name": "AISG 1 OUT",
+      "port_type": "Console",
+      "silkscreen_label": "OUT AISG 1",
+      "box_2d": [
+        525,
+        539,
+        620,
+        589
+      ]
+    },
+    {
+      "port_name": "AISG 1 IN",
+      "port_type": "Console",
+      "silkscreen_label": "AISG 1 IN",
+      "box_2d": [
+        525,
+        614,
+        620,
+        664
+      ]
+    },
+    {
+      "port_name": "RF Port 1 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R1 694-862 MHz",
+      "box_2d": [
+        500,
+        130,
+        638,
+        200
+      ]
+    },
+    {
+      "port_name": "RF Port 2 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R1 RET 1",
+      "box_2d": [
+        660,
+        177,
+        796,
+        246
+      ]
+    },
+    {
+      "port_name": "RF Port 6 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R3 694-960 MHz",
+      "box_2d": [
+        520,
+        797,
+        650,
+        868
+      ]
+    },
+    {
+      "port_name": "RF Port 5 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R3 RET 3",
+      "box_2d": [
+        675,
+        747,
+        808,
+        818
+      ]
+    }
+  ]
+}

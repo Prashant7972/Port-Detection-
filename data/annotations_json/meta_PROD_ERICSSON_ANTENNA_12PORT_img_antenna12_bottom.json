@@ -1,0 +1,163 @@
+{
+  "device_model": "Ericsson Multiband Antenna Endplate (KRD 901 239/1)",
+  "device_type": "Base Station Antenna Endplate",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "Cellular base station antenna bottom interface plate with 12x RF coaxial connectors (4.3-10 female) and 2x AISG/RET control ports.",
+  "ports": [
+    {
+      "port_name": "RF Port 1 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R1",
+      "box_2d": [
+        669,
+        57,
+        747,
+        124
+      ]
+    },
+    {
+      "port_name": "RF Port 2 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "R2",
+      "box_2d": [
+        669,
+        153,
+        748,
+        215
+      ]
+    },
+    {
+      "port_name": "RF Port 3 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y1",
+      "box_2d": [
+        669,
+        308,
+        748,
+        365
+      ]
+    },
+    {
+      "port_name": "RF Port 4 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y2",
+      "box_2d": [
+        669,
+        400,
+        748,
+        455
+      ]
+    },
+    {
+      "port_name": "RF Port 5 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y3",
+      "box_2d": [
+        669,
+        547,
+        747,
+        600
+      ]
+    },
+    {
+      "port_name": "RF Port 6 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "Y4",
+      "box_2d": [
+        669,
+        637,
+        747,
+        692
+      ]
+    },
+    {
+      "port_name": "RF Port 7 (+45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "B1",
+      "box_2d": [
+        669,
+        787,
+        748,
+        847
+      ]
+    },
+    {
+      "port_name": "RF Port 8 (-45\u00b0)",
+      "port_type": "RF",
+      "silkscreen_label": "B2",
+      "box_2d": [
+        669,
+        876,
+        748,
+        940
+      ]
+    },
+    {
+      "port_name": "RF Port 9 (Low-Band 1)",
+      "port_type": "RF",
+      "silkscreen_label": "L1",
+      "box_2d": [
+        535,
+        157,
+        608,
+        215
+      ]
+    },
+    {
+      "port_name": "RF Port 10 (Low-Band 2)",
+      "port_type": "RF",
+      "silkscreen_label": "L2",
+      "box_2d": [
+        535,
+        248,
+        607,
+        303
+      ]
+    },
+    {
+      "port_name": "RF Port 11 (High-Band 1)",
+      "port_type": "RF",
+      "silkscreen_label": "H1",
+      "box_2d": [
+        535,
+        695,
+        608,
+        752
+      ]
+    },
+    {
+      "port_name": "RF Port 12 (High-Band 2)",
+      "port_type": "RF",
+      "silkscreen_label": "H2",
+      "box_2d": [
+        535,
+        783,
+        608,
+        842
+      ]
+    },
+    {
+      "port_name": "AISG / RET Port 1",
+      "port_type": "Other",
+      "silkscreen_label": "RET 1",
+      "box_2d": [
+        540,
+        432,
+        592,
+        470
+      ]
+    },
+    {
+      "port_name": "AISG / RET Port 2",
+      "port_type": "Other",
+      "silkscreen_label": "RET 2",
+      "box_2d": [
+        540,
+        523,
+        592,
+        560
+      ]
+    }
+  ]
+}

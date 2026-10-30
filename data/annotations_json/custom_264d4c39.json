@@ -1,0 +1,39 @@
+{
+  "hardware_device": "Laptop Side Ports",
+  "view_perspective": "Side Ports",
+  "ports": [
+    {
+      "port_name": "USB Port 1",
+      "port_type": "USB",
+      "silkscreen_label": "USB icon",
+      "box_2d": [
+        180,
+        159,
+        448,
+        363
+      ]
+    },
+    {
+      "port_name": "USB Port 2",
+      "port_type": "USB",
+      "silkscreen_label": "SS5",
+      "box_2d": [
+        290,
+        499,
+        569,
+        695
+      ]
+    },
+    {
+      "port_name": "HDMI",
+      "port_type": "Other",
+      "silkscreen_label": "HDMI",
+      "box_2d": [
+        395,
+        806,
+        663,
+        1000
+      ]
+    }
+  ]
+}

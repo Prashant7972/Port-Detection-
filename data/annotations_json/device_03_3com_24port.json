@@ -1,0 +1,324 @@
+{
+  "device_model": "3Com 24-Port Gigabit Switch",
+  "ports": [
+    {
+      "port_name": "Port 1",
+      "port_type": "RJ45",
+      "box_2d": [
+        427,
+        58,
+        508,
+        134
+      ],
+      "silkscreen_label": "1"
+    },
+    {
+      "port_name": "Port 2",
+      "port_type": "RJ45",
+      "box_2d": [
+        519,
+        58,
+        584,
+        123
+      ],
+      "silkscreen_label": "2"
+    },
+    {
+      "port_name": "Port 3",
+      "port_type": "RJ45",
+      "box_2d": [
+        435,
+        126,
+        514,
+        196
+      ],
+      "silkscreen_label": "3"
+    },
+    {
+      "port_name": "Port 4",
+      "port_type": "RJ45",
+      "box_2d": [
+        522,
+        123,
+        588,
+        184
+      ],
+      "silkscreen_label": "4"
+    },
+    {
+      "port_name": "Port 5",
+      "port_type": "RJ45",
+      "box_2d": [
+        441,
+        199,
+        517,
+        251
+      ],
+      "silkscreen_label": "5"
+    },
+    {
+      "port_name": "Port 6",
+      "port_type": "RJ45",
+      "box_2d": [
+        526,
+        186,
+        590,
+        246
+      ],
+      "silkscreen_label": "6"
+    },
+    {
+      "port_name": "Port 7",
+      "port_type": "RJ45",
+      "box_2d": [
+        442,
+        251,
+        518,
+        313
+      ],
+      "silkscreen_label": "7"
+    },
+    {
+      "port_name": "Port 8",
+      "port_type": "RJ45",
+      "box_2d": [
+        529,
+        247,
+        592,
+        305
+      ],
+      "silkscreen_label": "8"
+    },
+    {
+      "port_name": "Port 9",
+      "port_type": "RJ45",
+      "box_2d": [
+        456,
+        309,
+        534,
+        375
+      ],
+      "silkscreen_label": "9"
+    },
+    {
+      "port_name": "Port 10",
+      "port_type": "RJ45",
+      "box_2d": [
+        537,
+        305,
+        597,
+        361
+      ],
+      "silkscreen_label": "10"
+    },
+    {
+      "port_name": "Port 11",
+      "port_type": "RJ45",
+      "box_2d": [
+        463,
+        362,
+        526,
+        408
+      ],
+      "silkscreen_label": "11"
+    },
+    {
+      "port_name": "Port 12",
+      "port_type": "RJ45",
+      "box_2d": [
+        539,
+        359,
+        599,
+        412
+      ],
+      "silkscreen_label": "12"
+    },
+    {
+      "port_name": "Port 13",
+      "port_type": "RJ45",
+      "box_2d": [
+        466,
+        429,
+        536,
+        497
+      ],
+      "silkscreen_label": "13"
+    },
+    {
+      "port_name": "Port 14",
+      "port_type": "RJ45",
+      "box_2d": [
+        548,
+        434,
+        606,
+        482
+      ],
+      "silkscreen_label": "14"
+    },
+    {
+      "port_name": "Port 15",
+      "port_type": "RJ45",
+      "box_2d": [
+        476,
+        495,
+        539,
+        552
+      ],
+      "silkscreen_label": "15"
+    },
+    {
+      "port_name": "Port 16",
+      "port_type": "RJ45",
+      "box_2d": [
+        549,
+        484,
+        606,
+        531
+      ],
+      "silkscreen_label": "16"
+    },
+    {
+      "port_name": "Port 17",
+      "port_type": "RJ45",
+      "box_2d": [
+        480,
+        545,
+        542,
+        597
+      ],
+      "silkscreen_label": "17"
+    },
+    {
+      "port_name": "Port 18",
+      "port_type": "RJ45",
+      "box_2d": [
+        551,
+        531,
+        609,
+        574
+      ],
+      "silkscreen_label": "18"
+    },
+    {
+      "port_name": "Port 19",
+      "port_type": "RJ45",
+      "box_2d": [
+        487,
+        587,
+        546,
+        638
+      ],
+      "silkscreen_label": "19"
+    },
+    {
+      "port_name": "Port 20",
+      "port_type": "RJ45",
+      "box_2d": [
+        555,
+        572,
+        610,
+        616
+      ],
+      "silkscreen_label": "20"
+    },
+    {
+      "port_name": "Port 21",
+      "port_type": "RJ45",
+      "box_2d": [
+        491,
+        626,
+        547,
+        679
+      ],
+      "silkscreen_label": "21"
+    },
+    {
+      "port_name": "Port 22",
+      "port_type": "RJ45",
+      "box_2d": [
+        559,
+        614,
+        613,
+        655
+      ],
+      "silkscreen_label": "22"
+    },
+    {
+      "port_name": "Port 23",
+      "port_type": "RJ45",
+      "box_2d": [
+        497,
+        652,
+        551,
+        690
+      ],
+      "silkscreen_label": "23"
+    },
+    {
+      "port_name": "Port 24",
+      "port_type": "RJ45",
+      "box_2d": [
+        563,
+        654,
+        614,
+        696
+      ],
+      "silkscreen_label": "24"
+    },
+    {
+      "port_name": "SFP 1",
+      "port_type": "SFP",
+      "box_2d": [
+        569,
+        712,
+        619,
+        755
+      ],
+      "silkscreen_label": "1"
+    },
+    {
+      "port_name": "SFP 2",
+      "port_type": "SFP",
+      "box_2d": [
+        570,
+        747,
+        621,
+        790
+      ],
+      "silkscreen_label": "2"
+    },
+    {
+      "port_name": "SFP 3",
+      "port_type": "SFP",
+      "box_2d": [
+        574,
+        784,
+        622,
+        824
+      ],
+      "silkscreen_label": "3"
+    },
+    {
+      "port_name": "SFP 4",
+      "port_type": "SFP",
+      "box_2d": [
+        575,
+        816,
+        624,
+        856
+      ],
+      "silkscreen_label": "4"
+    },
+    {
+      "port_name": "Console",
+      "port_type": "Console",
+      "box_2d": [
+        572,
+        854,
+        626,
+        899
+      ],
+      "silkscreen_label": "Console"
+    }
+  ]
+}

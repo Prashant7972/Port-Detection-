@@ -1,0 +1,75 @@
+{
+  "device_model": "Ericsson AIR (BFF901381)",
+  "device_type": "5G Massive MIMO / Base Station Antenna",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "The bottom interface panel displays multiple telecom ports including SFP optical fronthaul ports, circular connectors, a calibration RF port, power input, and grounding terminals.",
+  "ports": [
+    {
+      "port_name": "Optical SFP 1",
+      "port_type": "SFP",
+      "silkscreen_label": "",
+      "box_2d": [
+        386,
+        172,
+        449,
+        239
+      ]
+    },
+    {
+      "port_name": "Optical SFP 2",
+      "port_type": "SFP",
+      "silkscreen_label": "",
+      "box_2d": [
+        386,
+        258,
+        449,
+        323
+      ]
+    },
+    {
+      "port_name": "Console / AISG",
+      "port_type": "Console",
+      "silkscreen_label": "",
+      "box_2d": [
+        403,
+        346,
+        439,
+        383
+      ]
+    },
+    {
+      "port_name": "TX MON RF",
+      "port_type": "RF",
+      "silkscreen_label": "",
+      "box_2d": [
+        404,
+        563,
+        422,
+        584
+      ]
+    },
+    {
+      "port_name": "-48V DC Power",
+      "port_type": "Power",
+      "silkscreen_label": "-48V",
+      "box_2d": [
+        400,
+        732,
+        443,
+        783
+      ]
+    },
+    {
+      "port_name": "Ground",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        383,
+        808,
+        446,
+        847
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "device_model": "Netgear ProSafe GS108",
+  "ports": [
+    {
+      "port_name": "Port 1",
+      "port_type": "RJ45",
+      "box_2d": [
+        697,
+        114,
+        876,
+        219
+      ],
+      "silkscreen_label": "1"
+    },
+    {
+      "port_name": "Port 2",
+      "port_type": "RJ45",
+      "box_2d": [
+        697,
+        210,
+        876,
+        311
+      ],
+      "silkscreen_label": "2"
+    },
+    {
+      "port_name": "Port 3",
+      "port_type": "RJ45",
+      "box_2d": [
+        700,
+        305,
+        876,
+        404
+      ],
+      "silkscreen_label": "3"
+    },
+    {
+      "port_name": "Port 4",
+      "port_type": "RJ45",
+      "box_2d": [
+        700,
+        402,
+        876,
+        498
+      ],
+      "silkscreen_label": "4"
+    },
+    {
+      "port_name": "Port 5",
+      "port_type": "RJ45",
+      "box_2d": [
+        700,
+        500,
+        879,
+        597
+      ],
+      "silkscreen_label": "5"
+    },
+    {
+      "port_name": "Port 6",
+      "port_type": "RJ45",
+      "box_2d": [
+        700,
+        594,
+        879,
+        691
+      ],
+      "silkscreen_label": "6"
+    },
+    {
+      "port_name": "Port 7",
+      "port_type": "RJ45",
+      "box_2d": [
+        703,
+        688,
+        879,
+        784
+      ],
+      "silkscreen_label": "7"
+    },
+    {
+      "port_name": "Port 8",
+      "port_type": "RJ45",
+      "box_2d": [
+        703,
+        779,
+        879,
+        882
+      ],
+      "silkscreen_label": "8"
+    }
+  ],
+  "device_type": "switch"
+}

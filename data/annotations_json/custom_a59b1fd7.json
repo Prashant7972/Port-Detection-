@@ -1,0 +1,86 @@
+{
+  "device_model": "Ericsson Radio Unit KRD9011001",
+  "device_type": "Macro RRU / Base Station Radio Unit",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "The view displays the bottom interface panel of the Ericsson Radio Unit with the protective cover open, showing optical SFP fronthaul ports, alarm port, DC power terminals, and grounding point.",
+  "ports": [
+    {
+      "port_name": "Optical SFP Fronthaul 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        500,
+        385,
+        523,
+        404
+      ]
+    },
+    {
+      "port_name": "Optical SFP Fronthaul 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        500,
+        408,
+        523,
+        426
+      ]
+    },
+    {
+      "port_name": "Optical SFP Fronthaul 3",
+      "port_type": "SFP",
+      "silkscreen_label": "3",
+      "box_2d": [
+        500,
+        431,
+        522,
+        451
+      ]
+    },
+    {
+      "port_name": "Optical SFP Fronthaul 4",
+      "port_type": "SFP",
+      "silkscreen_label": "4",
+      "box_2d": [
+        500,
+        454,
+        522,
+        473
+      ]
+    },
+    {
+      "port_name": "Alarm / Control Port",
+      "port_type": "Console",
+      "silkscreen_label": "",
+      "box_2d": [
+        500,
+        480,
+        519,
+        506
+      ]
+    },
+    {
+      "port_name": "-48V DC Power Terminal",
+      "port_type": "Power",
+      "silkscreen_label": "-48V",
+      "box_2d": [
+        611,
+        451,
+        642,
+        545
+      ]
+    },
+    {
+      "port_name": "Grounding Point",
+      "port_type": "Ground",
+      "silkscreen_label": "",
+      "box_2d": [
+        595,
+        501,
+        633,
+        567
+      ]
+    }
+  ]
+}

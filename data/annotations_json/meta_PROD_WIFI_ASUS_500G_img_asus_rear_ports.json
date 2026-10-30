@@ -1,0 +1,126 @@
+{
+  "device_model": "Asus WL-500G Wireless Router",
+  "ports": [
+    {
+      "box_2d": [
+        370,
+        190,
+        500,
+        232
+      ],
+      "port_name": "DC Power In (5V/12V)",
+      "port_type": "Power",
+      "silkscreen_label": "DC IN"
+    },
+    {
+      "box_2d": [
+        425,
+        245,
+        505,
+        271
+      ],
+      "port_name": "EZSetup Button",
+      "port_type": "Other",
+      "silkscreen_label": "EZSETUP"
+    },
+    {
+      "box_2d": [
+        330,
+        284,
+        410,
+        340
+      ],
+      "port_name": "USB 2.0 (Port 1)",
+      "port_type": "USB",
+      "silkscreen_label": "USB 2.0"
+    },
+    {
+      "box_2d": [
+        430,
+        284,
+        510,
+        340
+      ],
+      "port_name": "USB 2.0 (Port 2)",
+      "port_type": "USB",
+      "silkscreen_label": "USB 2.0"
+    },
+    {
+      "box_2d": [
+        425,
+        356,
+        505,
+        379
+      ],
+      "port_name": "Restore Reset Pin",
+      "port_type": "Other",
+      "silkscreen_label": "RESTORE"
+    },
+    {
+      "box_2d": [
+        350,
+        385,
+        510,
+        457
+      ],
+      "port_name": "WAN / Internet Port",
+      "port_type": "RJ45",
+      "silkscreen_label": "WAN"
+    },
+    {
+      "box_2d": [
+        350,
+        558,
+        510,
+        620
+      ],
+      "port_name": "LAN 1 Port",
+      "port_type": "RJ45",
+      "silkscreen_label": "LAN 1"
+    },
+    {
+      "box_2d": [
+        350,
+        620,
+        510,
+        676
+      ],
+      "port_name": "LAN 2 Port",
+      "port_type": "RJ45",
+      "silkscreen_label": "LAN 2"
+    },
+    {
+      "box_2d": [
+        350,
+        676,
+        510,
+        731
+      ],
+      "port_name": "LAN 3 Port",
+      "port_type": "RJ45",
+      "silkscreen_label": "LAN 3"
+    },
+    {
+      "box_2d": [
+        350,
+        731,
+        510,
+        797
+      ],
+      "port_name": "LAN 4 Port",
+      "port_type": "RJ45",
+      "silkscreen_label": "LAN 4"
+    },
+    {
+      "box_2d": [
+        360,
+        816,
+        490,
+        865
+      ],
+      "port_name": "Wi-Fi SMA Antenna Jack",
+      "port_type": "RF",
+      "silkscreen_label": "ANT"
+    }
+  ]
+}

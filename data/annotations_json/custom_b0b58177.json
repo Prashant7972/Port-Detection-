@@ -1,0 +1,141 @@
+{
+  "device_model": "Laptops (Comparative Overview)",
+  "ports": [
+    {
+      "port_name": "USB-C 1",
+      "port_type": "USB",
+      "box_2d": [
+        480,
+        404,
+        495,
+        423
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB-C 2",
+      "port_type": "USB",
+      "box_2d": [
+        480,
+        439,
+        494,
+        450
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB-A 1",
+      "port_type": "USB",
+      "box_2d": [
+        540,
+        338,
+        558,
+        363
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB 3.0 Type-A 1",
+      "port_type": "USB",
+      "box_2d": [
+        595,
+        329,
+        615,
+        356
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB 3.0 Type-A 2",
+      "port_type": "USB",
+      "box_2d": [
+        595,
+        372,
+        614,
+        400
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB-C 3",
+      "port_type": "USB",
+      "box_2d": [
+        598,
+        424,
+        612,
+        442
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB Type-A 2",
+      "port_type": "USB",
+      "box_2d": [
+        521,
+        683,
+        545,
+        715
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB 3.0 Type-A 3",
+      "port_type": "USB",
+      "box_2d": [
+        520,
+        749,
+        545,
+        778
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "Ethernet",
+      "port_type": "RJ45",
+      "box_2d": [
+        518,
+        818,
+        546,
+        850
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "DC Power In",
+      "port_type": "Power",
+      "box_2d": [
+        582,
+        555,
+        624,
+        591
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "USB Type-A 3",
+      "port_type": "USB",
+      "box_2d": [
+        585,
+        855,
+        607,
+        882
+      ],
+      "silkscreen_label": ""
+    },
+    {
+      "port_name": "Audio Jack",
+      "port_type": "Other",
+      "box_2d": [
+        584,
+        896,
+        606,
+        912
+      ],
+      "silkscreen_label": ""
+    }
+  ],
+  "device_type": "Laptop",
+  "perspective_notes": "Stacked comparison of multiple laptops showing side I/O panels",
+  "ports_visible": true,
+  "view_perspective": "Side Ports"
+}

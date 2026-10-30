@@ -1,0 +1,75 @@
+{
+  "device_model": "Ericsson Radio 2219/4415 (KRD 901 234/1)",
+  "device_type": "Remote Radio Unit (RRU)",
+  "view_perspective": "Bottom Interface Panel",
+  "ports_visible": true,
+  "perspective_notes": "Ericsson remote radio unit interface panel with 2x SFP optical ports (labeled 1 and 2), -48V DC power (Max 28A), alarm port (bell icon), TX MON, and dual ground screws.",
+  "ports": [
+    {
+      "port_name": "TX MON RF Port",
+      "port_type": "RF",
+      "silkscreen_label": "TX MON",
+      "box_2d": [
+        397,
+        280,
+        428,
+        303
+      ]
+    },
+    {
+      "port_name": "Optical SFP Port 1",
+      "port_type": "SFP",
+      "silkscreen_label": "1",
+      "box_2d": [
+        389,
+        319,
+        452,
+        357
+      ]
+    },
+    {
+      "port_name": "Optical SFP Port 2",
+      "port_type": "SFP",
+      "silkscreen_label": "2",
+      "box_2d": [
+        386,
+        365,
+        452,
+        404
+      ]
+    },
+    {
+      "port_name": "Alarm / Ext Port",
+      "port_type": "Console",
+      "silkscreen_label": "ALARM",
+      "box_2d": [
+        394,
+        537,
+        439,
+        565
+      ]
+    },
+    {
+      "port_name": "-48V DC Power Input",
+      "port_type": "Power",
+      "silkscreen_label": "-48V Max:28A",
+      "box_2d": [
+        397,
+        584,
+        462,
+        622
+      ]
+    },
+    {
+      "port_name": "Chassis Ground Terminal",
+      "port_type": "Ground",
+      "silkscreen_label": "Ground",
+      "box_2d": [
+        392,
+        633,
+        467,
+        657
+      ]
+    }
+  ]
+}
